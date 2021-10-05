@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BusBoard
+namespace BusBoard.Tfl
 {
     public class StopPointArrival
     {
@@ -9,10 +9,12 @@ namespace BusBoard
         public DateTime ExpectedArrival { get; set; }
         public string Towards { get; set; }
         
+        public string StopName { get; set; }
+        
         public override String ToString()
         {
             var time = ConvertSecondsToMinutesSeconds(TimeToStation);
-            return $"{LineName} towards {Towards} expected at {ExpectedArrival:t} (in {time})";
+            return $"{LineName} from {StopName} towards {Towards} expected at {ExpectedArrival:t} (in {time})";
         }
 
         private string ConvertSecondsToMinutesSeconds(int seconds)

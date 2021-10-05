@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
+using BusBoard.Postcode;
+using BusBoard.Tfl;
 using RestSharp;
 
 namespace BusBoard
@@ -9,25 +12,73 @@ namespace BusBoard
     {
         static void Main(string[] args)
         {
-            var stopCode = GetUserInput();
-            var client = new RestClient("https://api.tfl.gov.uk/");
-            var request = new RestRequest($"StopPoint/{stopCode}/Arrivals", Method.GET);
-
-            var response = client.Get<List<StopPointArrival>>(request);
-            var data = response.Data;
-            
-            foreach (var stopPointArrival in data.OrderBy(item => item.TimeToStation).Take(5))
+            while (true)
             {
-                Console.WriteLine(stopPointArrival);
+                var location = PostcodeApi.GetLatLonFromPostcode();
+                Console.WriteLine(location);
+                var stopPoints = TflApi.GetStopPointsFromLocation(location);
+
+                if (stopPoints.Count == 0)
+                {
+                    Console.WriteLine("There are no bus stops for the given postcode. Try a different postcode");
+                    continue;
+                }
+                
+                var busList = new List<StopPointArrival>();
+                for (var i = 0; i < 2; i++)
+                {
+                    var stopPoint = stopPoints[i];
+                    var list = TflApi.Get5BusesForStopPoint(stopPoint.naptanID);
+                    foreach (var item in list)
+                    {
+                        item.StopName = stopPoint.commonName;
+                        busList.Add(item);
+                    }
+                }
+
+                busList.Sort(new Comparison<StopPointArrival>(Comparison));
+                foreach (var busArrival in busList)
+                {
+                    Console.WriteLine(busArrival);
+                }
+
+                if (busList.Count == 0)
+                {
+                    Console.WriteLine("No buses found for this location");
+                }
             }
 
-
         }
 
-        static string GetUserInput()
+        private static int Comparison(StopPointArrival x, StopPointArrival y)
         {
-            Console.WriteLine("Input stop code:");
-            return Console.ReadLine();
+            return x.TimeToStation - y.TimeToStation;
         }
+
+        public static string GetPostcodeInput(string prompt)
+        {
+
+            while (true)
+            {
+                Console.WriteLine(prompt);
+
+                var postCode = Console.ReadLine();
+
+                if (PostcodeApi.IsPostcodeValid(postCode))
+                {
+                    return postCode;
+                }
+
+                else
+                {
+                    Console.WriteLine("Invalid Postcode. Please enter a new one");
+                }
+                
+            }
+       
+        }
+
+
+
     }
 }
