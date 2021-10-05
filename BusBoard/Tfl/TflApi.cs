@@ -28,5 +28,13 @@ namespace BusBoard.Tfl
             var data = response.Data;
             return data.stopPoints;
         }
+
+        public static Trip GetDirections(string from, string to)
+        {
+            var request = new RestRequest($"Journey/JourneyResults/{from}/to/{to}");
+            var response = client.Get<Trip>(request);
+            var data = response.Data;
+            return data;
+        }
     }
 }

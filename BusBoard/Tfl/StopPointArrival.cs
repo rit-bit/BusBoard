@@ -23,5 +23,10 @@ namespace BusBoard.Tfl
             var secs = seconds % 60;
             return $"{mins}m {secs}s";
         }
+        
+        public static int Comparison(StopPointArrival x, StopPointArrival y)
+        {
+            return x.TimeToStation - y.TimeToStation;
+        }
     }
 }

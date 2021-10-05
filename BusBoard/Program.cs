@@ -23,7 +23,7 @@ namespace BusBoard
                     Console.WriteLine("There are no bus stops for the given postcode. Try a different postcode");
                     continue;
                 }
-                
+
                 var busList = new List<StopPointArrival>();
                 for (var i = 0; i < 2; i++)
                 {
@@ -36,7 +36,7 @@ namespace BusBoard
                     }
                 }
 
-                busList.Sort(new Comparison<StopPointArrival>(Comparison));
+                busList.Sort(new Comparison<StopPointArrival>(StopPointArrival.Comparison));
                 foreach (var busArrival in busList)
                 {
                     Console.WriteLine(busArrival);
@@ -45,40 +45,21 @@ namespace BusBoard
                 if (busList.Count == 0)
                 {
                     Console.WriteLine("No buses found for this location");
+                    continue;
+                }
+
+                if (UserInput.DoesUserWantDirections())
+                {
+                    var index = 0;
+                    if (stopPoints.Count >= 2)
+                    {
+                        index = UserInput.WhichBusStop(stopPoints[0].commonName, stopPoints[1].commonName);
+                    }
+
+                    var directions = TflApi.GetDirections("NW5 1TL", stopPoints[index].naptanID);
+                    Console.WriteLine(directions);
                 }
             }
-
         }
-
-        private static int Comparison(StopPointArrival x, StopPointArrival y)
-        {
-            return x.TimeToStation - y.TimeToStation;
-        }
-
-        public static string GetPostcodeInput(string prompt)
-        {
-
-            while (true)
-            {
-                Console.WriteLine(prompt);
-
-                var postCode = Console.ReadLine();
-
-                if (PostcodeApi.IsPostcodeValid(postCode))
-                {
-                    return postCode;
-                }
-
-                else
-                {
-                    Console.WriteLine("Invalid Postcode. Please enter a new one");
-                }
-                
-            }
-       
-        }
-
-
-
     }
 }
