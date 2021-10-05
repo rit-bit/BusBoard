@@ -13,7 +13,7 @@ namespace BusBoard.Postcode
         {
             while (true)
             {
-                var postcode = UserInput.GetPostcodeInput("Postcode:");
+                var postcode = UserInput.GetPostcodeInput("Input postcode:");
                 var request = new RestRequest($"postcodes?q={postcode}", Method.GET);
 
                 var response = client.Get<List<PostcodeInfo>>(request);

@@ -69,5 +69,34 @@ namespace BusBoard
                 }
             }
         }
+
+        public static MainAction GetMainAction()
+        {
+            Console.WriteLine($"\nWhich action would you like to do? Type 1 for Journey Planner and 2 for Nearest Bus Stop");
+
+            while (true)
+            {
+                var response = Console.ReadLine();
+
+                switch (response)
+                {
+                    case "1":
+                        return MainAction.JourneyPlanner;
+
+                    case "2":
+                        return MainAction.NearestBusStop;
+
+                    default:
+                        Console.WriteLine("You entered an invalid option. Please type 1 or 2");
+                        break;
+                }
+            }
+        }
+
+        public enum MainAction
+        {
+            JourneyPlanner,
+            NearestBusStop
+        }
     }
 }

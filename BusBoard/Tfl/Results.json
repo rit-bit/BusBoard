@@ -3,322 +3,66 @@
   "journeys": [
     {
       "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T13:25:00",
-      "duration": 22,
-      "arrivalDateTime": "2021-10-05T13:48:00",
+      "startDateTime": "2021-10-05T15:07:00",
+      "duration": 51,
+      "arrivalDateTime": "2021-10-05T15:58:00",
       "legs": [
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 3,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to Lady Somerset Road, Gospel Oak",
-            "detailed": "Walk to Lady Somerset Road, Gospel Oak",
-            "steps": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Sanderson Close for 40 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Sanderson Close",
-                "distance": 40,
-                "cumulativeDistance": 40,
-                "skyDirection": 415,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 51,
-                "latitude": 51.55421823769,
-                "longitude": -0.14504543618,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 79 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Highgate Road",
-                "distance": 79,
-                "cumulativeDistance": 119,
-                "skyDirection": 506,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 152,
-                "latitude": 51.55441740886,
-                "longitude": -0.14456130687,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
-                "trackType": "None"
-              }
-            ]
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:25:00",
-          "arrivalTime": "2021-10-05T13:28:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "platformName": "",
-            "icsCode": "99999997",
-            "commonName": "NW5 1TL",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55393486459,
-            "lon": -0.14475404161
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00015367",
-            "platformName": "GY",
-            "stopLetter": "GY",
-            "icsCode": "1015367",
-            "commonName": "Lady Somerset Road",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55381425687,
-            "lon": -0.143951157
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55385782187, -0.14386283442]]",
-            "stopPoints": [],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "",
-              "directions": [
-                ""
-              ]
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "walking",
-            "name": "walking",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
-              "category": "Undefined",
-              "type": "stopBlocking",
-              "categoryDescription": "Undefined",
-              "description": "Bus stop closed\\n    G.Network utility works\\n\\n",
-              "summary": "",
-              "additionalInfo": "",
-              "created": "2021-10-01T10:58:00",
-              "lastUpdate": "2021-10-01T10:58:00"
-            }
-          ],
-          "plannedWorks": [],
-          "distance": 119.0,
-          "isDisrupted": true,
-          "hasFixedLocations": true
-        },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
           "duration": 12,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "214 bus or 88 bus to Parliament Hill Fields",
-            "detailed": "214 bus towards Highgate Village or 88 bus towards Parliament Hill Fields",
-            "steps": []
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:28:00",
-          "arrivalTime": "2021-10-05T13:40:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00015367",
-            "platformName": "GY",
-            "stopLetter": "GY",
-            "icsCode": "1015367",
-            "commonName": "Lady Somerset Road",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55381425687,
-            "lon": -0.143951157
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00010852",
-            "platformName": "GH",
-            "stopLetter": "GH",
-            "icsCode": "1010852",
-            "commonName": "Parliament Hill Fields",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.5611234427,
-            "lon": -0.15067959724
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55385840883, -0.14386766318],[51.5542254972, -0.14436716653],[51.55441740886, -0.14456130687],[51.55458122046, -0.14468446669],[51.55489894489, -0.14487349089],[51.55563666435, -0.14546376811],[51.55615000633, -0.14605882098],[51.55615000633, -0.14605882098],[51.55621375989, -0.14613272364],[51.5566431938, -0.14656246022],[51.55713576056, -0.14700406471],[51.55726385066, -0.14714311808],[51.55744654357, -0.14732323127],[51.55749899305, -0.1473721172],[51.55749899305, -0.1473721172],[51.55780248671, -0.14765499334],[51.55846204282, -0.14842164249],[51.55872743377, -0.14871381818],[51.55880967446, -0.14880203469],[51.55880967446, -0.14880203469],[51.55919394234, -0.14921422957],[51.55978648972, -0.14972396214],[51.56018667773, -0.15001068334],[51.56085851104, -0.15041623069],[51.56093131357, -0.15047098517],[51.5611418136, -0.15060572116]]",
-            "stopPoints": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00007308",
-                "name": "Gordon House Road",
-                "uri": "/StopPoint/490G00007308",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00019154",
-                "name": "Glenhurst Avenue / Lissenden Gardens",
-                "uri": "/StopPoint/490G00019154",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00014697",
-                "name": "William Ellis School",
-                "uri": "/StopPoint/490G00014697",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00010852",
-                "name": "Parliament Hill Fields",
-                "uri": "/StopPoint/490G00010852",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            ],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "214",
-              "directions": [
-                "Highgate Village"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "214",
-                "name": "214",
-                "uri": "/Line/214",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "88",
-              "directions": [
-                "Parliament Hill Fields"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "88",
-                "name": "88",
-                "uri": "/Line/88",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "bus",
-            "name": "bus",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
-              "category": "Undefined",
-              "type": "stopBlocking",
-              "categoryDescription": "Undefined",
-              "description": "Bus stop closed\\n    G.Network utility works\\n\\n",
-              "summary": "",
-              "additionalInfo": "",
-              "created": "2021-10-01T10:58:00",
-              "lastUpdate": "2021-10-01T10:58:00"
-            }
-          ],
-          "plannedWorks": [],
-          "isDisrupted": true,
-          "hasFixedLocations": true
-        },
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 8,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to N6 6QH",
-            "detailed": "Walk to N6 6QH",
+            "summary": "Walk to Kentish Town",
+            "detailed": "Walk to Kentish Town",
             "steps": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Highgate Road for 32 metres",
+                "description": "Sanderson Close for 40 metres",
                 "turnDirection": "STRAIGHT",
+                "streetName": "Sanderson Close",
+                "distance": 40,
+                "cumulativeDistance": 40,
+                "skyDirection": 415,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 36,
+                "latitude": 51.55421823769,
+                "longitude": -0.14504543618,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Highgate Road, continue for 393 metres",
+                "turnDirection": "RIGHT",
                 "streetName": "Highgate Road",
-                "distance": 32,
-                "cumulativeDistance": 32,
-                "skyDirection": 337,
-                "skyDirectionDescription": "NorthWest",
-                "cumulativeTravelTime": 41,
-                "latitude": 51.56114027984,
-                "longitude": -0.15060677836,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "for 9 metres",
-                "turnDirection": "SLIGHT_RIGHT",
-                "streetName": "",
-                "distance": 9,
-                "cumulativeDistance": 41,
-                "skyDirection": 387,
+                "distance": 393,
+                "cumulativeDistance": 433,
+                "skyDirection": 506,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 54,
-                "latitude": 51.56142045771,
-                "longitude": -0.15069640212000002,
+                "cumulativeTravelTime": 392,
+                "latitude": 51.55441740886,
+                "longitude": -0.14456130687,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
-                "descriptionHeading": "Take a slight right",
+                "descriptionHeading": "Turn right",
                 "trackType": "None"
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Swains Lane, continue for 123 metres",
+                "description": "on to Kentish Town Road, continue for 58 metres",
                 "turnDirection": "STRAIGHT",
-                "streetName": "Swains Lane",
-                "distance": 123,
-                "cumulativeDistance": 164,
-                "skyDirection": 406,
+                "streetName": "Kentish Town Road",
+                "distance": 58,
+                "cumulativeDistance": 491,
+                "skyDirection": 512,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 213,
-                "latitude": 51.56149144219,
-                "longitude": -0.15063581326,
+                "cumulativeTravelTime": 443,
+                "latitude": 51.55167381019,
+                "longitude": -0.14109574709,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
@@ -327,16 +71,34 @@
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Hillway, continue for 103 metres",
-                "turnDirection": "LEFT",
-                "streetName": "Hillway",
-                "distance": 103,
-                "cumulativeDistance": 267,
-                "skyDirection": 363,
+                "description": "on to Kentish Town Road, continue for 37 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 37,
+                "cumulativeDistance": 528,
+                "skyDirection": 532,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 347,
-                "latitude": 51.5619620659,
-                "longitude": -0.14911626744,
+                "cumulativeTravelTime": 476,
+                "latitude": 51.55120932405,
+                "longitude": -0.14072523274,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 584,
+                "skyDirection": 449,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 526,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
@@ -345,49 +107,134 @@
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Bromwich Avenue, continue for 99 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Bromwich Avenue",
-                "distance": 99,
-                "cumulativeDistance": 366,
-                "skyDirection": 434,
+                "description": "on to Leighton Road, continue for 55 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 55,
+                "cumulativeDistance": 639,
+                "skyDirection": 448,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 474,
-                "latitude": 51.562886555940004,
-                "longitude": -0.14900658957000001,
+                "cumulativeTravelTime": 575,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
-                "descriptionHeading": "Turn right",
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 695,
+                "skyDirection": 268,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 624,
+                "latitude": 51.55092220136,
+                "longitude": -0.13906376139,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 751,
+                "skyDirection": 269,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 674,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 40 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Kentish Town Road",
+                "distance": 40,
+                "cumulativeDistance": 791,
+                "skyDirection": 180,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 711,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
                 "trackType": "None"
               }
             ]
           },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:40:00",
-          "arrivalTime": "2021-10-05T13:48:00",
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            }
+          ],
+          "departureTime": "2021-10-05T15:07:00",
+          "arrivalTime": "2021-10-05T15:19:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00010852",
-            "platformName": "GH",
-            "stopLetter": "GH",
-            "icsCode": "1010852",
-            "commonName": "Parliament Hill Fields",
+            "platformName": "",
+            "icsCode": "99999997",
+            "commonName": "NW5 1TL",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.5611234427,
-            "lon": -0.15067959724
+            "lat": 51.55393486459,
+            "lon": -0.14475404161
           },
           "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "N6 6QH",
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
             "placeType": "StopPoint",
-            "lat": 51.56330665224,
-            "lon": -0.14770545106
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.56114027984, -0.15060677836],[51.56124925626, -0.15067449313],[51.56142045771, -0.15069640212],[51.56149144219, -0.15063581326],[51.56185035003, -0.15001530178],[51.5619620659, -0.14911626744],[51.56288655594, -0.14900658957],[51.56310757992, -0.14762697401],[51.56330665224, -0.14770545106]]",
+            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55371084238, -0.14366687007],[51.55368319816, -0.14362472107],[51.5532296202, -0.14280655621],[51.55294304646, -0.14231336785],[51.55245046261, -0.14187185395],[51.55242304606, -0.14184412231],[51.55182102222, -0.14130610938],[51.55167381019, -0.14109574709],[51.55120932405, -0.14072523274],[51.55087567591, -0.1406667167],[51.55087186718, -0.1398591318],[51.55087216808, -0.13931101006],[51.55086828152, -0.13906596179],[51.55092220136, -0.13906376139],[51.55087230971, -0.13905137347],[51.55087217596, -0.1392965858],[51.55087216808, -0.13931101006],[51.55087186718, -0.1398591318],[51.55087567591, -0.1406667167],[51.5507229029, -0.14067294577],[51.55051664783, -0.14070900105],[51.55050562425, -0.14058083815],[51.55048536638, -0.14043742607],[51.55037562155, -0.14088903823],[51.550312715, -0.1408916028]]",
             "stopPoints": [],
             "elevation": []
           },
@@ -410,202 +257,93 @@
           },
           "disruptions": [],
           "plannedWorks": [],
-          "distance": 366.0,
+          "distance": 639.0,
           "isDisrupted": false,
-          "hasFixedLocations": false
-        }
-      ]
-    },
-    {
-      "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T13:33:00",
-      "duration": 23,
-      "arrivalDateTime": "2021-10-05T13:57:00",
-      "legs": [
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 3,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to Lady Somerset Road, Gospel Oak",
-            "detailed": "Walk to Lady Somerset Road, Gospel Oak",
-            "steps": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Sanderson Close for 40 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Sanderson Close",
-                "distance": 40,
-                "cumulativeDistance": 40,
-                "skyDirection": 415,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 51,
-                "latitude": 51.55421823769,
-                "longitude": -0.14504543618,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 79 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Highgate Road",
-                "distance": 79,
-                "cumulativeDistance": 119,
-                "skyDirection": 506,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 152,
-                "latitude": 51.55441740886,
-                "longitude": -0.14456130687,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
-                "trackType": "None"
-              }
-            ]
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:33:00",
-          "arrivalTime": "2021-10-05T13:36:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "platformName": "",
-            "icsCode": "99999997",
-            "commonName": "NW5 1TL",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55393486459,
-            "lon": -0.14475404161
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00015367",
-            "platformName": "GY",
-            "stopLetter": "GY",
-            "icsCode": "1015367",
-            "commonName": "Lady Somerset Road",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55381425687,
-            "lon": -0.143951157
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55385782187, -0.14386283442]]",
-            "stopPoints": [],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "",
-              "directions": [
-                ""
-              ]
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "walking",
-            "name": "walking",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
-              "category": "Undefined",
-              "type": "stopBlocking",
-              "categoryDescription": "Undefined",
-              "description": "Bus stop closed\\n    G.Network utility works\\n\\n",
-              "summary": "",
-              "additionalInfo": "",
-              "created": "2021-10-01T10:58:00",
-              "lastUpdate": "2021-10-01T10:58:00"
-            }
-          ],
-          "plannedWorks": [],
-          "distance": 119.0,
-          "isDisrupted": true,
           "hasFixedLocations": true
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 13,
+          "duration": 5,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "214 bus or 88 bus to Parliament Hill Fields",
-            "detailed": "214 bus towards Highgate Village or 88 bus towards Parliament Hill Fields",
+            "summary": "Northern line to Euston",
+            "detailed": "Northern line towards Battersea Power Station via Charing Cross, Morden via Bank, or Kennington Station via Charing Cross",
             "steps": []
           },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:36:00",
-          "arrivalTime": "2021-10-05T13:49:00",
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            }
+          ],
+          "departureTime": "2021-10-05T15:19:00",
+          "arrivalTime": "2021-10-05T15:24:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00015367",
-            "platformName": "GY",
-            "stopLetter": "GY",
-            "icsCode": "1015367",
-            "commonName": "Lady Somerset Road",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.55381425687,
-            "lon": -0.143951157
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00010852",
-            "platformName": "GH",
-            "stopLetter": "GH",
-            "icsCode": "1010852",
-            "commonName": "Parliament Hill Fields",
+            "naptanId": "940GZZLUEUS",
+            "platformName": "",
+            "icsCode": "1000077",
+            "commonName": "Euston Underground Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.5611234427,
-            "lon": -0.15067959724
+            "lat": 51.528202958959994,
+            "lon": -0.13426684017999999
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55385840883, -0.14386766318],[51.5542254972, -0.14436716653],[51.55441740886, -0.14456130687],[51.55458122046, -0.14468446669],[51.55489894489, -0.14487349089],[51.55563666435, -0.14546376811],[51.55615000633, -0.14605882098],[51.55615000633, -0.14605882098],[51.55621375989, -0.14613272364],[51.5566431938, -0.14656246022],[51.55713576056, -0.14700406471],[51.55726385066, -0.14714311808],[51.55744654357, -0.14732323127],[51.55749899305, -0.1473721172],[51.55749899305, -0.1473721172],[51.55780248671, -0.14765499334],[51.55846204282, -0.14842164249],[51.55872743377, -0.14871381818],[51.55880967446, -0.14880203469],[51.55880967446, -0.14880203469],[51.55919394234, -0.14921422957],[51.55978648972, -0.14972396214],[51.56018667773, -0.15001068334],[51.56085851104, -0.15041623069],[51.56093131357, -0.15047098517],[51.5611418136, -0.15060572116]]",
+            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53667774748, -0.14074069844],[51.53576377509, -0.13981185964],[51.53511566638, -0.13920384889],[51.53436925119, -0.13859814587],[51.53436925119, -0.13859814587],[51.53416825095, -0.13843504142],[51.53307848101, -0.13719627107],[51.53002289401, -0.13391850645],[51.52956920663, -0.13366313102],[51.52920905313, -0.1336346084],[51.5287622423, -0.13381146741],[51.52834399536, -0.13408807268],[51.52820254486, -0.13426599401]]",
             "stopPoints": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00007308",
-                "name": "Gordon House Road",
-                "uri": "/StopPoint/490G00007308",
+                "id": "940GZZLUCTN",
+                "name": "Camden Town Underground Station",
+                "uri": "/StopPoint/940GZZLUCTN",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00019154",
-                "name": "Glenhurst Avenue / Lissenden Gardens",
-                "uri": "/StopPoint/490G00019154",
+                "id": "940GZZLUMTC",
+                "name": "Mornington Crescent Underground Station",
+                "uri": "/StopPoint/940GZZLUMTC",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00014697",
-                "name": "William Ellis School",
-                "uri": "/StopPoint/490G00014697",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00010852",
-                "name": "Parliament Hill Fields",
-                "uri": "/StopPoint/490G00010852",
+                "id": "940GZZLUEUS",
+                "name": "Euston Underground Station",
+                "uri": "/StopPoint/940GZZLUEUS",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
@@ -616,34 +354,17 @@
           "routeOptions": [
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "214",
+              "name": "Northern",
               "directions": [
-                "Highgate Village"
+                "Battersea Power Station Underground Station via Charing Cross",
+                "Morden via Bank",
+                "Kennington Station via Charing Cross"
               ],
               "lineIdentifier": {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "214",
-                "name": "214",
-                "uri": "/Line/214",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "88",
-              "directions": [
-                "Parliament Hill Fields"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "88",
-                "name": "88",
-                "uri": "/Line/88",
+                "id": "northern",
+                "name": "Northern",
+                "uri": "/Line/northern",
                 "type": "Line",
                 "crowding": {
                   "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
@@ -655,27 +376,108 @@
           ],
           "mode": {
             "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "bus",
-            "name": "bus",
+            "id": "tube",
+            "name": "tube",
             "type": "Mode",
             "routeType": "Unknown",
             "status": "Unknown"
           },
-          "disruptions": [
+          "disruptions": [],
+          "plannedWorks": [],
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 17,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "West Midlands Trains to Bushey",
+            "detailed": "West Midlands Trains towards Tring",
+            "steps": []
+          },
+          "obstacles": [],
+          "departureTime": "2021-10-05T15:33:00",
+          "arrivalTime": "2021-10-05T15:50:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GEUSTON",
+            "platformName": "",
+            "icsCode": "1000077",
+            "commonName": "London Euston Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.528952007200004,
+            "lon": -0.1350003194
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GBUSHEY",
+            "platformName": "",
+            "icsCode": "1001041",
+            "commonName": "Bushey Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.645689926610004,
+            "lon": -0.38490422688
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.5289520072, -0.1350003194],[51.52995817237, -0.13606933464],[51.53028970384, -0.13656040354],[51.53077279877, -0.13753548988],[51.53145260722, -0.13900719494],[51.53212181203, -0.14037844944],[51.53273183084, -0.14142053552],[51.53348585572, -0.14247120528],[51.53471356361, -0.14390636331],[51.53519578537, -0.14426163994],[51.53570884032, -0.14486079527],[51.5400535411, -0.14950056629],[51.54138229087, -0.15107622791],[51.54178747146, -0.15167990984],[51.54214099846, -0.1524299061],[51.5424774548, -0.15323829],[51.54276293317, -0.15423622609],[51.54304085259, -0.15589786581],[51.54331401983, -0.15954988529],[51.54340607889, -0.16140654856],[51.54339379631, -0.16234444284],[51.54336556334, -0.16341277239],[51.54327756986, -0.16468540602],[51.54307836644, -0.16632304143],[51.54288655132, -0.16785941594],[51.54257834424, -0.17000614081],[51.54243231394, -0.17102148362],[51.54212089605, -0.17354324204],[51.54194897697, -0.17520854586],[51.54176647949, -0.17677331265],[51.54141022653, -0.17931120335],[51.54086223688, -0.18224605385],[51.54020729037, -0.1846659503],[51.53983259863, -0.18602195331],[51.53948893948, -0.18705945535],[51.53899672223, -0.1883768233],[51.53726357755, -0.19261288785],[51.53644132679, -0.19469299609],[51.53586779329, -0.19657575082],[51.53558739041, -0.19763942023],[51.53474796295, -0.20153679597],[51.53446669521, -0.20313393126],[51.53420883796, -0.20449942873],[51.53407197048, -0.20529827126],[51.53407197048, -0.20529827126],[51.53343278334, -0.2090284731],[51.53303372536, -0.21116360534],[51.53173286022, -0.21727005157],[51.53121966178, -0.21959691156],[51.53090372675, -0.22129608139],[51.53073181529, -0.2224129227],[51.53051879457, -0.22497308996],[51.53034704391, -0.22848317023],[51.53029653387, -0.22930691498],[51.53020687358, -0.23111254799],[51.53024378351, -0.23356204848],[51.53028084404, -0.23482933204],[51.53029329994, -0.23505952631],[51.53044154795, -0.23714430123],[51.53101178284, -0.24098615667],[51.53148734884, -0.24331789774],[51.53232226195, -0.24683255558],[51.53283877754, -0.2489033269],[51.53461320075, -0.25453057584],[51.53533843009, -0.25673774943],[51.53628872105, -0.25957084519],[51.5385964292, -0.26663504934],[51.54195025207, -0.27699159387],[51.54379313442, -0.28247424125],[51.54434426889, -0.28388122935],[51.54572305425, -0.28716084739],[51.54724928364, -0.29007457209],[51.54854799747, -0.29218932116],[51.54958517545, -0.29363607794],[51.55040035351, -0.29465849377],[51.55137771496, -0.29570373217],[51.55205170695, -0.29638864945],[51.55205170695, -0.29638864945],[51.55247294997, -0.29681673296],[51.55343064474, -0.29774740224],[51.55582276363, -0.29961992868],[51.55877228224, -0.30148630879],[51.56291561637, -0.30382788127],[51.56757826459, -0.30664115405],[51.57101652945, -0.30873562029],[51.57652215702, -0.31202374741],[51.57760244846, -0.31273419331],[51.57922149261, -0.31401646475],[51.58054373024, -0.31529536891],[51.58210624863, -0.31702733923],[51.58479082485, -0.32050787249],[51.5863913648, -0.32301826087],[51.58770260594, -0.32542397772],[51.58978790587, -0.32977913264],[51.59240945526, -0.33522047697],[51.59240945526, -0.33522047697],[51.59379972564, -0.33810661611],[51.59526364273, -0.34115727978],[51.5971263611, -0.34507436643],[51.59974230407, -0.35076933592],[51.60289016586, -0.35722551024],[51.60411882145, -0.35956383878],[51.60633205722, -0.36351314525],[51.6080319654, -0.36612372933],[51.61193732312, -0.37150069769],[51.61275143821, -0.37249702612],[51.61616320171, -0.37666492541],[51.61777276449, -0.37861531402],[51.61856784887, -0.37954034739],[51.61950652993, -0.38044585554],[51.62132576708, -0.38195568653],[51.62293950121, -0.38290953129],[51.62920666943, -0.3861543004],[51.63037263164, -0.38658973121],[51.63247589153, -0.38717977884],[51.63424944276, -0.38733362088],[51.63594851317, -0.38730225846],[51.63768194672, -0.38715406497],[51.63960054899, -0.38673915898],[51.64291427714, -0.38576884478],[51.64472323214, -0.38522764295],[51.6456895723, -0.38490151453]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "910GHROW",
+                "name": "Harrow & Wealdstone Rail Station",
+                "uri": "/StopPoint/910GHROW",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "910GBUSHEY",
+                "name": "Bushey Rail Station",
+                "uri": "/StopPoint/910GBUSHEY",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
             {
-              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
-              "category": "Undefined",
-              "type": "stopBlocking",
-              "categoryDescription": "Undefined",
-              "description": "Bus stop closed\\n    G.Network utility works\\n\\n",
-              "summary": "",
-              "additionalInfo": "",
-              "created": "2021-10-01T10:58:00",
-              "lastUpdate": "2021-10-01T10:58:00"
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "West Midlands Trains",
+              "directions": [
+                "Tring Rail Station"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "west-midlands-trains",
+                "name": "West Midlands Trains",
+                "uri": "/Line/west-midlands-trains",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
             }
           ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "national-rail",
+            "name": "national-rail",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
           "plannedWorks": [],
-          "isDisrupted": true,
+          "isDisrupted": false,
           "hasFixedLocations": true
         },
         {
@@ -683,21 +485,21 @@
           "duration": 8,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to N6 6QH",
-            "detailed": "Walk to N6 6QH",
+            "summary": "Walk to WD19 4HH",
+            "detailed": "Walk to WD19 4HH",
             "steps": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Highgate Road for 32 metres",
+                "description": "Bushey and Oxhey Railway Yard for 8 metres",
                 "turnDirection": "STRAIGHT",
-                "streetName": "Highgate Road",
-                "distance": 32,
-                "cumulativeDistance": 32,
-                "skyDirection": 337,
-                "skyDirectionDescription": "NorthWest",
-                "cumulativeTravelTime": 41,
-                "latitude": 51.56114027984,
-                "longitude": -0.15060677836,
+                "streetName": "Bushey and Oxhey Railway Yard",
+                "distance": 8,
+                "cumulativeDistance": 8,
+                "skyDirection": 369,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 8,
+                "latitude": 51.64574910786,
+                "longitude": -0.38397709254,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
@@ -706,70 +508,34 @@
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "for 9 metres",
-                "turnDirection": "SLIGHT_RIGHT",
-                "streetName": "",
-                "distance": 9,
-                "cumulativeDistance": 41,
-                "skyDirection": 387,
+                "description": "on to Pinner Road, continue for 216 metres",
+                "turnDirection": "SHARP_RIGHT",
+                "streetName": "Pinner Road",
+                "distance": 216,
+                "cumulativeDistance": 224,
+                "skyDirection": 517,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 54,
-                "latitude": 51.56142045771,
-                "longitude": -0.15069640212000002,
+                "cumulativeTravelTime": 203,
+                "latitude": 51.64580203976,
+                "longitude": -0.38390294237,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
-                "descriptionHeading": "Take a slight right",
+                "descriptionHeading": "Take a sharp right",
                 "trackType": "None"
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Swains Lane, continue for 123 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Swains Lane",
-                "distance": 123,
-                "cumulativeDistance": 164,
-                "skyDirection": 406,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 213,
-                "latitude": 51.56149144219,
-                "longitude": -0.15063581326,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Hillway, continue for 103 metres",
-                "turnDirection": "LEFT",
-                "streetName": "Hillway",
-                "distance": 103,
-                "cumulativeDistance": 267,
-                "skyDirection": 363,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 347,
-                "latitude": 51.5619620659,
-                "longitude": -0.14911626744,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn left",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Bromwich Avenue, continue for 99 metres",
+                "description": "on to Grover Road, continue for 152 metres",
                 "turnDirection": "RIGHT",
-                "streetName": "Bromwich Avenue",
-                "distance": 99,
-                "cumulativeDistance": 366,
-                "skyDirection": 434,
+                "streetName": "Grover Road",
+                "distance": 152,
+                "cumulativeDistance": 376,
+                "skyDirection": 266,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 474,
-                "latitude": 51.562886555940004,
-                "longitude": -0.14900658957000001,
+                "cumulativeTravelTime": 336,
+                "latitude": 51.64393065696,
+                "longitude": -0.38317456243,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
@@ -778,31 +544,38 @@
               }
             ]
           },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:49:00",
-          "arrivalTime": "2021-10-05T13:57:00",
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1001041,
+              "position": "BEFORE"
+            }
+          ],
+          "departureTime": "2021-10-05T15:50:00",
+          "arrivalTime": "2021-10-05T15:58:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00010852",
-            "platformName": "GH",
-            "stopLetter": "GH",
-            "icsCode": "1010852",
-            "commonName": "Parliament Hill Fields",
+            "naptanId": "910GBUSHEY",
+            "platformName": "",
+            "icsCode": "1001041",
+            "commonName": "Bushey Rail Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.5611234427,
-            "lon": -0.15067959724
+            "lat": 51.645689926610004,
+            "lon": -0.38490422688
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "N6 6QH",
+            "commonName": "WD19 4HH",
             "placeType": "StopPoint",
-            "lat": 51.56330665224,
-            "lon": -0.14770545106
+            "lat": 51.643157437579994,
+            "lon": -0.38448836412
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.56114027984, -0.15060677836],[51.56124925626, -0.15067449313],[51.56142045771, -0.15069640212],[51.56149144219, -0.15063581326],[51.56185035003, -0.15001530178],[51.5619620659, -0.14911626744],[51.56288655594, -0.14900658957],[51.56310757992, -0.14762697401],[51.56330665224, -0.14770545106]]",
+            "lineString": "[[51.64568992661, -0.38490422688],[51.64575447503, -0.38436714937],[51.64574910786, -0.38397709254],[51.64580203976, -0.38390294237],[51.64559333534, -0.38376582757],[51.64540220837, -0.38359918189],[51.6451030304, -0.38342192717],[51.64495803458, -0.38334036398],[51.6443179219, -0.38321859967],[51.64393065696, -0.38317456243],[51.6438984447, -0.38410070198],[51.64310852414, -0.38420104704],[51.64315743758, -0.38448836412]]",
             "stopPoints": [],
             "elevation": []
           },
@@ -825,7 +598,7 @@
           },
           "disruptions": [],
           "plannedWorks": [],
-          "distance": 366.0,
+          "distance": 376.0,
           "isDisrupted": false,
           "hasFixedLocations": false
         }
@@ -833,432 +606,17 @@
     },
     {
       "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T13:41:00",
-      "duration": 23,
-      "arrivalDateTime": "2021-10-05T14:04:00",
+      "startDateTime": "2021-10-05T15:40:00",
+      "duration": 53,
+      "arrivalDateTime": "2021-10-05T16:33:00",
       "legs": [
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 3,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to Lady Somerset Road, Gospel Oak",
-            "detailed": "Walk to Lady Somerset Road, Gospel Oak",
-            "steps": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Sanderson Close for 40 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Sanderson Close",
-                "distance": 40,
-                "cumulativeDistance": 40,
-                "skyDirection": 415,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 51,
-                "latitude": 51.55421823769,
-                "longitude": -0.14504543618,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 79 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Highgate Road",
-                "distance": 79,
-                "cumulativeDistance": 119,
-                "skyDirection": 506,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 152,
-                "latitude": 51.55441740886,
-                "longitude": -0.14456130687,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
-                "trackType": "None"
-              }
-            ]
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:41:00",
-          "arrivalTime": "2021-10-05T13:44:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "platformName": "",
-            "icsCode": "99999997",
-            "commonName": "NW5 1TL",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55393486459,
-            "lon": -0.14475404161
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00015367",
-            "platformName": "GY",
-            "stopLetter": "GY",
-            "icsCode": "1015367",
-            "commonName": "Lady Somerset Road",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55381425687,
-            "lon": -0.143951157
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55385782187, -0.14386283442]]",
-            "stopPoints": [],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "",
-              "directions": [
-                ""
-              ]
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "walking",
-            "name": "walking",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
-              "category": "Undefined",
-              "type": "stopBlocking",
-              "categoryDescription": "Undefined",
-              "description": "Bus stop closed\\n    G.Network utility works\\n\\n",
-              "summary": "",
-              "additionalInfo": "",
-              "created": "2021-10-01T10:58:00",
-              "lastUpdate": "2021-10-01T10:58:00"
-            }
-          ],
-          "plannedWorks": [],
-          "distance": 119.0,
-          "isDisrupted": true,
-          "hasFixedLocations": true
-        },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
           "duration": 12,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "214 bus or 88 bus to Parliament Hill Fields",
-            "detailed": "214 bus towards Highgate Village or 88 bus towards Parliament Hill Fields",
-            "steps": []
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:44:00",
-          "arrivalTime": "2021-10-05T13:56:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00015367",
-            "platformName": "GY",
-            "stopLetter": "GY",
-            "icsCode": "1015367",
-            "commonName": "Lady Somerset Road",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55381425687,
-            "lon": -0.143951157
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00010852",
-            "platformName": "GH",
-            "stopLetter": "GH",
-            "icsCode": "1010852",
-            "commonName": "Parliament Hill Fields",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.5611234427,
-            "lon": -0.15067959724
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55385840883, -0.14386766318],[51.5542254972, -0.14436716653],[51.55441740886, -0.14456130687],[51.55458122046, -0.14468446669],[51.55489894489, -0.14487349089],[51.55563666435, -0.14546376811],[51.55615000633, -0.14605882098],[51.55615000633, -0.14605882098],[51.55621375989, -0.14613272364],[51.5566431938, -0.14656246022],[51.55713576056, -0.14700406471],[51.55726385066, -0.14714311808],[51.55744654357, -0.14732323127],[51.55749899305, -0.1473721172],[51.55749899305, -0.1473721172],[51.55780248671, -0.14765499334],[51.55846204282, -0.14842164249],[51.55872743377, -0.14871381818],[51.55880967446, -0.14880203469],[51.55880967446, -0.14880203469],[51.55919394234, -0.14921422957],[51.55978648972, -0.14972396214],[51.56018667773, -0.15001068334],[51.56085851104, -0.15041623069],[51.56093131357, -0.15047098517],[51.5611418136, -0.15060572116]]",
-            "stopPoints": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00007308",
-                "name": "Gordon House Road",
-                "uri": "/StopPoint/490G00007308",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00019154",
-                "name": "Glenhurst Avenue / Lissenden Gardens",
-                "uri": "/StopPoint/490G00019154",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00014697",
-                "name": "William Ellis School",
-                "uri": "/StopPoint/490G00014697",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "490G00010852",
-                "name": "Parliament Hill Fields",
-                "uri": "/StopPoint/490G00010852",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            ],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "214",
-              "directions": [
-                "Highgate Village"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "214",
-                "name": "214",
-                "uri": "/Line/214",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "88",
-              "directions": [
-                "Parliament Hill Fields"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "88",
-                "name": "88",
-                "uri": "/Line/88",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "bus",
-            "name": "bus",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
-              "category": "Undefined",
-              "type": "stopBlocking",
-              "categoryDescription": "Undefined",
-              "description": "Bus stop closed\\n    G.Network utility works\\n\\n",
-              "summary": "",
-              "additionalInfo": "",
-              "created": "2021-10-01T10:58:00",
-              "lastUpdate": "2021-10-01T10:58:00"
-            }
-          ],
-          "plannedWorks": [],
-          "isDisrupted": true,
-          "hasFixedLocations": true
-        },
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 8,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to N6 6QH",
-            "detailed": "Walk to N6 6QH",
-            "steps": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Highgate Road for 32 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Highgate Road",
-                "distance": 32,
-                "cumulativeDistance": 32,
-                "skyDirection": 337,
-                "skyDirectionDescription": "NorthWest",
-                "cumulativeTravelTime": 41,
-                "latitude": 51.56114027984,
-                "longitude": -0.15060677836,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "for 9 metres",
-                "turnDirection": "SLIGHT_RIGHT",
-                "streetName": "",
-                "distance": 9,
-                "cumulativeDistance": 41,
-                "skyDirection": 387,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 54,
-                "latitude": 51.56142045771,
-                "longitude": -0.15069640212000002,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Take a slight right",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Swains Lane, continue for 123 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Swains Lane",
-                "distance": 123,
-                "cumulativeDistance": 164,
-                "skyDirection": 406,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 213,
-                "latitude": 51.56149144219,
-                "longitude": -0.15063581326,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Hillway, continue for 103 metres",
-                "turnDirection": "LEFT",
-                "streetName": "Hillway",
-                "distance": 103,
-                "cumulativeDistance": 267,
-                "skyDirection": 363,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 347,
-                "latitude": 51.5619620659,
-                "longitude": -0.14911626744,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn left",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Bromwich Avenue, continue for 99 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Bromwich Avenue",
-                "distance": 99,
-                "cumulativeDistance": 366,
-                "skyDirection": 434,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 474,
-                "latitude": 51.562886555940004,
-                "longitude": -0.14900658957000001,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
-                "trackType": "None"
-              }
-            ]
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:56:00",
-          "arrivalTime": "2021-10-05T14:04:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "490G00010852",
-            "platformName": "GH",
-            "stopLetter": "GH",
-            "icsCode": "1010852",
-            "commonName": "Parliament Hill Fields",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.5611234427,
-            "lon": -0.15067959724
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "N6 6QH",
-            "placeType": "StopPoint",
-            "lat": 51.56330665224,
-            "lon": -0.14770545106
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.56114027984, -0.15060677836],[51.56124925626, -0.15067449313],[51.56142045771, -0.15069640212],[51.56149144219, -0.15063581326],[51.56185035003, -0.15001530178],[51.5619620659, -0.14911626744],[51.56288655594, -0.14900658957],[51.56310757992, -0.14762697401],[51.56330665224, -0.14770545106]]",
-            "stopPoints": [],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "",
-              "directions": [
-                ""
-              ]
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "walking",
-            "name": "walking",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [],
-          "plannedWorks": [],
-          "distance": 366.0,
-          "isDisrupted": false,
-          "hasFixedLocations": false
-        }
-      ]
-    },
-    {
-      "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T13:29:00",
-      "duration": 27,
-      "arrivalDateTime": "2021-10-05T13:56:00",
-      "legs": [
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 27,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to N6 6QH",
-            "detailed": "Walk to N6 6QH",
+            "summary": "Walk to Kentish Town",
+            "detailed": "Walk to Kentish Town",
             "steps": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
@@ -1269,7 +627,7 @@
                 "cumulativeDistance": 40,
                 "skyDirection": 415,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 51,
+                "cumulativeTravelTime": 36,
                 "latitude": 51.55421823769,
                 "longitude": -0.14504543618,
                 "pathAttribute": {
@@ -1280,135 +638,182 @@
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 150 metres",
-                "turnDirection": "LEFT",
+                "description": "on to Highgate Road, continue for 393 metres",
+                "turnDirection": "RIGHT",
                 "streetName": "Highgate Road",
-                "distance": 150,
-                "cumulativeDistance": 190,
-                "skyDirection": 333,
+                "distance": 393,
+                "cumulativeDistance": 433,
+                "skyDirection": 506,
                 "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 244,
+                "cumulativeTravelTime": 392,
                 "latitude": 51.55441740886,
                 "longitude": -0.14456130687,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
-                "descriptionHeading": "Turn left",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 79 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Highgate Road",
-                "distance": 79,
-                "cumulativeDistance": 269,
-                "skyDirection": 323,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 344,
-                "latitude": 51.555636664350004,
-                "longitude": -0.14546376811,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 665 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Highgate Road",
-                "distance": 665,
-                "cumulativeDistance": 934,
-                "skyDirection": 327,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 1197,
-                "latitude": 51.55621375989,
-                "longitude": -0.14613272364000002,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "for 9 metres",
-                "turnDirection": "SLIGHT_RIGHT",
-                "streetName": "",
-                "distance": 9,
-                "cumulativeDistance": 943,
-                "skyDirection": 387,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 1210,
-                "latitude": 51.56142045771,
-                "longitude": -0.15069640212000002,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Take a slight right",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Swains Lane, continue for 123 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Swains Lane",
-                "distance": 123,
-                "cumulativeDistance": 1066,
-                "skyDirection": 406,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 1369,
-                "latitude": 51.56149144219,
-                "longitude": -0.15063581326,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Hillway, continue for 103 metres",
-                "turnDirection": "LEFT",
-                "streetName": "Hillway",
-                "distance": 103,
-                "cumulativeDistance": 1169,
-                "skyDirection": 363,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 1503,
-                "latitude": 51.5619620659,
-                "longitude": -0.14911626744,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn left",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Bromwich Avenue, continue for 99 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Bromwich Avenue",
-                "distance": 99,
-                "cumulativeDistance": 1268,
-                "skyDirection": 434,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 1626,
-                "latitude": 51.562886555940004,
-                "longitude": -0.14900658957000001,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
                 "descriptionHeading": "Turn right",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 58 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 58,
+                "cumulativeDistance": 491,
+                "skyDirection": 512,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 443,
+                "latitude": 51.55167381019,
+                "longitude": -0.14109574709,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 37 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 37,
+                "cumulativeDistance": 528,
+                "skyDirection": 532,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 476,
+                "latitude": 51.55120932405,
+                "longitude": -0.14072523274,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 584,
+                "skyDirection": 449,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 526,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 55 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 55,
+                "cumulativeDistance": 639,
+                "skyDirection": 448,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 575,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 695,
+                "skyDirection": 268,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 624,
+                "latitude": 51.55092220136,
+                "longitude": -0.13906376139,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 751,
+                "skyDirection": 269,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 674,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 40 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Kentish Town Road",
+                "distance": 40,
+                "cumulativeDistance": 791,
+                "skyDirection": 180,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 711,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
                 "trackType": "None"
               }
             ]
           },
-          "obstacles": [],
-          "departureTime": "2021-10-05T13:29:00",
-          "arrivalTime": "2021-10-05T13:56:00",
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            }
+          ],
+          "departureTime": "2021-10-05T15:40:00",
+          "arrivalTime": "2021-10-05T15:52:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
             "platformName": "",
@@ -1420,15 +825,19 @@
             "lon": -0.14475404161
           },
           "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "N6 6QH",
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
             "placeType": "StopPoint",
-            "lat": 51.56330665224,
-            "lon": -0.14770545106
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55393486459, -0.14475404161],[51.55422001281, -0.14504441919],[51.55441740886, -0.14456130687],[51.55458122046, -0.14468446669],[51.55489894489, -0.14487349089],[51.55563666435, -0.14546376811],[51.55621375989, -0.14613272364],[51.5566431938, -0.14656246022],[51.55713576056, -0.14700406471],[51.55726385066, -0.14714311808],[51.55744654357, -0.14732323127],[51.55780248671, -0.14765499334],[51.55846204282, -0.14842164249],[51.55872743377, -0.14871381818],[51.55919394234, -0.14921422957],[51.55978648972, -0.14972396214],[51.56018667773, -0.15001068334],[51.56085851104, -0.15041623069],[51.56093131357, -0.15047098517],[51.56124925626, -0.15067449313],[51.56142045771, -0.15069640212],[51.56149144219, -0.15063581326],[51.56185035003, -0.15001530178],[51.5619620659, -0.14911626744],[51.56288655594, -0.14900658957],[51.56310931037, -0.14762414984],[51.56330665224, -0.14770545106]]",
+            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55371084238, -0.14366687007],[51.55368319816, -0.14362472107],[51.5532296202, -0.14280655621],[51.55294304646, -0.14231336785],[51.55245046261, -0.14187185395],[51.55242304606, -0.14184412231],[51.55182102222, -0.14130610938],[51.55167381019, -0.14109574709],[51.55120932405, -0.14072523274],[51.55087567591, -0.1406667167],[51.55087186718, -0.1398591318],[51.55087216808, -0.13931101006],[51.55086828152, -0.13906596179],[51.55092220136, -0.13906376139],[51.55087230971, -0.13905137347],[51.55087217596, -0.1392965858],[51.55087216808, -0.13931101006],[51.55087186718, -0.1398591318],[51.55087567591, -0.1406667167],[51.5507229029, -0.14067294577],[51.55051664783, -0.14070900105],[51.55050562425, -0.14058083815],[51.55048536638, -0.14043742607],[51.55037562155, -0.14088903823],[51.550312715, -0.1408916028]]",
             "stopPoints": [],
             "elevation": []
           },
@@ -1451,7 +860,932 @@
           },
           "disruptions": [],
           "plannedWorks": [],
-          "distance": 1269.0,
+          "distance": 639.0,
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 5,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Northern line to Euston",
+            "detailed": "Northern line towards Morden via Bank",
+            "steps": []
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            }
+          ],
+          "departureTime": "2021-10-05T15:52:00",
+          "arrivalTime": "2021-10-05T15:57:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUEUS",
+            "platformName": "",
+            "icsCode": "1000077",
+            "commonName": "Euston Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.52835196921,
+            "lon": -0.13232889436
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53774768187, -0.14186509807],[51.53694558531, -0.14175356989],[51.53307164243, -0.14186808027],[51.5324937559, -0.14171859467],[51.53187809624, -0.14145530764],[51.5312603811, -0.14106235168],[51.53092193684, -0.14070128033],[51.52955367679, -0.1389116256],[51.52913023044, -0.13829454331],[51.5286296262, -0.13734903213],[51.52837691842, -0.13672500578],[51.52781991793, -0.13506099815],[51.52774578553, -0.13435761263],[51.52785922236, -0.13357447563],[51.52834644646, -0.13232336651]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUCTN",
+                "name": "Camden Town Underground Station",
+                "uri": "/StopPoint/940GZZLUCTN",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUEUS",
+                "name": "Euston Underground Station",
+                "uri": "/StopPoint/940GZZLUEUS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "Northern",
+              "directions": [
+                "Morden via Bank"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "northern",
+                "name": "Northern",
+                "uri": "/Line/northern",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "tube",
+            "name": "tube",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 18,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "West Midlands Trains to Bushey",
+            "detailed": "West Midlands Trains towards Watford Junction",
+            "steps": []
+          },
+          "obstacles": [],
+          "departureTime": "2021-10-05T16:07:00",
+          "arrivalTime": "2021-10-05T16:25:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GEUSTON",
+            "platformName": "",
+            "icsCode": "1000077",
+            "commonName": "London Euston Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.528952007200004,
+            "lon": -0.1350003194
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GBUSHEY",
+            "platformName": "",
+            "icsCode": "1001041",
+            "commonName": "Bushey Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.645689926610004,
+            "lon": -0.38490422688
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.5289520072, -0.1350003194],[51.52995817237, -0.13606933464],[51.53028970384, -0.13656040354],[51.53077279877, -0.13753548988],[51.53145260722, -0.13900719494],[51.53212181203, -0.14037844944],[51.53273183084, -0.14142053552],[51.53348585572, -0.14247120528],[51.53471356361, -0.14390636331],[51.53519578537, -0.14426163994],[51.53570884032, -0.14486079527],[51.5400535411, -0.14950056629],[51.54138229087, -0.15107622791],[51.54178747146, -0.15167990984],[51.54214099846, -0.1524299061],[51.5424774548, -0.15323829],[51.54276293317, -0.15423622609],[51.54304085259, -0.15589786581],[51.54331401983, -0.15954988529],[51.54340607889, -0.16140654856],[51.54339379631, -0.16234444284],[51.54336556334, -0.16341277239],[51.54327756986, -0.16468540602],[51.54307836644, -0.16632304143],[51.54288655132, -0.16785941594],[51.54257834424, -0.17000614081],[51.54243231394, -0.17102148362],[51.54212089605, -0.17354324204],[51.54194897697, -0.17520854586],[51.54176647949, -0.17677331265],[51.54141022653, -0.17931120335],[51.54086223688, -0.18224605385],[51.54020729037, -0.1846659503],[51.53983259863, -0.18602195331],[51.53948893948, -0.18705945535],[51.53899672223, -0.1883768233],[51.53726357755, -0.19261288785],[51.53644132679, -0.19469299609],[51.53586779329, -0.19657575082],[51.53558739041, -0.19763942023],[51.53474796295, -0.20153679597],[51.53446669521, -0.20313393126],[51.53420883796, -0.20449942873],[51.53407197048, -0.20529827126],[51.53407197048, -0.20529827126],[51.53343278334, -0.2090284731],[51.53303372536, -0.21116360534],[51.53173286022, -0.21727005157],[51.53121966178, -0.21959691156],[51.53090372675, -0.22129608139],[51.53073181529, -0.2224129227],[51.53051879457, -0.22497308996],[51.53034704391, -0.22848317023],[51.53029653387, -0.22930691498],[51.53020687358, -0.23111254799],[51.53024378351, -0.23356204848],[51.53028084404, -0.23482933204],[51.53029329994, -0.23505952631],[51.53044154795, -0.23714430123],[51.53101178284, -0.24098615667],[51.53148734884, -0.24331789774],[51.53232226195, -0.24683255558],[51.53283877754, -0.2489033269],[51.53461320075, -0.25453057584],[51.53533843009, -0.25673774943],[51.53628872105, -0.25957084519],[51.5385964292, -0.26663504934],[51.54195025207, -0.27699159387],[51.54379313442, -0.28247424125],[51.54434426889, -0.28388122935],[51.54572305425, -0.28716084739],[51.54724928364, -0.29007457209],[51.54854799747, -0.29218932116],[51.54958517545, -0.29363607794],[51.55040035351, -0.29465849377],[51.55137771496, -0.29570373217],[51.55205170695, -0.29638864945],[51.55205170695, -0.29638864945],[51.55247294997, -0.29681673296],[51.55343064474, -0.29774740224],[51.55582276363, -0.29961992868],[51.55877228224, -0.30148630879],[51.56291561637, -0.30382788127],[51.56757826459, -0.30664115405],[51.57101652945, -0.30873562029],[51.57652215702, -0.31202374741],[51.57760244846, -0.31273419331],[51.57922149261, -0.31401646475],[51.58054373024, -0.31529536891],[51.58210624863, -0.31702733923],[51.58479082485, -0.32050787249],[51.5863913648, -0.32301826087],[51.58770260594, -0.32542397772],[51.58978790587, -0.32977913264],[51.59240945526, -0.33522047697],[51.59240945526, -0.33522047697],[51.59379972564, -0.33810661611],[51.59526364273, -0.34115727978],[51.5971263611, -0.34507436643],[51.59974230407, -0.35076933592],[51.60289016586, -0.35722551024],[51.60411882145, -0.35956383878],[51.60633205722, -0.36351314525],[51.6080319654, -0.36612372933],[51.61193732312, -0.37150069769],[51.61275143821, -0.37249702612],[51.61616320171, -0.37666492541],[51.61777276449, -0.37861531402],[51.61856784887, -0.37954034739],[51.61950652993, -0.38044585554],[51.62132576708, -0.38195568653],[51.62293950121, -0.38290953129],[51.62920666943, -0.3861543004],[51.63037263164, -0.38658973121],[51.63247589153, -0.38717977884],[51.63424944276, -0.38733362088],[51.63594851317, -0.38730225846],[51.63768194672, -0.38715406497],[51.63960054899, -0.38673915898],[51.64291427714, -0.38576884478],[51.64472323214, -0.38522764295],[51.6456895723, -0.38490151453]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "910GHROW",
+                "name": "Harrow & Wealdstone Rail Station",
+                "uri": "/StopPoint/910GHROW",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "910GBUSHEY",
+                "name": "Bushey Rail Station",
+                "uri": "/StopPoint/910GBUSHEY",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "West Midlands Trains",
+              "directions": [
+                "Watford Junction Rail Station"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "west-midlands-trains",
+                "name": "West Midlands Trains",
+                "uri": "/Line/west-midlands-trains",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "national-rail",
+            "name": "national-rail",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 8,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Walk to WD19 4HH",
+            "detailed": "Walk to WD19 4HH",
+            "steps": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "Bushey and Oxhey Railway Yard for 8 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Bushey and Oxhey Railway Yard",
+                "distance": 8,
+                "cumulativeDistance": 8,
+                "skyDirection": 369,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 8,
+                "latitude": 51.64574910786,
+                "longitude": -0.38397709254,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Pinner Road, continue for 216 metres",
+                "turnDirection": "SHARP_RIGHT",
+                "streetName": "Pinner Road",
+                "distance": 216,
+                "cumulativeDistance": 224,
+                "skyDirection": 517,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 203,
+                "latitude": 51.64580203976,
+                "longitude": -0.38390294237,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Take a sharp right",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Grover Road, continue for 152 metres",
+                "turnDirection": "RIGHT",
+                "streetName": "Grover Road",
+                "distance": 152,
+                "cumulativeDistance": 376,
+                "skyDirection": 266,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 336,
+                "latitude": 51.64393065696,
+                "longitude": -0.38317456243,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn right",
+                "trackType": "None"
+              }
+            ]
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1001041,
+              "position": "BEFORE"
+            }
+          ],
+          "departureTime": "2021-10-05T16:25:00",
+          "arrivalTime": "2021-10-05T16:33:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GBUSHEY",
+            "platformName": "",
+            "icsCode": "1001041",
+            "commonName": "Bushey Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.645689926610004,
+            "lon": -0.38490422688
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+            "commonName": "WD19 4HH",
+            "placeType": "StopPoint",
+            "lat": 51.643157437579994,
+            "lon": -0.38448836412
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.64568992661, -0.38490422688],[51.64575447503, -0.38436714937],[51.64574910786, -0.38397709254],[51.64580203976, -0.38390294237],[51.64559333534, -0.38376582757],[51.64540220837, -0.38359918189],[51.6451030304, -0.38342192717],[51.64495803458, -0.38334036398],[51.6443179219, -0.38321859967],[51.64393065696, -0.38317456243],[51.6438984447, -0.38410070198],[51.64310852414, -0.38420104704],[51.64315743758, -0.38448836412]]",
+            "stopPoints": [],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "",
+              "directions": [
+                ""
+              ]
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "walking",
+            "name": "walking",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "distance": 376.0,
+          "isDisrupted": false,
+          "hasFixedLocations": false
+        }
+      ]
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
+      "startDateTime": "2021-10-05T16:07:00",
+      "duration": 48,
+      "arrivalDateTime": "2021-10-05T16:55:00",
+      "legs": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 12,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Walk to Kentish Town",
+            "detailed": "Walk to Kentish Town",
+            "steps": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "Sanderson Close for 40 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Sanderson Close",
+                "distance": 40,
+                "cumulativeDistance": 40,
+                "skyDirection": 415,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 36,
+                "latitude": 51.55421823769,
+                "longitude": -0.14504543618,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Highgate Road, continue for 393 metres",
+                "turnDirection": "RIGHT",
+                "streetName": "Highgate Road",
+                "distance": 393,
+                "cumulativeDistance": 433,
+                "skyDirection": 506,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 392,
+                "latitude": 51.55441740886,
+                "longitude": -0.14456130687,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn right",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 58 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 58,
+                "cumulativeDistance": 491,
+                "skyDirection": 512,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 443,
+                "latitude": 51.55167381019,
+                "longitude": -0.14109574709,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 37 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 37,
+                "cumulativeDistance": 528,
+                "skyDirection": 532,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 476,
+                "latitude": 51.55120932405,
+                "longitude": -0.14072523274,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 584,
+                "skyDirection": 449,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 526,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 55 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 55,
+                "cumulativeDistance": 639,
+                "skyDirection": 448,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 575,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 695,
+                "skyDirection": 268,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 624,
+                "latitude": 51.55092220136,
+                "longitude": -0.13906376139,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 751,
+                "skyDirection": 269,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 674,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 40 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Kentish Town Road",
+                "distance": 40,
+                "cumulativeDistance": 791,
+                "skyDirection": 180,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 711,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
+                "trackType": "None"
+              }
+            ]
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            }
+          ],
+          "departureTime": "2021-10-05T16:07:00",
+          "arrivalTime": "2021-10-05T16:19:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "platformName": "",
+            "icsCode": "99999997",
+            "commonName": "NW5 1TL",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.55393486459,
+            "lon": -0.14475404161
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55371084238, -0.14366687007],[51.55368319816, -0.14362472107],[51.5532296202, -0.14280655621],[51.55294304646, -0.14231336785],[51.55245046261, -0.14187185395],[51.55242304606, -0.14184412231],[51.55182102222, -0.14130610938],[51.55167381019, -0.14109574709],[51.55120932405, -0.14072523274],[51.55087567591, -0.1406667167],[51.55087186718, -0.1398591318],[51.55087216808, -0.13931101006],[51.55086828152, -0.13906596179],[51.55092220136, -0.13906376139],[51.55087230971, -0.13905137347],[51.55087217596, -0.1392965858],[51.55087216808, -0.13931101006],[51.55087186718, -0.1398591318],[51.55087567591, -0.1406667167],[51.5507229029, -0.14067294577],[51.55051664783, -0.14070900105],[51.55050562425, -0.14058083815],[51.55048536638, -0.14043742607],[51.55037562155, -0.14088903823],[51.550312715, -0.1408916028]]",
+            "stopPoints": [],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "",
+              "directions": [
+                ""
+              ]
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "walking",
+            "name": "walking",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "distance": 639.0,
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 5,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Northern line to Euston",
+            "detailed": "Northern line towards Battersea Power Station via Charing Cross, Morden via Bank, Kennington Station via Charing Cross, or Morden via Charing Cross",
+            "steps": []
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1000077,
+              "position": "AFTER"
+            }
+          ],
+          "departureTime": "2021-10-05T16:19:00",
+          "arrivalTime": "2021-10-05T16:24:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUEUS",
+            "platformName": "",
+            "icsCode": "1000077",
+            "commonName": "Euston Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.528202958959994,
+            "lon": -0.13426684017999999
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53667774748, -0.14074069844],[51.53576377509, -0.13981185964],[51.53511566638, -0.13920384889],[51.53436925119, -0.13859814587],[51.53436925119, -0.13859814587],[51.53416825095, -0.13843504142],[51.53307848101, -0.13719627107],[51.53002289401, -0.13391850645],[51.52956920663, -0.13366313102],[51.52920905313, -0.1336346084],[51.5287622423, -0.13381146741],[51.52834399536, -0.13408807268],[51.52820254486, -0.13426599401]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUCTN",
+                "name": "Camden Town Underground Station",
+                "uri": "/StopPoint/940GZZLUCTN",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUMTC",
+                "name": "Mornington Crescent Underground Station",
+                "uri": "/StopPoint/940GZZLUMTC",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUEUS",
+                "name": "Euston Underground Station",
+                "uri": "/StopPoint/940GZZLUEUS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "Northern",
+              "directions": [
+                "Battersea Power Station Underground Station via Charing Cross",
+                "Morden via Bank",
+                "Kennington Station via Charing Cross",
+                "Morden via Charing Cross"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "northern",
+                "name": "Northern",
+                "uri": "/Line/northern",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "tube",
+            "name": "tube",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 14,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "West Midlands Trains to Bushey",
+            "detailed": "West Midlands Trains towards Tring",
+            "steps": []
+          },
+          "obstacles": [],
+          "departureTime": "2021-10-05T16:33:00",
+          "arrivalTime": "2021-10-05T16:47:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GEUSTON",
+            "platformName": "",
+            "icsCode": "1000077",
+            "commonName": "London Euston Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.528952007200004,
+            "lon": -0.1350003194
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GBUSHEY",
+            "platformName": "",
+            "icsCode": "1001041",
+            "commonName": "Bushey Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.645689926610004,
+            "lon": -0.38490422688
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.5289520072, -0.1350003194],[51.52995817237, -0.13606933464],[51.53028970384, -0.13656040354],[51.53077279877, -0.13753548988],[51.53145260722, -0.13900719494],[51.53212181203, -0.14037844944],[51.53273183084, -0.14142053552],[51.53348585572, -0.14247120528],[51.53471356361, -0.14390636331],[51.53519578537, -0.14426163994],[51.53570884032, -0.14486079527],[51.5400535411, -0.14950056629],[51.54138229087, -0.15107622791],[51.54178747146, -0.15167990984],[51.54214099846, -0.1524299061],[51.5424774548, -0.15323829],[51.54276293317, -0.15423622609],[51.54304085259, -0.15589786581],[51.54331401983, -0.15954988529],[51.54340607889, -0.16140654856],[51.54339379631, -0.16234444284],[51.54336556334, -0.16341277239],[51.54327756986, -0.16468540602],[51.54307836644, -0.16632304143],[51.54288655132, -0.16785941594],[51.54257834424, -0.17000614081],[51.54243231394, -0.17102148362],[51.54212089605, -0.17354324204],[51.54194897697, -0.17520854586],[51.54176647949, -0.17677331265],[51.54141022653, -0.17931120335],[51.54086223688, -0.18224605385],[51.54020729037, -0.1846659503],[51.53983259863, -0.18602195331],[51.53948893948, -0.18705945535],[51.53899672223, -0.1883768233],[51.53726357755, -0.19261288785],[51.53644132679, -0.19469299609],[51.53586779329, -0.19657575082],[51.53558739041, -0.19763942023],[51.53474796295, -0.20153679597],[51.53446669521, -0.20313393126],[51.53420883796, -0.20449942873],[51.53407197048, -0.20529827126],[51.53407197048, -0.20529827126],[51.53343278334, -0.2090284731],[51.53303372536, -0.21116360534],[51.53173286022, -0.21727005157],[51.53121966178, -0.21959691156],[51.53090372675, -0.22129608139],[51.53073181529, -0.2224129227],[51.53051879457, -0.22497308996],[51.53034704391, -0.22848317023],[51.53029653387, -0.22930691498],[51.53020687358, -0.23111254799],[51.53024378351, -0.23356204848],[51.53028084404, -0.23482933204],[51.53029329994, -0.23505952631],[51.53044154795, -0.23714430123],[51.53101178284, -0.24098615667],[51.53148734884, -0.24331789774],[51.53232226195, -0.24683255558],[51.53283877754, -0.2489033269],[51.53461320075, -0.25453057584],[51.53533843009, -0.25673774943],[51.53628872105, -0.25957084519],[51.5385964292, -0.26663504934],[51.54195025207, -0.27699159387],[51.54379313442, -0.28247424125],[51.54434426889, -0.28388122935],[51.54572305425, -0.28716084739],[51.54724928364, -0.29007457209],[51.54854799747, -0.29218932116],[51.54958517545, -0.29363607794],[51.55040035351, -0.29465849377],[51.55137771496, -0.29570373217],[51.55205170695, -0.29638864945],[51.55205170695, -0.29638864945],[51.55247294997, -0.29681673296],[51.55343064474, -0.29774740224],[51.55582276363, -0.29961992868],[51.55877228224, -0.30148630879],[51.56291561637, -0.30382788127],[51.56757826459, -0.30664115405],[51.57101652945, -0.30873562029],[51.57652215702, -0.31202374741],[51.57760244846, -0.31273419331],[51.57922149261, -0.31401646475],[51.58054373024, -0.31529536891],[51.58210624863, -0.31702733923],[51.58479082485, -0.32050787249],[51.5863913648, -0.32301826087],[51.58770260594, -0.32542397772],[51.58978790587, -0.32977913264],[51.59240945526, -0.33522047697],[51.59240945526, -0.33522047697],[51.59379972564, -0.33810661611],[51.59526364273, -0.34115727978],[51.5971263611, -0.34507436643],[51.59974230407, -0.35076933592],[51.60289016586, -0.35722551024],[51.60411882145, -0.35956383878],[51.60633205722, -0.36351314525],[51.6080319654, -0.36612372933],[51.61193732312, -0.37150069769],[51.61275143821, -0.37249702612],[51.61616320171, -0.37666492541],[51.61777276449, -0.37861531402],[51.61856784887, -0.37954034739],[51.61950652993, -0.38044585554],[51.62132576708, -0.38195568653],[51.62293950121, -0.38290953129],[51.62920666943, -0.3861543004],[51.63037263164, -0.38658973121],[51.63247589153, -0.38717977884],[51.63424944276, -0.38733362088],[51.63594851317, -0.38730225846],[51.63768194672, -0.38715406497],[51.63960054899, -0.38673915898],[51.64291427714, -0.38576884478],[51.64472323214, -0.38522764295],[51.6456895723, -0.38490151453]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "910GBUSHEY",
+                "name": "Bushey Rail Station",
+                "uri": "/StopPoint/910GBUSHEY",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "West Midlands Trains",
+              "directions": [
+                "Tring Rail Station"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "west-midlands-trains",
+                "name": "West Midlands Trains",
+                "uri": "/Line/west-midlands-trains",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "national-rail",
+            "name": "national-rail",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 8,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Walk to WD19 4HH",
+            "detailed": "Walk to WD19 4HH",
+            "steps": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "Bushey and Oxhey Railway Yard for 8 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Bushey and Oxhey Railway Yard",
+                "distance": 8,
+                "cumulativeDistance": 8,
+                "skyDirection": 369,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 8,
+                "latitude": 51.64574910786,
+                "longitude": -0.38397709254,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Pinner Road, continue for 216 metres",
+                "turnDirection": "SHARP_RIGHT",
+                "streetName": "Pinner Road",
+                "distance": 216,
+                "cumulativeDistance": 224,
+                "skyDirection": 517,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 203,
+                "latitude": 51.64580203976,
+                "longitude": -0.38390294237,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Take a sharp right",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Grover Road, continue for 152 metres",
+                "turnDirection": "RIGHT",
+                "streetName": "Grover Road",
+                "distance": 152,
+                "cumulativeDistance": 376,
+                "skyDirection": 266,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 336,
+                "latitude": 51.64393065696,
+                "longitude": -0.38317456243,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn right",
+                "trackType": "None"
+              }
+            ]
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1001041,
+              "position": "BEFORE"
+            }
+          ],
+          "departureTime": "2021-10-05T16:47:00",
+          "arrivalTime": "2021-10-05T16:55:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "910GBUSHEY",
+            "platformName": "",
+            "icsCode": "1001041",
+            "commonName": "Bushey Rail Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.645689926610004,
+            "lon": -0.38490422688
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+            "commonName": "WD19 4HH",
+            "placeType": "StopPoint",
+            "lat": 51.643157437579994,
+            "lon": -0.38448836412
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.64568992661, -0.38490422688],[51.64575447503, -0.38436714937],[51.64574910786, -0.38397709254],[51.64580203976, -0.38390294237],[51.64559333534, -0.38376582757],[51.64540220837, -0.38359918189],[51.6451030304, -0.38342192717],[51.64495803458, -0.38334036398],[51.6443179219, -0.38321859967],[51.64393065696, -0.38317456243],[51.6438984447, -0.38410070198],[51.64310852414, -0.38420104704],[51.64315743758, -0.38448836412]]",
+            "stopPoints": [],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "",
+              "directions": [
+                ""
+              ]
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "walking",
+            "name": "walking",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "distance": 376.0,
           "isDisrupted": false,
           "hasFixedLocations": false
         }
@@ -1461,9 +1795,9 @@
   "lines": [
     {
       "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
-      "id": "214",
-      "name": "214",
-      "modeName": "bus",
+      "id": "northern",
+      "name": "Northern",
+      "modeName": "tube",
       "disruptions": [],
       "created": "2021-09-22T09:27:41.29Z",
       "modified": "2021-09-22T09:27:41.29Z",
@@ -1482,37 +1816,12 @@
         {
           "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
           "name": "Regular",
-          "uri": "/Line/Route?ids=214&serviceTypes=Regular"
-        }
-      ],
-      "crowding": {
-        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-      }
-    },
-    {
-      "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
-      "id": "88",
-      "name": "88",
-      "modeName": "bus",
-      "disruptions": [],
-      "created": "2021-09-22T09:27:41.29Z",
-      "modified": "2021-09-22T09:27:41.29Z",
-      "lineStatuses": [
-        {
-          "$type": "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities",
-          "id": 0,
-          "statusSeverity": 10,
-          "statusSeverityDescription": "Good Service",
-          "created": "0001-01-01T00:00:00",
-          "validityPeriods": []
-        }
-      ],
-      "routeSections": [],
-      "serviceTypes": [
+          "uri": "/Line/Route?ids=Northern&serviceTypes=Regular"
+        },
         {
           "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
-          "name": "Regular",
-          "uri": "/Line/Route?ids=88&serviceTypes=Regular"
+          "name": "Night",
+          "uri": "/Line/Route?ids=Northern&serviceTypes=Night"
         }
       ],
       "crowding": {
@@ -1524,7 +1833,7 @@
   "recommendedMaxAgeMinutes": 5,
   "searchCriteria": {
     "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria, Tfl.Api.Presentation.Entities",
-    "dateTime": "2021-10-05T13:57:00",
+    "dateTime": "2021-10-05T16:49:00",
     "dateTimeType": "Arriving",
     "timeAdjustments": {
       "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments, Tfl.Api.Presentation.Entities",
@@ -1533,36 +1842,36 @@
         "date": "20211005",
         "time": "0300",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/n66qh?timeIs=arriving&journeypreference=leastinterchange&mode=bus%2cwalking&walkingspeed=slow&cyclepreference=none&time=0300&date=20211005"
+        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=0300&date=20211005"
       },
       "earlier": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
         "date": "20211005",
-        "time": "1348",
+        "time": "1558",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/n66qh?timeIs=arriving&journeypreference=leastinterchange&mode=bus%2cwalking&walkingspeed=slow&cyclepreference=none&time=1348&date=20211005"
+        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=1558&date=20211005"
       },
       "later": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
         "date": "20211005",
-        "time": "1404",
+        "time": "1655",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/n66qh?timeIs=arriving&journeypreference=leastinterchange&mode=bus%2cwalking&walkingspeed=slow&cyclepreference=none&time=1404&date=20211005"
+        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=1655&date=20211005"
       },
       "latest": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
         "date": "20211006",
         "time": "0300",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/n66qh?timeIs=arriving&journeypreference=leastinterchange&mode=bus%2cwalking&walkingspeed=slow&cyclepreference=none&time=0300&date=20211006"
+        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=0300&date=20211006"
       }
     }
   },
   "journeyVector": {
     "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector, Tfl.Api.Presentation.Entities",
     "from": "nw51tl",
-    "to": "n66qh",
+    "to": "wd194hh",
     "via": "",
-    "uri": "/journey/journeyresults/nw51tl/to/n66qh?timeis=arriving&journeypreference=leastinterchange&mode=bus%2cwalking&walkingspeed=slow&cyclepreference=none"
+    "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeis=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none"
   }
 }

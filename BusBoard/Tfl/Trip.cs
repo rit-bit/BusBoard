@@ -6,11 +6,46 @@ namespace BusBoard.Tfl
 {
     public class Trip
     {
+        public const string Softwire = "NW5 1TL";
         public List<Journey> journeys { get; set; }
 
         public override string ToString()
         {
-            return string.Join('\n', journeys);
+            if (journeys.Count == 0)
+            {
+                return "";
+            }
+            var builder = new StringBuilder();
+            var option = 'A';
+            builder.Append($"\nOPTION {option}:");
+            builder.Append('\n');
+            builder.Append(journeys[0]);
+            for (var i = 1; i < journeys.Count; i++)
+            {
+                option++;
+                var journey = journeys[i];
+                builder.Append($"\n\nOPTION {option}:");
+                builder.Append('\n');
+                builder.Append(journey);
+            }
+
+            return builder.ToString();
+        }
+
+        public static void PrintDirectionsToBusStop(List<StopPoint> stopPoints)
+        {
+            var index = 0;
+            if (stopPoints.Count >= 2)
+            {
+                index = UserInput.WhichBusStop(stopPoints[0].commonName, stopPoints[1].commonName);
+            }
+            PrintDirections(Softwire, stopPoints[index].naptanID);
+        }
+
+        public static void PrintDirections(string from, string to)
+        {
+            var directions = TflApi.GetDirections(from, to);
+            Console.WriteLine(directions);
         }
     }
 
@@ -38,14 +73,16 @@ namespace BusBoard.Tfl
     public class Instruction
     {
         public List<Step> steps { get; set; }
+        public string summary { get; set; }
 
         public override string ToString()
         {
+            var builder = new StringBuilder(summary);
             if (steps.Count == 0)
             {
-                return "";
+                return builder.ToString();
             }
-            var builder = new StringBuilder();
+            builder.Append('\n');
             builder.Append(steps[0].FirstToString());
             for (var i = 1; i < steps.Count; i++)
             {
