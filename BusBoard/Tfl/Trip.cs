@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace BusBoard.Tfl
@@ -9,13 +10,7 @@ namespace BusBoard.Tfl
 
         public override string ToString()
         {
-            var builder = new StringBuilder();
-            foreach (var journey in journeys)
-            {
-                builder.Append(journey);
-                builder.Append('\n');
-            }
-            return builder.ToString();
+            return string.Join('\n', journeys);
         }
     }
 
@@ -26,13 +21,7 @@ namespace BusBoard.Tfl
         
         public override string ToString()
         {
-            var builder = new StringBuilder();
-            foreach (var leg in legs)
-            {
-                builder.Append(leg);
-                builder.Append('\n');
-            }
-            return builder.ToString();
+            return string.Join('\n', legs);
         }
     }
 
@@ -52,12 +41,18 @@ namespace BusBoard.Tfl
 
         public override string ToString()
         {
-            var builder = new StringBuilder();
-            foreach (var step in steps)
+            if (steps.Count == 0)
             {
-                builder.Append(step);
-                builder.Append('\n');
+                return "";
             }
+            var builder = new StringBuilder();
+            builder.Append(steps[0].FirstToString());
+            for (var i = 1; i < steps.Count; i++)
+            {
+                builder.Append('\n');
+                builder.Append(steps[i]);
+            }
+
             return builder.ToString();
         }
     }
@@ -70,7 +65,11 @@ namespace BusBoard.Tfl
 
         public override string ToString()
         {
-            return $"{descriptionHeading} {description}";
+            return $"{descriptionHeading.Trim()} {description.Trim()}";
+        }
+        public string FirstToString()
+        {
+            return $"{descriptionHeading.Trim()} {description.Trim()} ({skyDirectionDescription})";
         }
     }
 }

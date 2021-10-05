@@ -58,6 +58,7 @@ namespace BusBoard
 
                     var directions = TflApi.GetDirections("NW5 1TL", stopPoints[index].naptanID);
                     Console.WriteLine(directions);
+                    return;
                 }
             }
         }

@@ -27,7 +27,7 @@ namespace BusBoard
 
         public static bool DoesUserWantDirections()
         {
-            Console.WriteLine("Would you like directions to one of the bus stops? Type Y or N");
+            Console.WriteLine("\nWould you like directions to one of the bus stops? Type Y or N");
             while (true)
             {
                 var response = Console.ReadLine();
