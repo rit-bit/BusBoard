@@ -1,13 +1,18 @@
 ﻿using System;
 using BusBoard.Postcode;
 using BusBoard.Tfl;
+using NLog;
+using NLog.Config;
+using NLog.Targets;
 
 namespace BusBoard
 {
     class Program
     {
+        private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         static void Main(string[] args)
         {
+            InitLogging();
             while (true)
             {
                 var result = UserInput.GetMainAction();
@@ -25,6 +30,15 @@ namespace BusBoard
             }
         }
 
+        private static void InitLogging()
+        {
+            var config = new LoggingConfiguration();
+            var target = new FileTarget { FileName = @"C:\Work\Logs\SupportBank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
+            config.AddTarget("File Logger", target);
+            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
+            LogManager.Configuration = config;
+        }
+
         public static void PlanJourney()
         {
             var destination = UserInput.GetPostcodeInput("Input destination postcode: ");
@@ -38,6 +52,7 @@ namespace BusBoard
 
             if (stopPoints.Count == 0)
             {
+                Logger.Error($"No bus stops were found for the given location of \"{location}\"");
                 Console.WriteLine("There are no bus stops for the given postcode. Try a different postcode");
                 return;
             }
@@ -51,6 +66,7 @@ namespace BusBoard
 
             if (busList.Count == 0)
             {
+                Logger.Error($"No buses were found for the given location of \"{location}\"");
                 Console.WriteLine("No buses found for this location");
                 return;
             }

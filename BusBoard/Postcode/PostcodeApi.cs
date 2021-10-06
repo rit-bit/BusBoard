@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using BusBoard.Tfl;
+using NLog;
 using RestSharp;
 
 namespace BusBoard.Postcode
 {
     public static class PostcodeApi
     {
+        private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         static RestClient client = new RestClient("https://api.postcodes.io/");
         public static LocationInfo GetLatLonFromPostcode()
         {
@@ -26,7 +28,8 @@ namespace BusBoard.Postcode
 
                 else
                 {
-                    Console.WriteLine();
+                    Logger.Debug($"Postcode API did not send valid response to request for postcode \"{postcode}\"");
+                    Console.WriteLine(); // To separate old input from new input
                 }
 
             }
@@ -38,9 +41,12 @@ namespace BusBoard.Postcode
 
             var response = client.Get<Status>(request);
             var data = response.Data;
-
-            return data.status == 200;
-
+            var toReturn = data.status == 200;
+            
+            var validity = toReturn ? "pass" : "fail";
+            Logger.Debug($"Postcode \"{postcode}\" checked for validity, result: {validity}");
+            
+            return toReturn;
         }
         
     }

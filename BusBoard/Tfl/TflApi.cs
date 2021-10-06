@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using BusBoard.Postcode;
+using NLog;
 using RestSharp;
 
 namespace BusBoard.Tfl
 {
     public class TflApi
     {
+        private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         static RestClient client = new RestClient("https://api.tfl.gov.uk/");
         
         public static IEnumerable<StopPointArrival> Get5BusesForStopPoint(string stopPoint)

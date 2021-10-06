@@ -1,10 +1,12 @@
 ﻿using System;
 using BusBoard.Postcode;
+using NLog;
 
 namespace BusBoard
 {
     public class UserInput
     {
+        private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         public static string GetPostcodeInput(string prompt)
         {
             while (true)
@@ -20,6 +22,7 @@ namespace BusBoard
 
                 else
                 {
+                    Logger.Error($"User entered an invalid postcode of \"{postCode}\"");
                     Console.WriteLine("Invalid Postcode. Please enter a new one");
                 }
             }
@@ -41,6 +44,7 @@ namespace BusBoard
                         return false;
                     
                     default:
+                        Logger.Error($"User entered an invalid option of \"{response}\" instead of \"Y\" or \"N\".");
                         Console.WriteLine("You entered an invalid option. Please type Y or N");
                         break;
                 }
@@ -64,6 +68,7 @@ namespace BusBoard
                         return 1;
 
                     default:
+                        Logger.Error($"User entered an invalid option of \"{response}\" for which bus stop to get directions to.");
                         Console.WriteLine("You entered an invalid option. Please type 1 or 2");
                         break;
                 }
@@ -87,6 +92,7 @@ namespace BusBoard
                         return MainAction.NearestBusStop;
 
                     default:
+                        Logger.Error($"User entered an invalid Main Menu action option of \"{response}\"");
                         Console.WriteLine("You entered an invalid option. Please type 1 or 2");
                         break;
                 }
