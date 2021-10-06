@@ -63,10 +63,23 @@ namespace BusBoard.Tfl
     public class Leg
     {
         public Instruction instruction { get; set; }
+        public int duration { get; set; }
 
         public override string ToString()
         {
-            return instruction.ToString();
+            var output = $"{instruction} for {ConvertMinsToHoursMins(duration)}";
+            if (instruction.steps.Count == 0)
+            {
+                output += ')';
+            }
+            return output;
+        }
+        
+        private static string ConvertMinsToHoursMins(int minutes)
+        {
+            var hours = minutes / 60;
+            var mins = minutes % 60;
+            return $"{hours}h {mins}m";
         }
     }
 
@@ -74,12 +87,15 @@ namespace BusBoard.Tfl
     {
         public List<Step> steps { get; set; }
         public string summary { get; set; }
+        public string detailed { get; set; }
 
         public override string ToString()
         {
             var builder = new StringBuilder(summary);
             if (steps.Count == 0)
             {
+                builder.Append("\n(");
+                builder.Append(detailed);
                 return builder.ToString();
             }
             builder.Append('\n');
