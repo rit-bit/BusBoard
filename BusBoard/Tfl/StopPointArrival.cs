@@ -9,20 +9,19 @@ namespace BusBoard.Tfl
         public int TimeToStation { get; set; }
         public DateTime ExpectedArrival { get; set; }
         public string Towards { get; set; }
-        
         public string StopName { get; set; }
         
-        public override String ToString()
+        public override string ToString()
         {
             var time = ConvertSecondsToMinutesSeconds(TimeToStation);
             return $"{LineName} from {StopName} towards {Towards} expected at {ExpectedArrival:t} (in {time})";
         }
 
-        private string ConvertSecondsToMinutesSeconds(int seconds)
+        private static string ConvertSecondsToMinutesSeconds(int seconds)
         {
-            var mins = seconds / 60;
-            var secs = seconds % 60;
-            return $"{mins}m {secs}s";
+            var minutes = seconds / 60;
+            seconds = seconds % 60;
+            return $"{minutes}m {seconds}s";
         }
 
         public static List<StopPointArrival> GetArrivalList(List<StopPoint> stopPoints)

@@ -67,7 +67,7 @@ namespace BusBoard.Tfl
 
         public override string ToString()
         {
-            var output = $"{instruction} for {ConvertMinsToHoursMins(duration)}";
+            var output = $"{instruction} for {ConvertMinutesToHoursMinutes(duration)}";
             if (instruction.steps.Count == 0)
             {
                 output += ')';
@@ -75,11 +75,11 @@ namespace BusBoard.Tfl
             return output;
         }
         
-        private static string ConvertMinsToHoursMins(int minutes)
+        private static string ConvertMinutesToHoursMinutes(int minutes)
         {
             var hours = minutes / 60;
-            var mins = minutes % 60;
-            return $"{hours}h {mins}m";
+            minutes = minutes % 60;
+            return $"{hours}h {minutes}m";
         }
     }
 

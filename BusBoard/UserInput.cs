@@ -7,6 +7,7 @@ namespace BusBoard
     public class UserInput
     {
         private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
+
         public static string GetPostcodeInput(string prompt)
         {
             while (true)
@@ -34,26 +35,27 @@ namespace BusBoard
             while (true)
             {
                 var response = Console.ReadLine();
-
-                switch (response.ToLower())
+                if (response != null)
                 {
-                    case "y":
-                        return true;
+                    switch (response.ToLower())
+                    {
+                        case "y":
+                            return true;
 
-                    case "n":
-                        return false;
-                    
-                    default:
-                        Logger.Error($"User entered an invalid option of \"{response}\" instead of \"Y\" or \"N\".");
-                        Console.WriteLine("You entered an invalid option. Please type Y or N");
-                        break;
+                        case "n":
+                            return false;
+                    }
                 }
+
+                Logger.Error($"User entered an invalid option of \"{response}\" instead of \"Y\" or \"N\".");
+                Console.WriteLine("You entered an invalid option. Please type Y or N");
             }
         }
 
         public static int WhichBusStop(string busStop1, string busStop2)
         {
-            Console.WriteLine($"Which bus stop would you like directions to? Type 1 for {busStop1} or 2 for {busStop2}");
+            Console.WriteLine(
+                $"Which bus stop would you like directions to? Type 1 for {busStop1} or 2 for {busStop2}");
 
             while (true)
             {
@@ -68,7 +70,8 @@ namespace BusBoard
                         return 1;
 
                     default:
-                        Logger.Error($"User entered an invalid option of \"{response}\" for which bus stop to get directions to.");
+                        Logger.Error(
+                            $"User entered an invalid option of \"{response}\" for which bus stop to get directions to.");
                         Console.WriteLine("You entered an invalid option. Please type 1 or 2");
                         break;
                 }
@@ -77,7 +80,8 @@ namespace BusBoard
 
         public static MainAction GetMainAction()
         {
-            Console.WriteLine($"\nWhich action would you like to do? Type 1 for Journey Planner and 2 for Nearest Bus Stop");
+            Console.WriteLine(
+                $"\nWhich action would you like to do? Type 1 for Journey Planner and 2 for Nearest Bus Stop");
 
             while (true)
             {
