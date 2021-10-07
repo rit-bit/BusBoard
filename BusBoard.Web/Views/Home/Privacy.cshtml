@@ -1,6 +1,15 @@
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Journey Planner";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's privacy policy.</p>
+<div class="text-center">
+    <img src="Softwire_Banner.png" alt="Softwire Banner" style="width:100%;">
+    <h1 class="display-4">@ViewData["Title"]</h1>
+    <form>
+        <label from="from">From: </label>
+        <input type="text" id="from" name="from"><br>
+        <label to="to">To: </label>
+        <input type="text" id="to" name="to"><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
