@@ -86,7 +86,7 @@ namespace BusBoard.Tfl
         
         public bool isDisrupted { get; set; }
         
-        public List<Disruptions> disruptions { get; set; }
+        public List<Disruption> disruptions { get; set; }
 
         public override string ToString()
         {
@@ -94,15 +94,15 @@ namespace BusBoard.Tfl
             
             if (isDisrupted)
             {
-                builder.Append("The are disruptions for this part of the journey\n");
+                builder.Append("There are disruptions for this part of the journey\n");
                 builder.Append(string.Join('\n', disruptions));
             }
-            var output = $"\n{instruction} for {ConvertMinutesToHoursMinutes(duration)}";
+            builder.Append($"\n{instruction} for {ConvertMinutesToHoursMinutes(duration)}");
             if (instruction.steps.Count == 0)
             {
-                output += ')';
+                builder.Append(')');
             }
-            return output;
+            return builder.ToString();
         }
         
         private static string ConvertMinutesToHoursMinutes(int minutes)
@@ -113,16 +113,15 @@ namespace BusBoard.Tfl
         }
     }
 
-    public class Disruptions
+    public class Disruption
     {
         public string description { get; set; }
         public string summary { get; set; }
         public string additionalInfo { get; set; }
-        public string closureText { get; set; }
 
         public override string ToString()
         {
-            return $"{summary}, {description}";
+            return description;
         }
         
     }

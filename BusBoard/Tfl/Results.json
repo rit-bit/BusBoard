@@ -3,9 +3,9 @@
   "journeys": [
     {
       "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T15:07:00",
-      "duration": 51,
-      "arrivalDateTime": "2021-10-05T15:58:00",
+      "startDateTime": "2021-10-07T09:04:00",
+      "duration": 60,
+      "arrivalDateTime": "2021-10-07T10:04:00",
       "legs": [
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
@@ -209,8 +209,8 @@
               "position": "IDEST"
             }
           ],
-          "departureTime": "2021-10-05T15:07:00",
-          "arrivalTime": "2021-10-05T15:19:00",
+          "departureTime": "2021-10-07T09:04:00",
+          "arrivalTime": "2021-10-07T09:16:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
             "platformName": "",
@@ -263,613 +263,10 @@
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 5,
+          "duration": 16,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Northern line to Euston",
-            "detailed": "Northern line towards Battersea Power Station via Charing Cross, Morden via Bank, or Kennington Station via Charing Cross",
-            "steps": []
-          },
-          "obstacles": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            }
-          ],
-          "departureTime": "2021-10-05T15:19:00",
-          "arrivalTime": "2021-10-05T15:24:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "940GZZLUKSH",
-            "platformName": "",
-            "icsCode": "1000123",
-            "commonName": "Kentish Town Underground Station",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.550312715000004,
-            "lon": -0.1408916028
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "940GZZLUEUS",
-            "platformName": "",
-            "icsCode": "1000077",
-            "commonName": "Euston Underground Station",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.528202958959994,
-            "lon": -0.13426684017999999
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53667774748, -0.14074069844],[51.53576377509, -0.13981185964],[51.53511566638, -0.13920384889],[51.53436925119, -0.13859814587],[51.53436925119, -0.13859814587],[51.53416825095, -0.13843504142],[51.53307848101, -0.13719627107],[51.53002289401, -0.13391850645],[51.52956920663, -0.13366313102],[51.52920905313, -0.1336346084],[51.5287622423, -0.13381146741],[51.52834399536, -0.13408807268],[51.52820254486, -0.13426599401]]",
-            "stopPoints": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "940GZZLUCTN",
-                "name": "Camden Town Underground Station",
-                "uri": "/StopPoint/940GZZLUCTN",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "940GZZLUMTC",
-                "name": "Mornington Crescent Underground Station",
-                "uri": "/StopPoint/940GZZLUMTC",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "940GZZLUEUS",
-                "name": "Euston Underground Station",
-                "uri": "/StopPoint/940GZZLUEUS",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            ],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "Northern",
-              "directions": [
-                "Battersea Power Station Underground Station via Charing Cross",
-                "Morden via Bank",
-                "Kennington Station via Charing Cross"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "northern",
-                "name": "Northern",
-                "uri": "/Line/northern",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "tube",
-            "name": "tube",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [],
-          "plannedWorks": [],
-          "isDisrupted": false,
-          "hasFixedLocations": true
-        },
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 17,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "West Midlands Trains to Bushey",
-            "detailed": "West Midlands Trains towards Tring",
-            "steps": []
-          },
-          "obstacles": [],
-          "departureTime": "2021-10-05T15:33:00",
-          "arrivalTime": "2021-10-05T15:50:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GEUSTON",
-            "platformName": "",
-            "icsCode": "1000077",
-            "commonName": "London Euston Rail Station",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.528952007200004,
-            "lon": -0.1350003194
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GBUSHEY",
-            "platformName": "",
-            "icsCode": "1001041",
-            "commonName": "Bushey Rail Station",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.645689926610004,
-            "lon": -0.38490422688
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.5289520072, -0.1350003194],[51.52995817237, -0.13606933464],[51.53028970384, -0.13656040354],[51.53077279877, -0.13753548988],[51.53145260722, -0.13900719494],[51.53212181203, -0.14037844944],[51.53273183084, -0.14142053552],[51.53348585572, -0.14247120528],[51.53471356361, -0.14390636331],[51.53519578537, -0.14426163994],[51.53570884032, -0.14486079527],[51.5400535411, -0.14950056629],[51.54138229087, -0.15107622791],[51.54178747146, -0.15167990984],[51.54214099846, -0.1524299061],[51.5424774548, -0.15323829],[51.54276293317, -0.15423622609],[51.54304085259, -0.15589786581],[51.54331401983, -0.15954988529],[51.54340607889, -0.16140654856],[51.54339379631, -0.16234444284],[51.54336556334, -0.16341277239],[51.54327756986, -0.16468540602],[51.54307836644, -0.16632304143],[51.54288655132, -0.16785941594],[51.54257834424, -0.17000614081],[51.54243231394, -0.17102148362],[51.54212089605, -0.17354324204],[51.54194897697, -0.17520854586],[51.54176647949, -0.17677331265],[51.54141022653, -0.17931120335],[51.54086223688, -0.18224605385],[51.54020729037, -0.1846659503],[51.53983259863, -0.18602195331],[51.53948893948, -0.18705945535],[51.53899672223, -0.1883768233],[51.53726357755, -0.19261288785],[51.53644132679, -0.19469299609],[51.53586779329, -0.19657575082],[51.53558739041, -0.19763942023],[51.53474796295, -0.20153679597],[51.53446669521, -0.20313393126],[51.53420883796, -0.20449942873],[51.53407197048, -0.20529827126],[51.53407197048, -0.20529827126],[51.53343278334, -0.2090284731],[51.53303372536, -0.21116360534],[51.53173286022, -0.21727005157],[51.53121966178, -0.21959691156],[51.53090372675, -0.22129608139],[51.53073181529, -0.2224129227],[51.53051879457, -0.22497308996],[51.53034704391, -0.22848317023],[51.53029653387, -0.22930691498],[51.53020687358, -0.23111254799],[51.53024378351, -0.23356204848],[51.53028084404, -0.23482933204],[51.53029329994, -0.23505952631],[51.53044154795, -0.23714430123],[51.53101178284, -0.24098615667],[51.53148734884, -0.24331789774],[51.53232226195, -0.24683255558],[51.53283877754, -0.2489033269],[51.53461320075, -0.25453057584],[51.53533843009, -0.25673774943],[51.53628872105, -0.25957084519],[51.5385964292, -0.26663504934],[51.54195025207, -0.27699159387],[51.54379313442, -0.28247424125],[51.54434426889, -0.28388122935],[51.54572305425, -0.28716084739],[51.54724928364, -0.29007457209],[51.54854799747, -0.29218932116],[51.54958517545, -0.29363607794],[51.55040035351, -0.29465849377],[51.55137771496, -0.29570373217],[51.55205170695, -0.29638864945],[51.55205170695, -0.29638864945],[51.55247294997, -0.29681673296],[51.55343064474, -0.29774740224],[51.55582276363, -0.29961992868],[51.55877228224, -0.30148630879],[51.56291561637, -0.30382788127],[51.56757826459, -0.30664115405],[51.57101652945, -0.30873562029],[51.57652215702, -0.31202374741],[51.57760244846, -0.31273419331],[51.57922149261, -0.31401646475],[51.58054373024, -0.31529536891],[51.58210624863, -0.31702733923],[51.58479082485, -0.32050787249],[51.5863913648, -0.32301826087],[51.58770260594, -0.32542397772],[51.58978790587, -0.32977913264],[51.59240945526, -0.33522047697],[51.59240945526, -0.33522047697],[51.59379972564, -0.33810661611],[51.59526364273, -0.34115727978],[51.5971263611, -0.34507436643],[51.59974230407, -0.35076933592],[51.60289016586, -0.35722551024],[51.60411882145, -0.35956383878],[51.60633205722, -0.36351314525],[51.6080319654, -0.36612372933],[51.61193732312, -0.37150069769],[51.61275143821, -0.37249702612],[51.61616320171, -0.37666492541],[51.61777276449, -0.37861531402],[51.61856784887, -0.37954034739],[51.61950652993, -0.38044585554],[51.62132576708, -0.38195568653],[51.62293950121, -0.38290953129],[51.62920666943, -0.3861543004],[51.63037263164, -0.38658973121],[51.63247589153, -0.38717977884],[51.63424944276, -0.38733362088],[51.63594851317, -0.38730225846],[51.63768194672, -0.38715406497],[51.63960054899, -0.38673915898],[51.64291427714, -0.38576884478],[51.64472323214, -0.38522764295],[51.6456895723, -0.38490151453]]",
-            "stopPoints": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "910GHROW",
-                "name": "Harrow & Wealdstone Rail Station",
-                "uri": "/StopPoint/910GHROW",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "910GBUSHEY",
-                "name": "Bushey Rail Station",
-                "uri": "/StopPoint/910GBUSHEY",
-                "type": "StopPoint",
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            ],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "West Midlands Trains",
-              "directions": [
-                "Tring Rail Station"
-              ],
-              "lineIdentifier": {
-                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "west-midlands-trains",
-                "name": "West Midlands Trains",
-                "uri": "/Line/west-midlands-trains",
-                "type": "Line",
-                "crowding": {
-                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
-                },
-                "routeType": "Unknown",
-                "status": "Unknown"
-              }
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "national-rail",
-            "name": "national-rail",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [],
-          "plannedWorks": [],
-          "isDisrupted": false,
-          "hasFixedLocations": true
-        },
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 8,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to WD19 4HH",
-            "detailed": "Walk to WD19 4HH",
-            "steps": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Bushey and Oxhey Railway Yard for 8 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Bushey and Oxhey Railway Yard",
-                "distance": 8,
-                "cumulativeDistance": 8,
-                "skyDirection": 369,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 8,
-                "latitude": 51.64574910786,
-                "longitude": -0.38397709254,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Pinner Road, continue for 216 metres",
-                "turnDirection": "SHARP_RIGHT",
-                "streetName": "Pinner Road",
-                "distance": 216,
-                "cumulativeDistance": 224,
-                "skyDirection": 517,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 203,
-                "latitude": 51.64580203976,
-                "longitude": -0.38390294237,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Take a sharp right",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Grover Road, continue for 152 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Grover Road",
-                "distance": 152,
-                "cumulativeDistance": 376,
-                "skyDirection": 266,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 336,
-                "latitude": 51.64393065696,
-                "longitude": -0.38317456243,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
-                "trackType": "None"
-              }
-            ]
-          },
-          "obstacles": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "STAIRS",
-              "incline": "DOWN",
-              "stopId": 1001041,
-              "position": "BEFORE"
-            }
-          ],
-          "departureTime": "2021-10-05T15:50:00",
-          "arrivalTime": "2021-10-05T15:58:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GBUSHEY",
-            "platformName": "",
-            "icsCode": "1001041",
-            "commonName": "Bushey Rail Station",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.645689926610004,
-            "lon": -0.38490422688
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "WD19 4HH",
-            "placeType": "StopPoint",
-            "lat": 51.643157437579994,
-            "lon": -0.38448836412
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.64568992661, -0.38490422688],[51.64575447503, -0.38436714937],[51.64574910786, -0.38397709254],[51.64580203976, -0.38390294237],[51.64559333534, -0.38376582757],[51.64540220837, -0.38359918189],[51.6451030304, -0.38342192717],[51.64495803458, -0.38334036398],[51.6443179219, -0.38321859967],[51.64393065696, -0.38317456243],[51.6438984447, -0.38410070198],[51.64310852414, -0.38420104704],[51.64315743758, -0.38448836412]]",
-            "stopPoints": [],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "",
-              "directions": [
-                ""
-              ]
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "walking",
-            "name": "walking",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [],
-          "plannedWorks": [],
-          "distance": 376.0,
-          "isDisrupted": false,
-          "hasFixedLocations": false
-        }
-      ]
-    },
-    {
-      "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T15:40:00",
-      "duration": 53,
-      "arrivalDateTime": "2021-10-05T16:33:00",
-      "legs": [
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 12,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to Kentish Town",
-            "detailed": "Walk to Kentish Town",
-            "steps": [
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Sanderson Close for 40 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Sanderson Close",
-                "distance": 40,
-                "cumulativeDistance": 40,
-                "skyDirection": 415,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 36,
-                "latitude": 51.55421823769,
-                "longitude": -0.14504543618,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Highgate Road, continue for 393 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Highgate Road",
-                "distance": 393,
-                "cumulativeDistance": 433,
-                "skyDirection": 506,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 392,
-                "latitude": 51.55441740886,
-                "longitude": -0.14456130687,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Kentish Town Road, continue for 58 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Kentish Town Road",
-                "distance": 58,
-                "cumulativeDistance": 491,
-                "skyDirection": 512,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 443,
-                "latitude": 51.55167381019,
-                "longitude": -0.14109574709,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Kentish Town Road, continue for 37 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Kentish Town Road",
-                "distance": 37,
-                "cumulativeDistance": 528,
-                "skyDirection": 532,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 476,
-                "latitude": 51.55120932405,
-                "longitude": -0.14072523274,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Leighton Road, continue for 56 metres",
-                "turnDirection": "LEFT",
-                "streetName": "Leighton Road",
-                "distance": 56,
-                "cumulativeDistance": 584,
-                "skyDirection": 449,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 526,
-                "latitude": 51.550875675910007,
-                "longitude": -0.1406667167,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn left",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Leighton Road, continue for 55 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Leighton Road",
-                "distance": 55,
-                "cumulativeDistance": 639,
-                "skyDirection": 448,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 575,
-                "latitude": 51.55087186718,
-                "longitude": -0.1398591318,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Leighton Road, continue for 56 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Leighton Road",
-                "distance": 56,
-                "cumulativeDistance": 695,
-                "skyDirection": 268,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 624,
-                "latitude": 51.55092220136,
-                "longitude": -0.13906376139,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Leighton Road, continue for 56 metres",
-                "turnDirection": "STRAIGHT",
-                "streetName": "Leighton Road",
-                "distance": 56,
-                "cumulativeDistance": 751,
-                "skyDirection": 269,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 674,
-                "latitude": 51.55087186718,
-                "longitude": -0.1398591318,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Kentish Town Road, continue for 40 metres",
-                "turnDirection": "LEFT",
-                "streetName": "Kentish Town Road",
-                "distance": 40,
-                "cumulativeDistance": 791,
-                "skyDirection": 180,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 711,
-                "latitude": 51.550875675910007,
-                "longitude": -0.1406667167,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn left",
-                "trackType": "None"
-              }
-            ]
-          },
-          "obstacles": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "WALKWAY",
-              "incline": "LEVEL",
-              "stopId": 1000123,
-              "position": "IDEST"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "WALKWAY",
-              "incline": "LEVEL",
-              "stopId": 1000123,
-              "position": "IDEST"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "DOWN",
-              "stopId": 1000123,
-              "position": "IDEST"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "STAIRS",
-              "incline": "DOWN",
-              "stopId": 1000123,
-              "position": "IDEST"
-            }
-          ],
-          "departureTime": "2021-10-05T15:40:00",
-          "arrivalTime": "2021-10-05T15:52:00",
-          "departurePoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "platformName": "",
-            "icsCode": "99999997",
-            "commonName": "NW5 1TL",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.55393486459,
-            "lon": -0.14475404161
-          },
-          "arrivalPoint": {
-            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "940GZZLUKSH",
-            "platformName": "",
-            "icsCode": "1000123",
-            "commonName": "Kentish Town Underground Station",
-            "placeType": "StopPoint",
-            "additionalProperties": [],
-            "lat": 51.550312715000004,
-            "lon": -0.1408916028
-          },
-          "path": {
-            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55371084238, -0.14366687007],[51.55368319816, -0.14362472107],[51.5532296202, -0.14280655621],[51.55294304646, -0.14231336785],[51.55245046261, -0.14187185395],[51.55242304606, -0.14184412231],[51.55182102222, -0.14130610938],[51.55167381019, -0.14109574709],[51.55120932405, -0.14072523274],[51.55087567591, -0.1406667167],[51.55087186718, -0.1398591318],[51.55087216808, -0.13931101006],[51.55086828152, -0.13906596179],[51.55092220136, -0.13906376139],[51.55087230971, -0.13905137347],[51.55087217596, -0.1392965858],[51.55087216808, -0.13931101006],[51.55087186718, -0.1398591318],[51.55087567591, -0.1406667167],[51.5507229029, -0.14067294577],[51.55051664783, -0.14070900105],[51.55050562425, -0.14058083815],[51.55048536638, -0.14043742607],[51.55037562155, -0.14088903823],[51.550312715, -0.1408916028]]",
-            "stopPoints": [],
-            "elevation": []
-          },
-          "routeOptions": [
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "",
-              "directions": [
-                ""
-              ]
-            }
-          ],
-          "mode": {
-            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "walking",
-            "name": "walking",
-            "type": "Mode",
-            "routeType": "Unknown",
-            "status": "Unknown"
-          },
-          "disruptions": [],
-          "plannedWorks": [],
-          "distance": 639.0,
-          "isDisrupted": false,
-          "hasFixedLocations": true
-        },
-        {
-          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 5,
-          "instruction": {
-            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Northern line to Euston",
+            "summary": "Northern line to Bank",
             "detailed": "Northern line towards Morden via Bank",
             "steps": []
           },
@@ -877,27 +274,13 @@
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
               "type": "STAIRS",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
+              "incline": "DOWN",
+              "stopId": 1000013,
               "position": "AFTER"
             }
           ],
-          "departureTime": "2021-10-05T15:52:00",
-          "arrivalTime": "2021-10-05T15:57:00",
+          "departureTime": "2021-10-07T09:16:00",
+          "arrivalTime": "2021-10-07T09:32:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
             "naptanId": "940GZZLUKSH",
@@ -911,18 +294,18 @@
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "940GZZLUEUS",
+            "naptanId": "940GZZLUBNK",
             "platformName": "",
-            "icsCode": "1000077",
-            "commonName": "Euston Underground Station",
+            "icsCode": "1000013",
+            "commonName": "Bank Underground Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.52835196921,
-            "lon": -0.13232889436
+            "lat": 51.51227861417,
+            "lon": -0.088007180250000011
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53774768187, -0.14186509807],[51.53694558531, -0.14175356989],[51.53307164243, -0.14186808027],[51.5324937559, -0.14171859467],[51.53187809624, -0.14145530764],[51.5312603811, -0.14106235168],[51.53092193684, -0.14070128033],[51.52955367679, -0.1389116256],[51.52913023044, -0.13829454331],[51.5286296262, -0.13734903213],[51.52837691842, -0.13672500578],[51.52781991793, -0.13506099815],[51.52774578553, -0.13435761263],[51.52785922236, -0.13357447563],[51.52834644646, -0.13232336651]]",
+            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53774768187, -0.14186509807],[51.53694558531, -0.14175356989],[51.53307164243, -0.14186808027],[51.5324937559, -0.14171859467],[51.53187809624, -0.14145530764],[51.5312603811, -0.14106235168],[51.53092193684, -0.14070128033],[51.52955367679, -0.1389116256],[51.52913023044, -0.13829454331],[51.5286296262, -0.13734903213],[51.52837691842, -0.13672500578],[51.52781991793, -0.13506099815],[51.52774578553, -0.13435761263],[51.52785922236, -0.13357447563],[51.52834644646, -0.13232336651],[51.52834644646, -0.13232336651],[51.52967342576, -0.12891559578],[51.53066641047, -0.12633739074],[51.5308357846, -0.12568164358],[51.53081573603, -0.12217898581],[51.53083403091, -0.12188905651],[51.53083403091, -0.12188905651],[51.53097351221, -0.1196782358],[51.53144325068, -0.11420894051],[51.53186578205, -0.10917402442],[51.53195618808, -0.10641643862],[51.53188520014, -0.10593762469],[51.53188520014, -0.10593762469],[51.53183508984, -0.10559963931],[51.53092770444, -0.10175894924],[51.52990173533, -0.09782243058],[51.52786667474, -0.08990596002],[51.52748938338, -0.08882608664],[51.52717680256, -0.08840668018],[51.52700324319, -0.0882409519],[51.52656719901, -0.08797088995],[51.52595994266, -0.08767917428],[51.52497773052, -0.08754498483],[51.52497773052, -0.08754498483],[51.52394111414, -0.08740336839],[51.52191852558, -0.08689710407],[51.5215595389, -0.08694097859],[51.51990292457, -0.08737075753],[51.51922371448, -0.08762983795],[51.51891940948, -0.08779467948],[51.51891940948, -0.08779467948],[51.51726266597, -0.08869209283],[51.51592861601, -0.0890506115],[51.51481258509, -0.08954411156],[51.5143810014, -0.08954775688],[51.51318969901, -0.08873287314],[51.51280499226, -0.08830220371],[51.51231327408, -0.08789869585]]",
             "stopPoints": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
@@ -938,6 +321,51 @@
                 "id": "940GZZLUEUS",
                 "name": "Euston Underground Station",
                 "uri": "/StopPoint/940GZZLUEUS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUKSX",
+                "name": "King's Cross St. Pancras Underground Station",
+                "uri": "/StopPoint/940GZZLUKSX",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUAGL",
+                "name": "Angel Underground Station",
+                "uri": "/StopPoint/940GZZLUAGL",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUODS",
+                "name": "Old Street Underground Station",
+                "uri": "/StopPoint/940GZZLUODS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUMGT",
+                "name": "Moorgate Underground Station",
+                "uri": "/StopPoint/940GZZLUMGT",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUBNK",
+                "name": "Bank Underground Station",
+                "uri": "/StopPoint/940GZZLUBNK",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
@@ -981,56 +409,146 @@
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 18,
+          "duration": 26,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "West Midlands Trains to Bushey",
-            "detailed": "West Midlands Trains towards Watford Junction",
+            "summary": "DLR to Woolwich Arsenal DLR Station",
+            "detailed": "DLR towards Woolwich Arsenal DLR Station",
             "steps": []
           },
           "obstacles": [],
-          "departureTime": "2021-10-05T16:07:00",
-          "arrivalTime": "2021-10-05T16:25:00",
+          "departureTime": "2021-10-07T09:35:00",
+          "arrivalTime": "2021-10-07T10:01:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GEUSTON",
+            "naptanId": "940GZZDLBNK",
             "platformName": "",
-            "icsCode": "1000077",
-            "commonName": "London Euston Rail Station",
+            "icsCode": "1000013",
+            "commonName": "Bank DLR Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.528952007200004,
-            "lon": -0.1350003194
+            "lat": 51.512082556029995,
+            "lon": -0.08811627176
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GBUSHEY",
+            "naptanId": "940GZZDLWLA",
             "platformName": "",
-            "icsCode": "1001041",
-            "commonName": "Bushey Rail Station",
+            "icsCode": "1003000",
+            "commonName": "Woolwich Arsenal DLR Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.645689926610004,
-            "lon": -0.38490422688
+            "lat": 51.49030854513,
+            "lon": 0.0693849411
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.5289520072, -0.1350003194],[51.52995817237, -0.13606933464],[51.53028970384, -0.13656040354],[51.53077279877, -0.13753548988],[51.53145260722, -0.13900719494],[51.53212181203, -0.14037844944],[51.53273183084, -0.14142053552],[51.53348585572, -0.14247120528],[51.53471356361, -0.14390636331],[51.53519578537, -0.14426163994],[51.53570884032, -0.14486079527],[51.5400535411, -0.14950056629],[51.54138229087, -0.15107622791],[51.54178747146, -0.15167990984],[51.54214099846, -0.1524299061],[51.5424774548, -0.15323829],[51.54276293317, -0.15423622609],[51.54304085259, -0.15589786581],[51.54331401983, -0.15954988529],[51.54340607889, -0.16140654856],[51.54339379631, -0.16234444284],[51.54336556334, -0.16341277239],[51.54327756986, -0.16468540602],[51.54307836644, -0.16632304143],[51.54288655132, -0.16785941594],[51.54257834424, -0.17000614081],[51.54243231394, -0.17102148362],[51.54212089605, -0.17354324204],[51.54194897697, -0.17520854586],[51.54176647949, -0.17677331265],[51.54141022653, -0.17931120335],[51.54086223688, -0.18224605385],[51.54020729037, -0.1846659503],[51.53983259863, -0.18602195331],[51.53948893948, -0.18705945535],[51.53899672223, -0.1883768233],[51.53726357755, -0.19261288785],[51.53644132679, -0.19469299609],[51.53586779329, -0.19657575082],[51.53558739041, -0.19763942023],[51.53474796295, -0.20153679597],[51.53446669521, -0.20313393126],[51.53420883796, -0.20449942873],[51.53407197048, -0.20529827126],[51.53407197048, -0.20529827126],[51.53343278334, -0.2090284731],[51.53303372536, -0.21116360534],[51.53173286022, -0.21727005157],[51.53121966178, -0.21959691156],[51.53090372675, -0.22129608139],[51.53073181529, -0.2224129227],[51.53051879457, -0.22497308996],[51.53034704391, -0.22848317023],[51.53029653387, -0.22930691498],[51.53020687358, -0.23111254799],[51.53024378351, -0.23356204848],[51.53028084404, -0.23482933204],[51.53029329994, -0.23505952631],[51.53044154795, -0.23714430123],[51.53101178284, -0.24098615667],[51.53148734884, -0.24331789774],[51.53232226195, -0.24683255558],[51.53283877754, -0.2489033269],[51.53461320075, -0.25453057584],[51.53533843009, -0.25673774943],[51.53628872105, -0.25957084519],[51.5385964292, -0.26663504934],[51.54195025207, -0.27699159387],[51.54379313442, -0.28247424125],[51.54434426889, -0.28388122935],[51.54572305425, -0.28716084739],[51.54724928364, -0.29007457209],[51.54854799747, -0.29218932116],[51.54958517545, -0.29363607794],[51.55040035351, -0.29465849377],[51.55137771496, -0.29570373217],[51.55205170695, -0.29638864945],[51.55205170695, -0.29638864945],[51.55247294997, -0.29681673296],[51.55343064474, -0.29774740224],[51.55582276363, -0.29961992868],[51.55877228224, -0.30148630879],[51.56291561637, -0.30382788127],[51.56757826459, -0.30664115405],[51.57101652945, -0.30873562029],[51.57652215702, -0.31202374741],[51.57760244846, -0.31273419331],[51.57922149261, -0.31401646475],[51.58054373024, -0.31529536891],[51.58210624863, -0.31702733923],[51.58479082485, -0.32050787249],[51.5863913648, -0.32301826087],[51.58770260594, -0.32542397772],[51.58978790587, -0.32977913264],[51.59240945526, -0.33522047697],[51.59240945526, -0.33522047697],[51.59379972564, -0.33810661611],[51.59526364273, -0.34115727978],[51.5971263611, -0.34507436643],[51.59974230407, -0.35076933592],[51.60289016586, -0.35722551024],[51.60411882145, -0.35956383878],[51.60633205722, -0.36351314525],[51.6080319654, -0.36612372933],[51.61193732312, -0.37150069769],[51.61275143821, -0.37249702612],[51.61616320171, -0.37666492541],[51.61777276449, -0.37861531402],[51.61856784887, -0.37954034739],[51.61950652993, -0.38044585554],[51.62132576708, -0.38195568653],[51.62293950121, -0.38290953129],[51.62920666943, -0.3861543004],[51.63037263164, -0.38658973121],[51.63247589153, -0.38717977884],[51.63424944276, -0.38733362088],[51.63594851317, -0.38730225846],[51.63768194672, -0.38715406497],[51.63960054899, -0.38673915898],[51.64291427714, -0.38576884478],[51.64472323214, -0.38522764295],[51.6456895723, -0.38490151453]]",
+            "lineString": "[[51.51215154899, -0.08790032732],[51.51171347167, -0.08754084696],[51.51083903021, -0.08685689939],[51.51059122794, -0.08655023225],[51.51044227561, -0.08623942588],[51.51032785795, -0.08584070674],[51.50937383396, -0.0802892572],[51.50923199129, -0.07931527971],[51.50923911353, -0.07865207944],[51.50934201406, -0.07779750598],[51.50947754781, -0.07673980089],[51.50959154699, -0.07601444984],[51.51009527189, -0.07383155306],[51.51051004917, -0.07225763792],[51.51074177694, -0.07103730035],[51.51088623547, -0.06997916449],[51.51108685842, -0.06687221512],[51.51127907619, -0.06326118894],[51.51138490142, -0.06204612674],[51.5114401297, -0.06103496995],[51.51161172912, -0.05673300504],[51.51160958146, -0.05660339134],[51.51163642378, -0.05632825856],[51.51163642378, -0.05632825856],[51.51167876254, -0.05589427383],[51.51185929183, -0.05105864776],[51.51201579996, -0.04857313519],[51.51218933737, -0.0417200751],[51.51228432099, -0.04034907808],[51.51228432099, -0.04034907808],[51.51243565914, -0.0381641668],[51.51243669455, -0.03768852717],[51.51235770805, -0.03619307867],[51.51224438848, -0.03533323715],[51.51212738588, -0.03479061974],[51.5106849442, -0.02975104934],[51.51049675307, -0.02925477071],[51.50986950665, -0.02778307696],[51.50953849094, -0.02687058834],[51.50953849094, -0.02687058834],[51.50863415607, -0.02437783574],[51.50817321539, -0.0226396759],[51.50818317438, -0.02216369289],[51.50831455988, -0.02088986085],[51.50829075497, -0.02054503571],[51.50821230329, -0.02015934789],[51.50788829614, -0.01907819057],[51.50778578505, -0.01833328878],[51.50768700783, -0.01753175313],[51.50768700783, -0.01753175313],[51.50757733953, -0.01664189692],[51.50747164586, -0.01570980784],[51.50740986558, -0.01418498637],[51.50741564397, -0.01346421335],[51.50741023574, -0.01261423292],[51.50750630585, -0.01138516256],[51.50780299941, -0.00820191902],[51.5079061191, -0.00739042788],[51.5079614504, -0.00701282992],[51.5079614504, -0.00701282992],[51.50809951127, -0.00607061932],[51.50823324782, -0.00547394119],[51.50837065572, -0.00509326042],[51.5085716993, -0.00475302947],[51.50881718175, -0.00438203179],[51.50899126522, -0.00404297263],[51.50916461229, -0.00366071001],[51.5093624642, -0.00313326229],[51.50950590727, -0.00257936748],[51.50968867119, -0.00160174726],[51.50968867119, -0.00160174726],[51.5102311239, 0.00130018427],[51.51034155149, 0.00167971997],[51.51051537118, 0.00203321391],[51.5108037942, 0.0025214398],[51.51115634648, 0.0029404267],[51.51156379683, 0.00330418159],[51.51188433882, 0.00349118698],[51.5134747324, 0.00409422882],[51.51394384954, 0.00453278301],[51.51443475199, 0.00527496951],[51.514564862, 0.00555452577],[51.51465853499, 0.00586130841],[51.51472426396, 0.00622451563],[51.51471810441, 0.00658456451],[51.51465827467, 0.0069278414],[51.51456373268, 0.00719752768],[51.51444346486, 0.00739401827],[51.51389346207, 0.00800398837],[51.51386511731, 0.00802984393],[51.51386511731, 0.00802984393],[51.512989059, 0.00882894965],[51.51049054294, 0.01031870668],[51.51036227165, 0.01045717387],[51.50994176013, 0.0108565876],[51.50841187587, 0.01197090833],[51.5065383786, 0.01371846968],[51.5062096937, 0.01400658976],[51.50593467615, 0.01431148271],[51.50575001149, 0.01459153762],[51.50559955796, 0.01497396897],[51.50548430441, 0.01540118072],[51.50539526445, 0.01587277689],[51.50521463074, 0.01644119622],[51.50505568066, 0.01679442245],[51.50454337614, 0.01782370102],[51.5035577175, 0.02022973509],[51.50279054238, 0.02247981102],[51.50279054238, 0.02247981102],[51.50267686055, 0.02281321553],[51.50257081315, 0.0232263796],[51.50251818249, 0.02367072623],[51.50249027098, 0.02424584786],[51.50243788505, 0.0246757945],[51.50230814044, 0.02541930631],[51.50212776764, 0.02701069014],[51.50211357925, 0.02783136457],[51.50213609394, 0.0291291608],[51.50238190385, 0.03329951185],[51.50238190385, 0.03329951185],[51.50239325084, 0.03349208411],[51.50252649812, 0.03617808795],[51.50253696902, 0.03661082456],[51.50251399615, 0.03689798003],[51.50246181412, 0.03731351325],[51.50244682461, 0.03765865993],[51.50245478766, 0.03823537404],[51.50248497456, 0.03856812765],[51.50255210486, 0.03884489477],[51.5026466925, 0.0390940704],[51.50351349258, 0.04044401412],[51.50373087044, 0.04087159708],[51.50385813859, 0.04130956641],[51.50393249332, 0.04168753508],[51.50397015168, 0.04210709273],[51.50396237826, 0.04255343834],[51.50392589003, 0.04309936555],[51.50396580136, 0.04338934004],[51.50410079101, 0.04389971185],[51.50412820065, 0.04439086185],[51.50404359061, 0.04666377391],[51.50401757708, 0.04712371171],[51.50395763004, 0.04746685205],[51.5036052939, 0.04858939696],[51.50347471478, 0.04885731731],[51.5034434313, 0.04889875939],[51.5034434313, 0.04889875939],[51.50332742157, 0.04905243996],[51.50306306229, 0.04925671838],[51.50290728598, 0.04942263913],[51.50275898527, 0.04967534875],[51.50263688606, 0.04997245982],[51.50256819686, 0.05030078478],[51.50253544954, 0.05063072237],[51.5025145466, 0.0518257324],[51.502458697, 0.05296153478],[51.50231177918, 0.05518832021],[51.5021424688, 0.05920078879],[51.50198131774, 0.06201110293],[51.50198131774, 0.06201110293],[51.50175337276, 0.06598420163],[51.50161300527, 0.06884519728],[51.50149782868, 0.07078515984],[51.50132261106, 0.07154087661],[51.50100387382, 0.07227566807],[51.50062554153, 0.07282043483],[51.50027696347, 0.07320805129],[51.49561165042, 0.07665569119],[51.49478504065, 0.07712235184],[51.49394402849, 0.07738665203],[51.49332300481, 0.07741604126],[51.49158356861, 0.07661667828],[51.49111396076, 0.07622079449],[51.49068360626, 0.07563943284],[51.4903084358, 0.07498856214],[51.48999921616, 0.07416783465],[51.48975339877, 0.07332118502],[51.48964261346, 0.07246626363],[51.4896378689, 0.07171698863],[51.4897170405, 0.07079865667],[51.48984732352, 0.0700410924],[51.49003949867, 0.06922281183]]",
             "stopPoints": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "910GHROW",
-                "name": "Harrow & Wealdstone Rail Station",
-                "uri": "/StopPoint/910GHROW",
+                "id": "940GZZDLSHA",
+                "name": "Shadwell DLR Station",
+                "uri": "/StopPoint/940GZZDLSHA",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "910GBUSHEY",
-                "name": "Bushey Rail Station",
-                "uri": "/StopPoint/910GBUSHEY",
+                "id": "940GZZDLLIM",
+                "name": "Limehouse DLR Station",
+                "uri": "/StopPoint/940GZZDLLIM",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWFE",
+                "name": "Westferry DLR Station",
+                "uri": "/StopPoint/940GZZDLWFE",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLPOP",
+                "name": "Poplar DLR Station",
+                "uri": "/StopPoint/940GZZDLPOP",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLBLA",
+                "name": "Blackwall DLR Station",
+                "uri": "/StopPoint/940GZZDLBLA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLEIN",
+                "name": "East India DLR Station",
+                "uri": "/StopPoint/940GZZDLEIN",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLCGT",
+                "name": "Canning Town DLR Station",
+                "uri": "/StopPoint/940GZZDLCGT",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWSV",
+                "name": "West Silvertown DLR Station",
+                "uri": "/StopPoint/940GZZDLWSV",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLPDK",
+                "name": "Pontoon Dock DLR Station",
+                "uri": "/StopPoint/940GZZDLPDK",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLLCA",
+                "name": "London City Airport DLR Station",
+                "uri": "/StopPoint/940GZZDLLCA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLKGV",
+                "name": "King George V DLR Station",
+                "uri": "/StopPoint/940GZZDLKGV",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWLA",
+                "name": "Woolwich Arsenal DLR Station",
+                "uri": "/StopPoint/940GZZDLWLA",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
@@ -1041,15 +559,15 @@
           "routeOptions": [
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "West Midlands Trains",
+              "name": "DLR",
               "directions": [
-                "Watford Junction Rail Station"
+                "Woolwich Arsenal DLR Station"
               ],
               "lineIdentifier": {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "west-midlands-trains",
-                "name": "West Midlands Trains",
-                "uri": "/Line/west-midlands-trains",
+                "id": "dlr",
+                "name": "DLR",
+                "uri": "/Line/dlr",
                 "type": "Line",
                 "crowding": {
                   "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
@@ -1061,77 +579,53 @@
           ],
           "mode": {
             "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "national-rail",
-            "name": "national-rail",
+            "id": "dlr",
+            "name": "dlr",
             "type": "Mode",
             "routeType": "Unknown",
             "status": "Unknown"
           },
-          "disruptions": [],
+          "disruptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "PlannedWork",
+              "type": "stopInfo",
+              "categoryDescription": "PlannedWork",
+              "description": "BANK STATION: From Monday 30 August until early October, during planned escalator maintenance work, access to the DLR platforms will be via the fixed staircase between the escalators. Please take care and hold the handrail as you walk down. The remaining escalators from the DLR will run in the up direction. Step-free access between the DLR, the ticket hall and the street will be available via the lifts.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-08-13T08:06:00",
+              "lastUpdate": "2021-08-13T08:08:00"
+            }
+          ],
           "plannedWorks": [],
-          "isDisrupted": false,
+          "isDisrupted": true,
           "hasFixedLocations": true
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 8,
+          "duration": 3,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to WD19 4HH",
-            "detailed": "Walk to WD19 4HH",
+            "summary": "Walk to SE18 6AB",
+            "detailed": "Walk to SE18 6AB",
             "steps": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Bushey and Oxhey Railway Yard for 8 metres",
+                "description": "Woolwich New Road for 11 metres",
                 "turnDirection": "STRAIGHT",
-                "streetName": "Bushey and Oxhey Railway Yard",
-                "distance": 8,
-                "cumulativeDistance": 8,
-                "skyDirection": 369,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 8,
-                "latitude": 51.64574910786,
-                "longitude": -0.38397709254,
+                "streetName": "Woolwich New Road",
+                "distance": 11,
+                "cumulativeDistance": 11,
+                "skyDirection": 224,
+                "skyDirectionDescription": "SouthWest",
+                "cumulativeTravelTime": 6,
+                "latitude": 51.49026199755,
+                "longitude": 0.068965082729999988,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
                 "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Pinner Road, continue for 216 metres",
-                "turnDirection": "SHARP_RIGHT",
-                "streetName": "Pinner Road",
-                "distance": 216,
-                "cumulativeDistance": 224,
-                "skyDirection": 517,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 203,
-                "latitude": 51.64580203976,
-                "longitude": -0.38390294237,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Take a sharp right",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Grover Road, continue for 152 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Grover Road",
-                "distance": 152,
-                "cumulativeDistance": 376,
-                "skyDirection": 266,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 336,
-                "latitude": 51.64393065696,
-                "longitude": -0.38317456243,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
                 "trackType": "None"
               }
             ]
@@ -1139,35 +633,35 @@
           "obstacles": [
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "STAIRS",
-              "incline": "DOWN",
-              "stopId": 1001041,
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1003000,
               "position": "BEFORE"
             }
           ],
-          "departureTime": "2021-10-05T16:25:00",
-          "arrivalTime": "2021-10-05T16:33:00",
+          "departureTime": "2021-10-07T10:01:00",
+          "arrivalTime": "2021-10-07T10:04:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GBUSHEY",
+            "naptanId": "940GZZDLWLA",
             "platformName": "",
-            "icsCode": "1001041",
-            "commonName": "Bushey Rail Station",
+            "icsCode": "1003000",
+            "commonName": "Woolwich Arsenal DLR Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.645689926610004,
-            "lon": -0.38490422688
+            "lat": 51.49030854513,
+            "lon": 0.0693849411
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "WD19 4HH",
+            "commonName": "SE18 6AB",
             "placeType": "StopPoint",
-            "lat": 51.643157437579994,
-            "lon": -0.38448836412
+            "lat": 51.49038642905,
+            "lon": 0.068538559770000007
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.64568992661, -0.38490422688],[51.64575447503, -0.38436714937],[51.64574910786, -0.38397709254],[51.64580203976, -0.38390294237],[51.64559333534, -0.38376582757],[51.64540220837, -0.38359918189],[51.6451030304, -0.38342192717],[51.64495803458, -0.38334036398],[51.6443179219, -0.38321859967],[51.64393065696, -0.38317456243],[51.6438984447, -0.38410070198],[51.64310852414, -0.38420104704],[51.64315743758, -0.38448836412]]",
+            "lineString": "[[51.49030854513, 0.0693849411],[51.49022503918, 0.06902103009],[51.49026199755, 0.06896508273],[51.4901921444, 0.06884667872],[51.49038642905, 0.06853855977]]",
             "stopPoints": [],
             "elevation": []
           },
@@ -1190,7 +684,7 @@
           },
           "disruptions": [],
           "plannedWorks": [],
-          "distance": 376.0,
+          "distance": 11.0,
           "isDisrupted": false,
           "hasFixedLocations": false
         }
@@ -1198,9 +692,9 @@
     },
     {
       "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
-      "startDateTime": "2021-10-05T16:07:00",
-      "duration": 48,
-      "arrivalDateTime": "2021-10-05T16:55:00",
+      "startDateTime": "2021-10-07T09:10:00",
+      "duration": 62,
+      "arrivalDateTime": "2021-10-07T10:12:00",
       "legs": [
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
@@ -1404,8 +898,8 @@
               "position": "IDEST"
             }
           ],
-          "departureTime": "2021-10-05T16:07:00",
-          "arrivalTime": "2021-10-05T16:19:00",
+          "departureTime": "2021-10-07T09:10:00",
+          "arrivalTime": "2021-10-07T09:22:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
             "platformName": "",
@@ -1458,38 +952,24 @@
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 5,
+          "duration": 16,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Northern line to Euston",
-            "detailed": "Northern line towards Battersea Power Station via Charing Cross, Morden via Bank, Kennington Station via Charing Cross, or Morden via Charing Cross",
+            "summary": "Northern line to Bank",
+            "detailed": "Northern line towards Morden via Bank",
             "steps": []
           },
           "obstacles": [
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
-              "position": "AFTER"
-            },
-            {
-              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "ESCALATOR",
-              "incline": "UP",
-              "stopId": 1000077,
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1000013,
               "position": "AFTER"
             }
           ],
-          "departureTime": "2021-10-05T16:19:00",
-          "arrivalTime": "2021-10-05T16:24:00",
+          "departureTime": "2021-10-07T09:22:00",
+          "arrivalTime": "2021-10-07T09:38:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
             "naptanId": "940GZZLUKSH",
@@ -1503,18 +983,18 @@
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "940GZZLUEUS",
+            "naptanId": "940GZZLUBNK",
             "platformName": "",
-            "icsCode": "1000077",
-            "commonName": "Euston Underground Station",
+            "icsCode": "1000013",
+            "commonName": "Bank Underground Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.528202958959994,
-            "lon": -0.13426684017999999
+            "lat": 51.51227861417,
+            "lon": -0.088007180250000011
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53667774748, -0.14074069844],[51.53576377509, -0.13981185964],[51.53511566638, -0.13920384889],[51.53436925119, -0.13859814587],[51.53436925119, -0.13859814587],[51.53416825095, -0.13843504142],[51.53307848101, -0.13719627107],[51.53002289401, -0.13391850645],[51.52956920663, -0.13366313102],[51.52920905313, -0.1336346084],[51.5287622423, -0.13381146741],[51.52834399536, -0.13408807268],[51.52820254486, -0.13426599401]]",
+            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53774768187, -0.14186509807],[51.53694558531, -0.14175356989],[51.53307164243, -0.14186808027],[51.5324937559, -0.14171859467],[51.53187809624, -0.14145530764],[51.5312603811, -0.14106235168],[51.53092193684, -0.14070128033],[51.52955367679, -0.1389116256],[51.52913023044, -0.13829454331],[51.5286296262, -0.13734903213],[51.52837691842, -0.13672500578],[51.52781991793, -0.13506099815],[51.52774578553, -0.13435761263],[51.52785922236, -0.13357447563],[51.52834644646, -0.13232336651],[51.52834644646, -0.13232336651],[51.52967342576, -0.12891559578],[51.53066641047, -0.12633739074],[51.5308357846, -0.12568164358],[51.53081573603, -0.12217898581],[51.53083403091, -0.12188905651],[51.53083403091, -0.12188905651],[51.53097351221, -0.1196782358],[51.53144325068, -0.11420894051],[51.53186578205, -0.10917402442],[51.53195618808, -0.10641643862],[51.53188520014, -0.10593762469],[51.53188520014, -0.10593762469],[51.53183508984, -0.10559963931],[51.53092770444, -0.10175894924],[51.52990173533, -0.09782243058],[51.52786667474, -0.08990596002],[51.52748938338, -0.08882608664],[51.52717680256, -0.08840668018],[51.52700324319, -0.0882409519],[51.52656719901, -0.08797088995],[51.52595994266, -0.08767917428],[51.52497773052, -0.08754498483],[51.52497773052, -0.08754498483],[51.52394111414, -0.08740336839],[51.52191852558, -0.08689710407],[51.5215595389, -0.08694097859],[51.51990292457, -0.08737075753],[51.51922371448, -0.08762983795],[51.51891940948, -0.08779467948],[51.51891940948, -0.08779467948],[51.51726266597, -0.08869209283],[51.51592861601, -0.0890506115],[51.51481258509, -0.08954411156],[51.5143810014, -0.08954775688],[51.51318969901, -0.08873287314],[51.51280499226, -0.08830220371],[51.51231327408, -0.08789869585]]",
             "stopPoints": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
@@ -1527,18 +1007,54 @@
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "940GZZLUMTC",
-                "name": "Mornington Crescent Underground Station",
-                "uri": "/StopPoint/940GZZLUMTC",
+                "id": "940GZZLUEUS",
+                "name": "Euston Underground Station",
+                "uri": "/StopPoint/940GZZLUEUS",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
               },
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "940GZZLUEUS",
-                "name": "Euston Underground Station",
-                "uri": "/StopPoint/940GZZLUEUS",
+                "id": "940GZZLUKSX",
+                "name": "King's Cross St. Pancras Underground Station",
+                "uri": "/StopPoint/940GZZLUKSX",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUAGL",
+                "name": "Angel Underground Station",
+                "uri": "/StopPoint/940GZZLUAGL",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUODS",
+                "name": "Old Street Underground Station",
+                "uri": "/StopPoint/940GZZLUODS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUMGT",
+                "name": "Moorgate Underground Station",
+                "uri": "/StopPoint/940GZZLUMGT",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUBNK",
+                "name": "Bank Underground Station",
+                "uri": "/StopPoint/940GZZLUBNK",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
@@ -1551,10 +1067,7 @@
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
               "name": "Northern",
               "directions": [
-                "Battersea Power Station Underground Station via Charing Cross",
-                "Morden via Bank",
-                "Kennington Station via Charing Cross",
-                "Morden via Charing Cross"
+                "Morden via Bank"
               ],
               "lineIdentifier": {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
@@ -1585,47 +1098,146 @@
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 14,
+          "duration": 27,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "West Midlands Trains to Bushey",
-            "detailed": "West Midlands Trains towards Tring",
+            "summary": "DLR to Woolwich Arsenal DLR Station",
+            "detailed": "DLR towards Woolwich Arsenal DLR Station",
             "steps": []
           },
           "obstacles": [],
-          "departureTime": "2021-10-05T16:33:00",
-          "arrivalTime": "2021-10-05T16:47:00",
+          "departureTime": "2021-10-07T09:42:00",
+          "arrivalTime": "2021-10-07T10:09:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GEUSTON",
+            "naptanId": "940GZZDLBNK",
             "platformName": "",
-            "icsCode": "1000077",
-            "commonName": "London Euston Rail Station",
+            "icsCode": "1000013",
+            "commonName": "Bank DLR Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.528952007200004,
-            "lon": -0.1350003194
+            "lat": 51.512082556029995,
+            "lon": -0.08811627176
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GBUSHEY",
+            "naptanId": "940GZZDLWLA",
             "platformName": "",
-            "icsCode": "1001041",
-            "commonName": "Bushey Rail Station",
+            "icsCode": "1003000",
+            "commonName": "Woolwich Arsenal DLR Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.645689926610004,
-            "lon": -0.38490422688
+            "lat": 51.49030854513,
+            "lon": 0.0693849411
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.5289520072, -0.1350003194],[51.52995817237, -0.13606933464],[51.53028970384, -0.13656040354],[51.53077279877, -0.13753548988],[51.53145260722, -0.13900719494],[51.53212181203, -0.14037844944],[51.53273183084, -0.14142053552],[51.53348585572, -0.14247120528],[51.53471356361, -0.14390636331],[51.53519578537, -0.14426163994],[51.53570884032, -0.14486079527],[51.5400535411, -0.14950056629],[51.54138229087, -0.15107622791],[51.54178747146, -0.15167990984],[51.54214099846, -0.1524299061],[51.5424774548, -0.15323829],[51.54276293317, -0.15423622609],[51.54304085259, -0.15589786581],[51.54331401983, -0.15954988529],[51.54340607889, -0.16140654856],[51.54339379631, -0.16234444284],[51.54336556334, -0.16341277239],[51.54327756986, -0.16468540602],[51.54307836644, -0.16632304143],[51.54288655132, -0.16785941594],[51.54257834424, -0.17000614081],[51.54243231394, -0.17102148362],[51.54212089605, -0.17354324204],[51.54194897697, -0.17520854586],[51.54176647949, -0.17677331265],[51.54141022653, -0.17931120335],[51.54086223688, -0.18224605385],[51.54020729037, -0.1846659503],[51.53983259863, -0.18602195331],[51.53948893948, -0.18705945535],[51.53899672223, -0.1883768233],[51.53726357755, -0.19261288785],[51.53644132679, -0.19469299609],[51.53586779329, -0.19657575082],[51.53558739041, -0.19763942023],[51.53474796295, -0.20153679597],[51.53446669521, -0.20313393126],[51.53420883796, -0.20449942873],[51.53407197048, -0.20529827126],[51.53407197048, -0.20529827126],[51.53343278334, -0.2090284731],[51.53303372536, -0.21116360534],[51.53173286022, -0.21727005157],[51.53121966178, -0.21959691156],[51.53090372675, -0.22129608139],[51.53073181529, -0.2224129227],[51.53051879457, -0.22497308996],[51.53034704391, -0.22848317023],[51.53029653387, -0.22930691498],[51.53020687358, -0.23111254799],[51.53024378351, -0.23356204848],[51.53028084404, -0.23482933204],[51.53029329994, -0.23505952631],[51.53044154795, -0.23714430123],[51.53101178284, -0.24098615667],[51.53148734884, -0.24331789774],[51.53232226195, -0.24683255558],[51.53283877754, -0.2489033269],[51.53461320075, -0.25453057584],[51.53533843009, -0.25673774943],[51.53628872105, -0.25957084519],[51.5385964292, -0.26663504934],[51.54195025207, -0.27699159387],[51.54379313442, -0.28247424125],[51.54434426889, -0.28388122935],[51.54572305425, -0.28716084739],[51.54724928364, -0.29007457209],[51.54854799747, -0.29218932116],[51.54958517545, -0.29363607794],[51.55040035351, -0.29465849377],[51.55137771496, -0.29570373217],[51.55205170695, -0.29638864945],[51.55205170695, -0.29638864945],[51.55247294997, -0.29681673296],[51.55343064474, -0.29774740224],[51.55582276363, -0.29961992868],[51.55877228224, -0.30148630879],[51.56291561637, -0.30382788127],[51.56757826459, -0.30664115405],[51.57101652945, -0.30873562029],[51.57652215702, -0.31202374741],[51.57760244846, -0.31273419331],[51.57922149261, -0.31401646475],[51.58054373024, -0.31529536891],[51.58210624863, -0.31702733923],[51.58479082485, -0.32050787249],[51.5863913648, -0.32301826087],[51.58770260594, -0.32542397772],[51.58978790587, -0.32977913264],[51.59240945526, -0.33522047697],[51.59240945526, -0.33522047697],[51.59379972564, -0.33810661611],[51.59526364273, -0.34115727978],[51.5971263611, -0.34507436643],[51.59974230407, -0.35076933592],[51.60289016586, -0.35722551024],[51.60411882145, -0.35956383878],[51.60633205722, -0.36351314525],[51.6080319654, -0.36612372933],[51.61193732312, -0.37150069769],[51.61275143821, -0.37249702612],[51.61616320171, -0.37666492541],[51.61777276449, -0.37861531402],[51.61856784887, -0.37954034739],[51.61950652993, -0.38044585554],[51.62132576708, -0.38195568653],[51.62293950121, -0.38290953129],[51.62920666943, -0.3861543004],[51.63037263164, -0.38658973121],[51.63247589153, -0.38717977884],[51.63424944276, -0.38733362088],[51.63594851317, -0.38730225846],[51.63768194672, -0.38715406497],[51.63960054899, -0.38673915898],[51.64291427714, -0.38576884478],[51.64472323214, -0.38522764295],[51.6456895723, -0.38490151453]]",
+            "lineString": "[[51.51215154899, -0.08790032732],[51.51171347167, -0.08754084696],[51.51083903021, -0.08685689939],[51.51059122794, -0.08655023225],[51.51044227561, -0.08623942588],[51.51032785795, -0.08584070674],[51.50937383396, -0.0802892572],[51.50923199129, -0.07931527971],[51.50923911353, -0.07865207944],[51.50934201406, -0.07779750598],[51.50947754781, -0.07673980089],[51.50959154699, -0.07601444984],[51.51009527189, -0.07383155306],[51.51051004917, -0.07225763792],[51.51074177694, -0.07103730035],[51.51088623547, -0.06997916449],[51.51108685842, -0.06687221512],[51.51127907619, -0.06326118894],[51.51138490142, -0.06204612674],[51.5114401297, -0.06103496995],[51.51161172912, -0.05673300504],[51.51160958146, -0.05660339134],[51.51163642378, -0.05632825856],[51.51163642378, -0.05632825856],[51.51167876254, -0.05589427383],[51.51185929183, -0.05105864776],[51.51201579996, -0.04857313519],[51.51218933737, -0.0417200751],[51.51228432099, -0.04034907808],[51.51228432099, -0.04034907808],[51.51243565914, -0.0381641668],[51.51243669455, -0.03768852717],[51.51235770805, -0.03619307867],[51.51224438848, -0.03533323715],[51.51212738588, -0.03479061974],[51.5106849442, -0.02975104934],[51.51049675307, -0.02925477071],[51.50986950665, -0.02778307696],[51.50953849094, -0.02687058834],[51.50953849094, -0.02687058834],[51.50863415607, -0.02437783574],[51.50817321539, -0.0226396759],[51.50818317438, -0.02216369289],[51.50831455988, -0.02088986085],[51.50829075497, -0.02054503571],[51.50821230329, -0.02015934789],[51.50788829614, -0.01907819057],[51.50778578505, -0.01833328878],[51.50768700783, -0.01753175313],[51.50768700783, -0.01753175313],[51.50757733953, -0.01664189692],[51.50747164586, -0.01570980784],[51.50740986558, -0.01418498637],[51.50741564397, -0.01346421335],[51.50741023574, -0.01261423292],[51.50750630585, -0.01138516256],[51.50780299941, -0.00820191902],[51.5079061191, -0.00739042788],[51.5079614504, -0.00701282992],[51.5079614504, -0.00701282992],[51.50809951127, -0.00607061932],[51.50823324782, -0.00547394119],[51.50837065572, -0.00509326042],[51.5085716993, -0.00475302947],[51.50881718175, -0.00438203179],[51.50899126522, -0.00404297263],[51.50916461229, -0.00366071001],[51.5093624642, -0.00313326229],[51.50950590727, -0.00257936748],[51.50968867119, -0.00160174726],[51.50968867119, -0.00160174726],[51.5102311239, 0.00130018427],[51.51034155149, 0.00167971997],[51.51051537118, 0.00203321391],[51.5108037942, 0.0025214398],[51.51115634648, 0.0029404267],[51.51156379683, 0.00330418159],[51.51188433882, 0.00349118698],[51.5134747324, 0.00409422882],[51.51394384954, 0.00453278301],[51.51443475199, 0.00527496951],[51.514564862, 0.00555452577],[51.51465853499, 0.00586130841],[51.51472426396, 0.00622451563],[51.51471810441, 0.00658456451],[51.51465827467, 0.0069278414],[51.51456373268, 0.00719752768],[51.51444346486, 0.00739401827],[51.51389346207, 0.00800398837],[51.51386511731, 0.00802984393],[51.51386511731, 0.00802984393],[51.512989059, 0.00882894965],[51.51049054294, 0.01031870668],[51.51036227165, 0.01045717387],[51.50994176013, 0.0108565876],[51.50841187587, 0.01197090833],[51.5065383786, 0.01371846968],[51.5062096937, 0.01400658976],[51.50593467615, 0.01431148271],[51.50575001149, 0.01459153762],[51.50559955796, 0.01497396897],[51.50548430441, 0.01540118072],[51.50539526445, 0.01587277689],[51.50521463074, 0.01644119622],[51.50505568066, 0.01679442245],[51.50454337614, 0.01782370102],[51.5035577175, 0.02022973509],[51.50279054238, 0.02247981102],[51.50279054238, 0.02247981102],[51.50267686055, 0.02281321553],[51.50257081315, 0.0232263796],[51.50251818249, 0.02367072623],[51.50249027098, 0.02424584786],[51.50243788505, 0.0246757945],[51.50230814044, 0.02541930631],[51.50212776764, 0.02701069014],[51.50211357925, 0.02783136457],[51.50213609394, 0.0291291608],[51.50238190385, 0.03329951185],[51.50238190385, 0.03329951185],[51.50239325084, 0.03349208411],[51.50252649812, 0.03617808795],[51.50253696902, 0.03661082456],[51.50251399615, 0.03689798003],[51.50246181412, 0.03731351325],[51.50244682461, 0.03765865993],[51.50245478766, 0.03823537404],[51.50248497456, 0.03856812765],[51.50255210486, 0.03884489477],[51.5026466925, 0.0390940704],[51.50351349258, 0.04044401412],[51.50373087044, 0.04087159708],[51.50385813859, 0.04130956641],[51.50393249332, 0.04168753508],[51.50397015168, 0.04210709273],[51.50396237826, 0.04255343834],[51.50392589003, 0.04309936555],[51.50396580136, 0.04338934004],[51.50410079101, 0.04389971185],[51.50412820065, 0.04439086185],[51.50404359061, 0.04666377391],[51.50401757708, 0.04712371171],[51.50395763004, 0.04746685205],[51.5036052939, 0.04858939696],[51.50347471478, 0.04885731731],[51.5034434313, 0.04889875939],[51.5034434313, 0.04889875939],[51.50332742157, 0.04905243996],[51.50306306229, 0.04925671838],[51.50290728598, 0.04942263913],[51.50275898527, 0.04967534875],[51.50263688606, 0.04997245982],[51.50256819686, 0.05030078478],[51.50253544954, 0.05063072237],[51.5025145466, 0.0518257324],[51.502458697, 0.05296153478],[51.50231177918, 0.05518832021],[51.5021424688, 0.05920078879],[51.50198131774, 0.06201110293],[51.50198131774, 0.06201110293],[51.50175337276, 0.06598420163],[51.50161300527, 0.06884519728],[51.50149782868, 0.07078515984],[51.50132261106, 0.07154087661],[51.50100387382, 0.07227566807],[51.50062554153, 0.07282043483],[51.50027696347, 0.07320805129],[51.49561165042, 0.07665569119],[51.49478504065, 0.07712235184],[51.49394402849, 0.07738665203],[51.49332300481, 0.07741604126],[51.49158356861, 0.07661667828],[51.49111396076, 0.07622079449],[51.49068360626, 0.07563943284],[51.4903084358, 0.07498856214],[51.48999921616, 0.07416783465],[51.48975339877, 0.07332118502],[51.48964261346, 0.07246626363],[51.4896378689, 0.07171698863],[51.4897170405, 0.07079865667],[51.48984732352, 0.0700410924],[51.49003949867, 0.06922281183]]",
             "stopPoints": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "910GBUSHEY",
-                "name": "Bushey Rail Station",
-                "uri": "/StopPoint/910GBUSHEY",
+                "id": "940GZZDLSHA",
+                "name": "Shadwell DLR Station",
+                "uri": "/StopPoint/940GZZDLSHA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLLIM",
+                "name": "Limehouse DLR Station",
+                "uri": "/StopPoint/940GZZDLLIM",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWFE",
+                "name": "Westferry DLR Station",
+                "uri": "/StopPoint/940GZZDLWFE",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLPOP",
+                "name": "Poplar DLR Station",
+                "uri": "/StopPoint/940GZZDLPOP",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLBLA",
+                "name": "Blackwall DLR Station",
+                "uri": "/StopPoint/940GZZDLBLA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLEIN",
+                "name": "East India DLR Station",
+                "uri": "/StopPoint/940GZZDLEIN",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLCGT",
+                "name": "Canning Town DLR Station",
+                "uri": "/StopPoint/940GZZDLCGT",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWSV",
+                "name": "West Silvertown DLR Station",
+                "uri": "/StopPoint/940GZZDLWSV",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLPDK",
+                "name": "Pontoon Dock DLR Station",
+                "uri": "/StopPoint/940GZZDLPDK",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLLCA",
+                "name": "London City Airport DLR Station",
+                "uri": "/StopPoint/940GZZDLLCA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLKGV",
+                "name": "King George V DLR Station",
+                "uri": "/StopPoint/940GZZDLKGV",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWLA",
+                "name": "Woolwich Arsenal DLR Station",
+                "uri": "/StopPoint/940GZZDLWLA",
                 "type": "StopPoint",
                 "routeType": "Unknown",
                 "status": "Unknown"
@@ -1636,15 +1248,15 @@
           "routeOptions": [
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
-              "name": "West Midlands Trains",
+              "name": "DLR",
               "directions": [
-                "Tring Rail Station"
+                "Woolwich Arsenal DLR Station"
               ],
               "lineIdentifier": {
                 "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-                "id": "west-midlands-trains",
-                "name": "West Midlands Trains",
-                "uri": "/Line/west-midlands-trains",
+                "id": "dlr",
+                "name": "DLR",
+                "uri": "/Line/dlr",
                 "type": "Line",
                 "crowding": {
                   "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
@@ -1656,77 +1268,53 @@
           ],
           "mode": {
             "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
-            "id": "national-rail",
-            "name": "national-rail",
+            "id": "dlr",
+            "name": "dlr",
             "type": "Mode",
             "routeType": "Unknown",
             "status": "Unknown"
           },
-          "disruptions": [],
+          "disruptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "PlannedWork",
+              "type": "stopInfo",
+              "categoryDescription": "PlannedWork",
+              "description": "BANK STATION: From Monday 30 August until early October, during planned escalator maintenance work, access to the DLR platforms will be via the fixed staircase between the escalators. Please take care and hold the handrail as you walk down. The remaining escalators from the DLR will run in the up direction. Step-free access between the DLR, the ticket hall and the street will be available via the lifts.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-08-13T08:06:00",
+              "lastUpdate": "2021-08-13T08:08:00"
+            }
+          ],
           "plannedWorks": [],
-          "isDisrupted": false,
+          "isDisrupted": true,
           "hasFixedLocations": true
         },
         {
           "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
-          "duration": 8,
+          "duration": 3,
           "instruction": {
             "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
-            "summary": "Walk to WD19 4HH",
-            "detailed": "Walk to WD19 4HH",
+            "summary": "Walk to SE18 6AB",
+            "detailed": "Walk to SE18 6AB",
             "steps": [
               {
                 "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "Bushey and Oxhey Railway Yard for 8 metres",
+                "description": "Woolwich New Road for 11 metres",
                 "turnDirection": "STRAIGHT",
-                "streetName": "Bushey and Oxhey Railway Yard",
-                "distance": 8,
-                "cumulativeDistance": 8,
-                "skyDirection": 369,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 8,
-                "latitude": 51.64574910786,
-                "longitude": -0.38397709254,
+                "streetName": "Woolwich New Road",
+                "distance": 11,
+                "cumulativeDistance": 11,
+                "skyDirection": 224,
+                "skyDirectionDescription": "SouthWest",
+                "cumulativeTravelTime": 6,
+                "latitude": 51.49026199755,
+                "longitude": 0.068965082729999988,
                 "pathAttribute": {
                   "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
                 },
                 "descriptionHeading": "Continue along ",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Pinner Road, continue for 216 metres",
-                "turnDirection": "SHARP_RIGHT",
-                "streetName": "Pinner Road",
-                "distance": 216,
-                "cumulativeDistance": 224,
-                "skyDirection": 517,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 203,
-                "latitude": 51.64580203976,
-                "longitude": -0.38390294237,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Take a sharp right",
-                "trackType": "None"
-              },
-              {
-                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
-                "description": "on to Grover Road, continue for 152 metres",
-                "turnDirection": "RIGHT",
-                "streetName": "Grover Road",
-                "distance": 152,
-                "cumulativeDistance": 376,
-                "skyDirection": 266,
-                "skyDirectionDescription": "North",
-                "cumulativeTravelTime": 336,
-                "latitude": 51.64393065696,
-                "longitude": -0.38317456243,
-                "pathAttribute": {
-                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
-                },
-                "descriptionHeading": "Turn right",
                 "trackType": "None"
               }
             ]
@@ -1734,35 +1322,35 @@
           "obstacles": [
             {
               "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
-              "type": "STAIRS",
-              "incline": "DOWN",
-              "stopId": 1001041,
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1003000,
               "position": "BEFORE"
             }
           ],
-          "departureTime": "2021-10-05T16:47:00",
-          "arrivalTime": "2021-10-05T16:55:00",
+          "departureTime": "2021-10-07T10:09:00",
+          "arrivalTime": "2021-10-07T10:12:00",
           "departurePoint": {
             "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
-            "naptanId": "910GBUSHEY",
+            "naptanId": "940GZZDLWLA",
             "platformName": "",
-            "icsCode": "1001041",
-            "commonName": "Bushey Rail Station",
+            "icsCode": "1003000",
+            "commonName": "Woolwich Arsenal DLR Station",
             "placeType": "StopPoint",
             "additionalProperties": [],
-            "lat": 51.645689926610004,
-            "lon": -0.38490422688
+            "lat": 51.49030854513,
+            "lon": 0.0693849411
           },
           "arrivalPoint": {
             "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
-            "commonName": "WD19 4HH",
+            "commonName": "SE18 6AB",
             "placeType": "StopPoint",
-            "lat": 51.643157437579994,
-            "lon": -0.38448836412
+            "lat": 51.49038642905,
+            "lon": 0.068538559770000007
           },
           "path": {
             "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
-            "lineString": "[[51.64568992661, -0.38490422688],[51.64575447503, -0.38436714937],[51.64574910786, -0.38397709254],[51.64580203976, -0.38390294237],[51.64559333534, -0.38376582757],[51.64540220837, -0.38359918189],[51.6451030304, -0.38342192717],[51.64495803458, -0.38334036398],[51.6443179219, -0.38321859967],[51.64393065696, -0.38317456243],[51.6438984447, -0.38410070198],[51.64310852414, -0.38420104704],[51.64315743758, -0.38448836412]]",
+            "lineString": "[[51.49030854513, 0.0693849411],[51.49022503918, 0.06902103009],[51.49026199755, 0.06896508273],[51.4901921444, 0.06884667872],[51.49038642905, 0.06853855977]]",
             "stopPoints": [],
             "elevation": []
           },
@@ -1785,7 +1373,751 @@
           },
           "disruptions": [],
           "plannedWorks": [],
-          "distance": 376.0,
+          "distance": 11.0,
+          "isDisrupted": false,
+          "hasFixedLocations": false
+        }
+      ]
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
+      "startDateTime": "2021-10-07T09:16:00",
+      "duration": 66,
+      "arrivalDateTime": "2021-10-07T10:22:00",
+      "legs": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 12,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Walk to Kentish Town",
+            "detailed": "Walk to Kentish Town",
+            "steps": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "Sanderson Close for 40 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Sanderson Close",
+                "distance": 40,
+                "cumulativeDistance": 40,
+                "skyDirection": 415,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 36,
+                "latitude": 51.55421823769,
+                "longitude": -0.14504543618,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Highgate Road, continue for 393 metres",
+                "turnDirection": "RIGHT",
+                "streetName": "Highgate Road",
+                "distance": 393,
+                "cumulativeDistance": 433,
+                "skyDirection": 506,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 392,
+                "latitude": 51.55441740886,
+                "longitude": -0.14456130687,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn right",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 58 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 58,
+                "cumulativeDistance": 491,
+                "skyDirection": 512,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 443,
+                "latitude": 51.55167381019,
+                "longitude": -0.14109574709,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 37 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Kentish Town Road",
+                "distance": 37,
+                "cumulativeDistance": 528,
+                "skyDirection": 532,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 476,
+                "latitude": 51.55120932405,
+                "longitude": -0.14072523274,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 584,
+                "skyDirection": 449,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 526,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 55 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 55,
+                "cumulativeDistance": 639,
+                "skyDirection": 448,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 575,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 695,
+                "skyDirection": 268,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 624,
+                "latitude": 51.55092220136,
+                "longitude": -0.13906376139,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Leighton Road, continue for 56 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Leighton Road",
+                "distance": 56,
+                "cumulativeDistance": 751,
+                "skyDirection": 269,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 674,
+                "latitude": 51.55087186718,
+                "longitude": -0.1398591318,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "on to Kentish Town Road, continue for 40 metres",
+                "turnDirection": "LEFT",
+                "streetName": "Kentish Town Road",
+                "distance": 40,
+                "cumulativeDistance": 791,
+                "skyDirection": 180,
+                "skyDirectionDescription": "North",
+                "cumulativeTravelTime": 711,
+                "latitude": 51.550875675910007,
+                "longitude": -0.1406667167,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Turn left",
+                "trackType": "None"
+              }
+            ]
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "WALKWAY",
+              "incline": "LEVEL",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1000123,
+              "position": "IDEST"
+            }
+          ],
+          "departureTime": "2021-10-07T09:16:00",
+          "arrivalTime": "2021-10-07T09:28:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "platformName": "",
+            "icsCode": "99999997",
+            "commonName": "NW5 1TL",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.55393486459,
+            "lon": -0.14475404161
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.55393486459, -0.14475404161],[51.55421823769, -0.14504543618],[51.55441740886, -0.14456130687],[51.5542254972, -0.14436716653],[51.55371084238, -0.14366687007],[51.55368319816, -0.14362472107],[51.5532296202, -0.14280655621],[51.55294304646, -0.14231336785],[51.55245046261, -0.14187185395],[51.55242304606, -0.14184412231],[51.55182102222, -0.14130610938],[51.55167381019, -0.14109574709],[51.55120932405, -0.14072523274],[51.55087567591, -0.1406667167],[51.55087186718, -0.1398591318],[51.55087216808, -0.13931101006],[51.55086828152, -0.13906596179],[51.55092220136, -0.13906376139],[51.55087230971, -0.13905137347],[51.55087217596, -0.1392965858],[51.55087216808, -0.13931101006],[51.55087186718, -0.1398591318],[51.55087567591, -0.1406667167],[51.5507229029, -0.14067294577],[51.55051664783, -0.14070900105],[51.55050562425, -0.14058083815],[51.55048536638, -0.14043742607],[51.55037562155, -0.14088903823],[51.550312715, -0.1408916028]]",
+            "stopPoints": [],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "",
+              "directions": [
+                ""
+              ]
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "walking",
+            "name": "walking",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "distance": 639.0,
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 16,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Northern line to Bank",
+            "detailed": "Northern line towards Morden via Bank",
+            "steps": []
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "STAIRS",
+              "incline": "DOWN",
+              "stopId": 1000013,
+              "position": "AFTER"
+            }
+          ],
+          "departureTime": "2021-10-07T09:28:00",
+          "arrivalTime": "2021-10-07T09:44:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUKSH",
+            "platformName": "",
+            "icsCode": "1000123",
+            "commonName": "Kentish Town Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.550312715000004,
+            "lon": -0.1408916028
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZLUBNK",
+            "platformName": "",
+            "icsCode": "1000013",
+            "commonName": "Bank Underground Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.51227861417,
+            "lon": -0.088007180250000011
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.5503116244, -0.14087816298],[51.54920111102, -0.14110999981],[51.5488245851, -0.14118304048],[51.54803718479, -0.14143147906],[51.54651584547, -0.14189730631],[51.54618356729, -0.14192526569],[51.54565152807, -0.14183156191],[51.54533471205, -0.14170024722],[51.54512756224, -0.1416798428],[51.5441650762, -0.14166136895],[51.54355695072, -0.14187362568],[51.54271266066, -0.14193686083],[51.54183379321, -0.14208802801],[51.53933998, -0.14246605129],[51.53933998, -0.14246605129],[51.53923222258, -0.14248238462],[51.53888981621, -0.14243864557],[51.53826380234, -0.14208921617],[51.53774768187, -0.14186509807],[51.53694558531, -0.14175356989],[51.53307164243, -0.14186808027],[51.5324937559, -0.14171859467],[51.53187809624, -0.14145530764],[51.5312603811, -0.14106235168],[51.53092193684, -0.14070128033],[51.52955367679, -0.1389116256],[51.52913023044, -0.13829454331],[51.5286296262, -0.13734903213],[51.52837691842, -0.13672500578],[51.52781991793, -0.13506099815],[51.52774578553, -0.13435761263],[51.52785922236, -0.13357447563],[51.52834644646, -0.13232336651],[51.52834644646, -0.13232336651],[51.52967342576, -0.12891559578],[51.53066641047, -0.12633739074],[51.5308357846, -0.12568164358],[51.53081573603, -0.12217898581],[51.53083403091, -0.12188905651],[51.53083403091, -0.12188905651],[51.53097351221, -0.1196782358],[51.53144325068, -0.11420894051],[51.53186578205, -0.10917402442],[51.53195618808, -0.10641643862],[51.53188520014, -0.10593762469],[51.53188520014, -0.10593762469],[51.53183508984, -0.10559963931],[51.53092770444, -0.10175894924],[51.52990173533, -0.09782243058],[51.52786667474, -0.08990596002],[51.52748938338, -0.08882608664],[51.52717680256, -0.08840668018],[51.52700324319, -0.0882409519],[51.52656719901, -0.08797088995],[51.52595994266, -0.08767917428],[51.52497773052, -0.08754498483],[51.52497773052, -0.08754498483],[51.52394111414, -0.08740336839],[51.52191852558, -0.08689710407],[51.5215595389, -0.08694097859],[51.51990292457, -0.08737075753],[51.51922371448, -0.08762983795],[51.51891940948, -0.08779467948],[51.51891940948, -0.08779467948],[51.51726266597, -0.08869209283],[51.51592861601, -0.0890506115],[51.51481258509, -0.08954411156],[51.5143810014, -0.08954775688],[51.51318969901, -0.08873287314],[51.51280499226, -0.08830220371],[51.51231327408, -0.08789869585]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUCTN",
+                "name": "Camden Town Underground Station",
+                "uri": "/StopPoint/940GZZLUCTN",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUEUS",
+                "name": "Euston Underground Station",
+                "uri": "/StopPoint/940GZZLUEUS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUKSX",
+                "name": "King's Cross St. Pancras Underground Station",
+                "uri": "/StopPoint/940GZZLUKSX",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUAGL",
+                "name": "Angel Underground Station",
+                "uri": "/StopPoint/940GZZLUAGL",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUODS",
+                "name": "Old Street Underground Station",
+                "uri": "/StopPoint/940GZZLUODS",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUMGT",
+                "name": "Moorgate Underground Station",
+                "uri": "/StopPoint/940GZZLUMGT",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZLUBNK",
+                "name": "Bank Underground Station",
+                "uri": "/StopPoint/940GZZLUBNK",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "Northern",
+              "directions": [
+                "Morden via Bank"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "northern",
+                "name": "Northern",
+                "uri": "/Line/northern",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "tube",
+            "name": "tube",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "isDisrupted": false,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 27,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "DLR to Woolwich Arsenal DLR Station",
+            "detailed": "DLR towards Woolwich Arsenal DLR Station",
+            "steps": []
+          },
+          "obstacles": [],
+          "departureTime": "2021-10-07T09:52:00",
+          "arrivalTime": "2021-10-07T10:19:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZDLBNK",
+            "platformName": "",
+            "icsCode": "1000013",
+            "commonName": "Bank DLR Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.512082556029995,
+            "lon": -0.08811627176
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZDLWLA",
+            "platformName": "",
+            "icsCode": "1003000",
+            "commonName": "Woolwich Arsenal DLR Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.49030854513,
+            "lon": 0.0693849411
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.51215154899, -0.08790032732],[51.51171347167, -0.08754084696],[51.51083903021, -0.08685689939],[51.51059122794, -0.08655023225],[51.51044227561, -0.08623942588],[51.51032785795, -0.08584070674],[51.50937383396, -0.0802892572],[51.50923199129, -0.07931527971],[51.50923911353, -0.07865207944],[51.50934201406, -0.07779750598],[51.50947754781, -0.07673980089],[51.50959154699, -0.07601444984],[51.51009527189, -0.07383155306],[51.51051004917, -0.07225763792],[51.51074177694, -0.07103730035],[51.51088623547, -0.06997916449],[51.51108685842, -0.06687221512],[51.51127907619, -0.06326118894],[51.51138490142, -0.06204612674],[51.5114401297, -0.06103496995],[51.51161172912, -0.05673300504],[51.51160958146, -0.05660339134],[51.51163642378, -0.05632825856],[51.51163642378, -0.05632825856],[51.51167876254, -0.05589427383],[51.51185929183, -0.05105864776],[51.51201579996, -0.04857313519],[51.51218933737, -0.0417200751],[51.51228432099, -0.04034907808],[51.51228432099, -0.04034907808],[51.51243565914, -0.0381641668],[51.51243669455, -0.03768852717],[51.51235770805, -0.03619307867],[51.51224438848, -0.03533323715],[51.51212738588, -0.03479061974],[51.5106849442, -0.02975104934],[51.51049675307, -0.02925477071],[51.50986950665, -0.02778307696],[51.50953849094, -0.02687058834],[51.50953849094, -0.02687058834],[51.50863415607, -0.02437783574],[51.50817321539, -0.0226396759],[51.50818317438, -0.02216369289],[51.50831455988, -0.02088986085],[51.50829075497, -0.02054503571],[51.50821230329, -0.02015934789],[51.50788829614, -0.01907819057],[51.50778578505, -0.01833328878],[51.50768700783, -0.01753175313],[51.50768700783, -0.01753175313],[51.50757733953, -0.01664189692],[51.50747164586, -0.01570980784],[51.50740986558, -0.01418498637],[51.50741564397, -0.01346421335],[51.50741023574, -0.01261423292],[51.50750630585, -0.01138516256],[51.50780299941, -0.00820191902],[51.5079061191, -0.00739042788],[51.5079614504, -0.00701282992],[51.5079614504, -0.00701282992],[51.50809951127, -0.00607061932],[51.50823324782, -0.00547394119],[51.50837065572, -0.00509326042],[51.5085716993, -0.00475302947],[51.50881718175, -0.00438203179],[51.50899126522, -0.00404297263],[51.50916461229, -0.00366071001],[51.5093624642, -0.00313326229],[51.50950590727, -0.00257936748],[51.50968867119, -0.00160174726],[51.50968867119, -0.00160174726],[51.5102311239, 0.00130018427],[51.51034155149, 0.00167971997],[51.51051537118, 0.00203321391],[51.5108037942, 0.0025214398],[51.51115634648, 0.0029404267],[51.51156379683, 0.00330418159],[51.51188433882, 0.00349118698],[51.5134747324, 0.00409422882],[51.51394384954, 0.00453278301],[51.51443475199, 0.00527496951],[51.514564862, 0.00555452577],[51.51465853499, 0.00586130841],[51.51472426396, 0.00622451563],[51.51471810441, 0.00658456451],[51.51465827467, 0.0069278414],[51.51456373268, 0.00719752768],[51.51444346486, 0.00739401827],[51.51389346207, 0.00800398837],[51.51386511731, 0.00802984393],[51.51386511731, 0.00802984393],[51.512989059, 0.00882894965],[51.51049054294, 0.01031870668],[51.51036227165, 0.01045717387],[51.50994176013, 0.0108565876],[51.50841187587, 0.01197090833],[51.5065383786, 0.01371846968],[51.5062096937, 0.01400658976],[51.50593467615, 0.01431148271],[51.50575001149, 0.01459153762],[51.50559955796, 0.01497396897],[51.50548430441, 0.01540118072],[51.50539526445, 0.01587277689],[51.50521463074, 0.01644119622],[51.50505568066, 0.01679442245],[51.50454337614, 0.01782370102],[51.5035577175, 0.02022973509],[51.50279054238, 0.02247981102],[51.50279054238, 0.02247981102],[51.50267686055, 0.02281321553],[51.50257081315, 0.0232263796],[51.50251818249, 0.02367072623],[51.50249027098, 0.02424584786],[51.50243788505, 0.0246757945],[51.50230814044, 0.02541930631],[51.50212776764, 0.02701069014],[51.50211357925, 0.02783136457],[51.50213609394, 0.0291291608],[51.50238190385, 0.03329951185],[51.50238190385, 0.03329951185],[51.50239325084, 0.03349208411],[51.50252649812, 0.03617808795],[51.50253696902, 0.03661082456],[51.50251399615, 0.03689798003],[51.50246181412, 0.03731351325],[51.50244682461, 0.03765865993],[51.50245478766, 0.03823537404],[51.50248497456, 0.03856812765],[51.50255210486, 0.03884489477],[51.5026466925, 0.0390940704],[51.50351349258, 0.04044401412],[51.50373087044, 0.04087159708],[51.50385813859, 0.04130956641],[51.50393249332, 0.04168753508],[51.50397015168, 0.04210709273],[51.50396237826, 0.04255343834],[51.50392589003, 0.04309936555],[51.50396580136, 0.04338934004],[51.50410079101, 0.04389971185],[51.50412820065, 0.04439086185],[51.50404359061, 0.04666377391],[51.50401757708, 0.04712371171],[51.50395763004, 0.04746685205],[51.5036052939, 0.04858939696],[51.50347471478, 0.04885731731],[51.5034434313, 0.04889875939],[51.5034434313, 0.04889875939],[51.50332742157, 0.04905243996],[51.50306306229, 0.04925671838],[51.50290728598, 0.04942263913],[51.50275898527, 0.04967534875],[51.50263688606, 0.04997245982],[51.50256819686, 0.05030078478],[51.50253544954, 0.05063072237],[51.5025145466, 0.0518257324],[51.502458697, 0.05296153478],[51.50231177918, 0.05518832021],[51.5021424688, 0.05920078879],[51.50198131774, 0.06201110293],[51.50198131774, 0.06201110293],[51.50175337276, 0.06598420163],[51.50161300527, 0.06884519728],[51.50149782868, 0.07078515984],[51.50132261106, 0.07154087661],[51.50100387382, 0.07227566807],[51.50062554153, 0.07282043483],[51.50027696347, 0.07320805129],[51.49561165042, 0.07665569119],[51.49478504065, 0.07712235184],[51.49394402849, 0.07738665203],[51.49332300481, 0.07741604126],[51.49158356861, 0.07661667828],[51.49111396076, 0.07622079449],[51.49068360626, 0.07563943284],[51.4903084358, 0.07498856214],[51.48999921616, 0.07416783465],[51.48975339877, 0.07332118502],[51.48964261346, 0.07246626363],[51.4896378689, 0.07171698863],[51.4897170405, 0.07079865667],[51.48984732352, 0.0700410924],[51.49003949867, 0.06922281183]]",
+            "stopPoints": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLSHA",
+                "name": "Shadwell DLR Station",
+                "uri": "/StopPoint/940GZZDLSHA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLLIM",
+                "name": "Limehouse DLR Station",
+                "uri": "/StopPoint/940GZZDLLIM",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWFE",
+                "name": "Westferry DLR Station",
+                "uri": "/StopPoint/940GZZDLWFE",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLPOP",
+                "name": "Poplar DLR Station",
+                "uri": "/StopPoint/940GZZDLPOP",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLBLA",
+                "name": "Blackwall DLR Station",
+                "uri": "/StopPoint/940GZZDLBLA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLEIN",
+                "name": "East India DLR Station",
+                "uri": "/StopPoint/940GZZDLEIN",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLCGT",
+                "name": "Canning Town DLR Station",
+                "uri": "/StopPoint/940GZZDLCGT",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWSV",
+                "name": "West Silvertown DLR Station",
+                "uri": "/StopPoint/940GZZDLWSV",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLPDK",
+                "name": "Pontoon Dock DLR Station",
+                "uri": "/StopPoint/940GZZDLPDK",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLLCA",
+                "name": "London City Airport DLR Station",
+                "uri": "/StopPoint/940GZZDLLCA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLKGV",
+                "name": "King George V DLR Station",
+                "uri": "/StopPoint/940GZZDLKGV",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              },
+              {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "940GZZDLWLA",
+                "name": "Woolwich Arsenal DLR Station",
+                "uri": "/StopPoint/940GZZDLWLA",
+                "type": "StopPoint",
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            ],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "DLR",
+              "directions": [
+                "Woolwich Arsenal DLR Station"
+              ],
+              "lineIdentifier": {
+                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                "id": "dlr",
+                "name": "DLR",
+                "uri": "/Line/dlr",
+                "type": "Line",
+                "crowding": {
+                  "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                },
+                "routeType": "Unknown",
+                "status": "Unknown"
+              }
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "dlr",
+            "name": "dlr",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "RealTime",
+              "type": "routeInfo",
+              "categoryDescription": "RealTime",
+              "description": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-10-07T10:12:00",
+              "lastUpdate": "2021-10-07T10:12:00"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "RealTime",
+              "type": "routeInfo",
+              "categoryDescription": "RealTime",
+              "description": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-10-07T10:12:00",
+              "lastUpdate": "2021-10-07T10:12:00"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "RealTime",
+              "type": "routeInfo",
+              "categoryDescription": "RealTime",
+              "description": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-10-07T10:12:00",
+              "lastUpdate": "2021-10-07T10:12:00"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "RealTime",
+              "type": "routeInfo",
+              "categoryDescription": "RealTime",
+              "description": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-10-07T10:12:00",
+              "lastUpdate": "2021-10-07T10:12:00"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "RealTime",
+              "type": "routeInfo",
+              "categoryDescription": "RealTime",
+              "description": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-10-07T10:12:00",
+              "lastUpdate": "2021-10-07T10:12:00"
+            },
+            {
+              "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+              "category": "PlannedWork",
+              "type": "stopInfo",
+              "categoryDescription": "PlannedWork",
+              "description": "BANK STATION: From Monday 30 August until early October, during planned escalator maintenance work, access to the DLR platforms will be via the fixed staircase between the escalators. Please take care and hold the handrail as you walk down. The remaining escalators from the DLR will run in the up direction. Step-free access between the DLR, the ticket hall and the street will be available via the lifts.",
+              "summary": "",
+              "additionalInfo": "",
+              "created": "2021-08-13T08:06:00",
+              "lastUpdate": "2021-08-13T08:08:00"
+            }
+          ],
+          "plannedWorks": [],
+          "isDisrupted": true,
+          "hasFixedLocations": true
+        },
+        {
+          "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+          "duration": 3,
+          "instruction": {
+            "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+            "summary": "Walk to SE18 6AB",
+            "detailed": "Walk to SE18 6AB",
+            "steps": [
+              {
+                "$type": "Tfl.Api.Presentation.Entities.InstructionStep, Tfl.Api.Presentation.Entities",
+                "description": "Woolwich New Road for 11 metres",
+                "turnDirection": "STRAIGHT",
+                "streetName": "Woolwich New Road",
+                "distance": 11,
+                "cumulativeDistance": 11,
+                "skyDirection": 224,
+                "skyDirectionDescription": "SouthWest",
+                "cumulativeTravelTime": 6,
+                "latitude": 51.49026199755,
+                "longitude": 0.068965082729999988,
+                "pathAttribute": {
+                  "$type": "Tfl.Api.Presentation.Entities.PathAttribute, Tfl.Api.Presentation.Entities"
+                },
+                "descriptionHeading": "Continue along ",
+                "trackType": "None"
+              }
+            ]
+          },
+          "obstacles": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+              "type": "ESCALATOR",
+              "incline": "UP",
+              "stopId": 1003000,
+              "position": "BEFORE"
+            }
+          ],
+          "departureTime": "2021-10-07T10:19:00",
+          "arrivalTime": "2021-10-07T10:22:00",
+          "departurePoint": {
+            "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+            "naptanId": "940GZZDLWLA",
+            "platformName": "",
+            "icsCode": "1003000",
+            "commonName": "Woolwich Arsenal DLR Station",
+            "placeType": "StopPoint",
+            "additionalProperties": [],
+            "lat": 51.49030854513,
+            "lon": 0.0693849411
+          },
+          "arrivalPoint": {
+            "$type": "Tfl.Api.Presentation.Entities.Place, Tfl.Api.Presentation.Entities",
+            "commonName": "SE18 6AB",
+            "placeType": "StopPoint",
+            "lat": 51.49038642905,
+            "lon": 0.068538559770000007
+          },
+          "path": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+            "lineString": "[[51.49030854513, 0.0693849411],[51.49022503918, 0.06902103009],[51.49026199755, 0.06896508273],[51.4901921444, 0.06884667872],[51.49038642905, 0.06853855977]]",
+            "stopPoints": [],
+            "elevation": []
+          },
+          "routeOptions": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+              "name": "",
+              "directions": [
+                ""
+              ]
+            }
+          ],
+          "mode": {
+            "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+            "id": "walking",
+            "name": "walking",
+            "type": "Mode",
+            "routeType": "Unknown",
+            "status": "Unknown"
+          },
+          "disruptions": [],
+          "plannedWorks": [],
+          "distance": 11.0,
           "isDisrupted": false,
           "hasFixedLocations": false
         }
@@ -1795,12 +2127,60 @@
   "lines": [
     {
       "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
+      "id": "dlr",
+      "name": "DLR",
+      "modeName": "dlr",
+      "disruptions": [],
+      "created": "2021-10-05T14:46:06.437Z",
+      "modified": "2021-10-05T14:46:06.437Z",
+      "lineStatuses": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities",
+          "id": 0,
+          "lineId": "dlr",
+          "statusSeverity": 6,
+          "statusSeverityDescription": "Severe Delays",
+          "reason": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse. ",
+          "created": "0001-01-01T00:00:00",
+          "validityPeriods": [
+            {
+              "$type": "Tfl.Api.Presentation.Entities.ValidityPeriod, Tfl.Api.Presentation.Entities",
+              "fromDate": "2021-10-07T10:10:34Z",
+              "toDate": "2021-10-08T01:29:00Z",
+              "isNow": true
+            }
+          ],
+          "disruption": {
+            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+            "category": "RealTime",
+            "categoryDescription": "RealTime",
+            "description": "Docklands Light Railway: Severe delays between Bank / Tower Gateway and Lewisham / Beckton / Woolwich Arsenal while we fix a faulty train at Limehouse. ",
+            "affectedRoutes": [],
+            "affectedStops": [],
+            "closureText": "severeDelays"
+          }
+        }
+      ],
+      "routeSections": [],
+      "serviceTypes": [
+        {
+          "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
+          "name": "Regular",
+          "uri": "/Line/Route?ids=DLR&serviceTypes=Regular"
+        }
+      ],
+      "crowding": {
+        "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+      }
+    },
+    {
+      "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
       "id": "northern",
       "name": "Northern",
       "modeName": "tube",
       "disruptions": [],
-      "created": "2021-09-22T09:27:41.29Z",
-      "modified": "2021-09-22T09:27:41.29Z",
+      "created": "2021-10-05T14:46:06.437Z",
+      "modified": "2021-10-05T14:46:06.437Z",
       "lineStatuses": [
         {
           "$type": "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities",
@@ -1833,45 +2213,45 @@
   "recommendedMaxAgeMinutes": 5,
   "searchCriteria": {
     "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria, Tfl.Api.Presentation.Entities",
-    "dateTime": "2021-10-05T16:49:00",
+    "dateTime": "2021-10-07T10:21:00",
     "dateTimeType": "Arriving",
     "timeAdjustments": {
       "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments, Tfl.Api.Presentation.Entities",
       "earliest": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
-        "date": "20211005",
+        "date": "20211007",
         "time": "0300",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=0300&date=20211005"
+        "uri": "/journey/journeyresults/nw51tl/to/se186ab?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=0300&date=20211007"
       },
       "earlier": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
-        "date": "20211005",
-        "time": "1558",
+        "date": "20211007",
+        "time": "1004",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=1558&date=20211005"
+        "uri": "/journey/journeyresults/nw51tl/to/se186ab?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=1004&date=20211007"
       },
       "later": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
-        "date": "20211005",
-        "time": "1655",
+        "date": "20211007",
+        "time": "1022",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=1655&date=20211005"
+        "uri": "/journey/journeyresults/nw51tl/to/se186ab?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=1022&date=20211007"
       },
       "latest": {
         "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
-        "date": "20211006",
+        "date": "20211008",
         "time": "0300",
         "timeIs": "arriving",
-        "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=0300&date=20211006"
+        "uri": "/journey/journeyresults/nw51tl/to/se186ab?timeIs=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none&time=0300&date=20211008"
       }
     }
   },
   "journeyVector": {
     "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector, Tfl.Api.Presentation.Entities",
     "from": "nw51tl",
-    "to": "wd194hh",
+    "to": "se186ab",
     "via": "",
-    "uri": "/journey/journeyresults/nw51tl/to/wd194hh?timeis=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none"
+    "uri": "/journey/journeyresults/nw51tl/to/se186ab?timeis=arriving&journeypreference=leastinterchange&walkingspeed=slow&cyclepreference=none"
   }
 }
