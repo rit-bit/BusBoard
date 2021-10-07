@@ -3,22 +3,23 @@
 }
 
 <div class="text-center">
+    <img src="Softwire_Banner.png" alt="Softwire Banner" style="width:100%;">
     <h1 class="display-4">Bus Board</h1>
-    <table>
+    <table style="width:100%">
         <tr>
             <th>Bus</th>
             <th>Towards</th>
             <th>Arrival time</th>
             <th>Bus Stop</th>
         </tr>
-        @foreach(var arrival in @Model)
-    {
-        <tr>
-            <td>@arrival.LineName</td>
-            <td>@arrival.Towards</td>
-            <td>@arrival.ExpectedArrival.ToString("HH:mm")</td>
-            <td>@arrival.StopName</td>
-        </tr>
-    }
+        @foreach (var arrival in @Model)
+        {
+            <tr>
+                <td>@arrival.LineName</td>
+                <td>@arrival.Towards</td>
+                <td>@arrival.ExpectedArrival.ToString("HH:mm")</td>
+                <td>@arrival.StopName</td>
+            </tr>
+        }
     </table>
 </div>
