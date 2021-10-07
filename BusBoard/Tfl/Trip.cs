@@ -54,9 +54,28 @@ namespace BusBoard.Tfl
         public int duration { get; set; }
         public List<Leg> legs { get; set; }
         
+        public bool isDisrupted { get; set; }
+        
         public override string ToString()
         {
-            return string.Join('\n', legs);
+            foreach (var leg in legs)
+            {
+                if (leg.isDisrupted)
+                {
+                    isDisrupted = true;
+                    break;
+                }
+            }
+
+            var builder = new StringBuilder();
+            
+            if (isDisrupted)
+            {
+                builder.Append("This journey is disrupted\n");
+                
+            }
+            builder.Append(string.Join('\n', legs));
+            return builder.ToString();
         }
     }
 
@@ -64,10 +83,21 @@ namespace BusBoard.Tfl
     {
         public Instruction instruction { get; set; }
         public int duration { get; set; }
+        
+        public bool isDisrupted { get; set; }
+        
+        public List<Disruptions> disruptions { get; set; }
 
         public override string ToString()
         {
-            var output = $"{instruction} for {ConvertMinutesToHoursMinutes(duration)}";
+            var builder = new StringBuilder();
+            
+            if (isDisrupted)
+            {
+                builder.Append("The are disruptions for this part of the journey\n");
+                builder.Append(string.Join('\n', disruptions));
+            }
+            var output = $"\n{instruction} for {ConvertMinutesToHoursMinutes(duration)}";
             if (instruction.steps.Count == 0)
             {
                 output += ')';
@@ -81,6 +111,20 @@ namespace BusBoard.Tfl
             minutes = minutes % 60;
             return $"{hours}h {minutes}m";
         }
+    }
+
+    public class Disruptions
+    {
+        public string description { get; set; }
+        public string summary { get; set; }
+        public string additionalInfo { get; set; }
+        public string closureText { get; set; }
+
+        public override string ToString()
+        {
+            return $"{summary}, {description}";
+        }
+        
     }
 
     public class Instruction
