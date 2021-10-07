@@ -1,5 +1,7 @@
-﻿using System;
+﻿#nullable enable
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace BusBoard.Tfl
@@ -95,7 +97,7 @@ namespace BusBoard.Tfl
             if (isDisrupted)
             {
                 builder.Append("There are disruptions for this part of the journey\n");
-                builder.Append(string.Join('\n', disruptions));
+                builder.Append(string.Join('\n', disruptions.Distinct().ToList()));
             }
             builder.Append($"\n{instruction} for {ConvertMinutesToHoursMinutes(duration)}");
             if (instruction.steps.Count == 0)
@@ -123,12 +125,44 @@ namespace BusBoard.Tfl
         {
             return description;
         }
-        
+
+        public override bool Equals(object? obj)
+        {
+            if (obj == null)
+            {
+                return false;
+            }
+            if (obj.GetType() == GetType())
+            {
+                var other = (Disruption) obj;
+                if (description != other.description)
+                {
+                    return false;
+                }
+
+                if (summary != other.summary)
+                {
+                    return false;
+                }
+
+                return additionalInfo == other.additionalInfo;
+            }
+
+            return false;
+        }
+
+        public override int GetHashCode()
+        {
+            var hash = 7 * description.GetHashCode();
+            hash *= 11 * summary.GetHashCode();
+            hash *= 13 * additionalInfo.GetHashCode();
+            return hash;
+        }
     }
 
     public class Instruction
     {
-        public List<Step> steps { get; set; }
+        public List<Step> steps { get; set; } = null!;
         public string summary { get; set; }
         public string detailed { get; set; }
 
