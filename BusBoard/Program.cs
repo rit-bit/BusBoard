@@ -53,7 +53,8 @@ namespace BusBoard
 
         public static void GetNearestBusStopsAndDirections()
         {
-            var location = PostcodeApi.GetLatLonFromPostcode();
+            var postcode = UserInput.GetPostcodeInput("Input postcode:");
+            var location = PostcodeApi.GetLatLonFromPostcode(postcode);
             var stopPoints = TflApi.GetStopPointsFromLocation(location);
 
             if (stopPoints.Count == 0)
@@ -79,8 +80,12 @@ namespace BusBoard
 
             if (UserInput.DoesUserWantDirections())
             {
-                Trip.PrintDirectionsToBusStop(stopPoints);
-                return;
+                var index = 0;
+                if (stopPoints.Count > 1)
+                {
+                   index = UserInput.WhichBusStop(stopPoints[0].commonName, stopPoints[1].commonName);
+                }
+                Trip.PrintDirectionsToBusStop(stopPoints[index]);
             }
         }
         

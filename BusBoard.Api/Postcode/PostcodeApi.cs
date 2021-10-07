@@ -11,11 +11,10 @@ namespace BusBoard.Postcode
     {
         private static readonly ILogger Logger = LogManager.GetCurrentClassLogger();
         static RestClient client = new RestClient("https://api.postcodes.io/");
-        public static LocationInfo GetLatLonFromPostcode()
+        public static LocationInfo GetLatLonFromPostcode(string postcode)
         {
             while (true)
             {
-                var postcode = UserInput.GetPostcodeInput("Input postcode:");
                 var request = new RestRequest($"postcodes?q={postcode}", Method.GET);
 
                 var response = client.Get<List<PostcodeInfo>>(request);

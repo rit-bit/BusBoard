@@ -34,14 +34,9 @@ namespace BusBoard.Tfl
             return builder.ToString();
         }
 
-        public static void PrintDirectionsToBusStop(List<StopPoint> stopPoints)
+        public static void PrintDirectionsToBusStop(StopPoint stopPoint)
         {
-            var index = 0;
-            if (stopPoints.Count >= 2)
-            {
-                index = UserInput.WhichBusStop(stopPoints[0].commonName, stopPoints[1].commonName);
-            }
-            PrintDirections(Softwire, stopPoints[index].naptanID);
+            PrintDirections(Softwire, stopPoint.naptanID);
         }
 
         public static void PrintDirections(string from, string to)
