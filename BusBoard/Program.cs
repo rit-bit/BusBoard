@@ -26,9 +26,14 @@ namespace BusBoard
                     case UserInput.MainAction.NearestBusStop:
                         GetNearestBusStopsAndDirections();
                         break;
+                    
+                    case UserInput.MainAction.ActiveDisruptions:
+                        CheckActiveDisruptions();
+                        break;
                 }
             }
         }
+        
 
         private static void InitLogging()
         {
@@ -43,6 +48,7 @@ namespace BusBoard
         {
             var destination = UserInput.GetPostcodeInput("Input destination postcode: ");
             Trip.PrintDirections(Trip.Softwire, destination);
+            //TODO execption throw when journey planned from softwire to softwire
         }
 
         public static void GetNearestBusStopsAndDirections()
@@ -76,6 +82,11 @@ namespace BusBoard
                 Trip.PrintDirectionsToBusStop(stopPoints);
                 return;
             }
+        }
+        
+        public static void CheckActiveDisruptions()
+        {
+            throw new NotImplementedException();
         }
     }
 }

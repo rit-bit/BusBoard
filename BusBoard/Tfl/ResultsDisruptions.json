@@ -1,0 +1,183 @@
+﻿[{
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "Information",
+  "type": "lineInfo",
+  "categoryDescription": "Information",
+  "description": "Changes to Route 246: Buses operate to/from Chartwell during the day on Sundays and Bank Holidays until Sunday 31 October",
+  "created": "2021-04-13T07:27:00Z",
+  "lastUpdate": "2021-04-13T07:27:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "Information",
+  "type": "lineInfo",
+  "categoryDescription": "Information",
+  "description": "Proposed changes to bus route 497: We are considering two very different futures for bus route 497 and we want to know your thoughts. We are now holding a public consultation on our proposals, running until Sunday 17 October 2021, and you can find details on how to take part below. Route 497 currently runs between Harold Wood Station to Harold Hill, Gooshays Drive via Gallows Corner Tesco. Proposal 1: We propose extending route 497 to serve bus stops between Gooshays Drive and a new terminus at Dagnam Park Square. Proposal 2: We are considering withdrawing the service.",
+  "additionalInfo": "Find out more and <a href=\"https://haveyoursay.tfl.gov.uk/bus-route-497\">let us have your views</a>",
+  "created": "2021-10-05T08:26:00Z",
+  "lastUpdate": "2021-10-05T08:28:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "SHEPISTONE ROAD, HARLINGTON: Route 698 is on diversion in both directions due to a collision. Buses will not be serving stops from Chery Lane Cemetery to Millington Road (P) towards Ickenham, and from Fairey Corner (F) to Sam Philip Recreation Ground towards West Drayton.",
+  "created": "2021-10-06T08:29:00Z",
+  "lastUpdate": "2021-10-06T08:30:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "WHITTON DENE, TWICKENHAM, TW2: Route 481 is on diversion via Warren Road due to roadworks. Buses will not be serving stop Kneller Road in both directions.",
+  "created": "2021-10-06T10:31:00Z",
+  "lastUpdate": "2021-10-06T10:34:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "WHITTON DENE, TWICKENHAM, TW2: Route H22 is on diversion via Whitton Dene and Hounslow Road due to roadworks. Buses will not be serving stops from Kneller Road (S) to The Admiral Nelson/Whitton (W) towards West Middlesex Hospital, and from The Admiral Nelson/Whitton (Q) to Kneller Gardens towards Hounslow.",
+  "created": "2021-10-06T10:36:00Z",
+  "lastUpdate": "2021-10-06T10:47:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "The road is inaccessible to Buses and HGV's due to works. As a result, bus route 23 is diverting from Westbourne Grove onto Pembridge Road and will not be serving stops between Chepstow Road and Blenheim Crescent / Elgin Crescent in either direction.",
+  "created": "2021-10-04T11:36:00Z",
+  "lastUpdate": "2021-10-04T13:09:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "FRIARY ROAD: Route 260 towards Golders Green is on diversion from Friary Road to Gypsy Corner via Western Avenue and Leamington Park due to a crane operation. Buses will miss the stops Joseph Avenue, Acton Main Line Station and Noel Road.",
+  "created": "2021-10-01T08:53:00Z",
+  "lastUpdate": "2021-10-04T16:39:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "FLAXTON ROAD: Route 291 is operating from Queen Elizabeth Hospital to Plumstead Common and there is no service from Plumstead Common to Woodlands Estate due to water leak repair works and carriageway repair works. Buses towards Woolwich will depart from Plumstead Common Road/Warwick Terrace (Stop R).",
+  "created": "2021-09-25T10:12:00Z",
+  "lastUpdate": "2021-10-01T11:46:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "GREEN LANE: Routes 250 and N250 are on diversion from Streatham High Road/Arragon Gardens  to Thornton Heath/Brook Road via London Road, Norbury Crescent and Melfort Road due to emergency water works. Buses will miss stops from Hermitage Lane to Thornton Heath Station.",
+  "created": "2021-10-03T13:05:00Z",
+  "lastUpdate": "2021-10-03T13:15:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "ARIEL WAY, W12: Routes 31 49 207 228 237 260 316 607 C1 are on diversion towards White City via Shepherd's Bush Green, Wood Lane, Ariel Way and Dimco Road due to resurfacing ways. Buses are missing the stop Shepherd's Bush Station.",
+  "created": "2021-08-29T00:05:00Z",
+  "lastUpdate": "2021-09-21T15:15:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "stopBlocking",
+  "categoryDescription": "RealTime",
+  "description": "NORWOOD ROAD: This stop is closed due to a dangerous structure. Please use alternative stops to continue your journey.",
+  "created": "2021-09-10T08:43:00Z",
+  "lastUpdate": "2021-09-10T10:51:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "EASTCHEAP, EC3: Route 15 N15 are on diversion towards Trafalgar Square due to an emergency road closure. Buses will not be serving stops from Minories (H) to Monument Station (J).",
+  "created": "2021-10-05T10:32:00Z",
+  "lastUpdate": "2021-10-05T10:33:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "ELSTREE HILL NORTH, BOREHAMWOOD: Route 107 is on diversion in both directions via Barnet Lane and Furzehill Road due to roadworks. Buses will not be serving stops from/to The East Public House and Glenhaven Avenue.",
+  "created": "2021-10-06T11:48:00Z",
+  "lastUpdate": "2021-10-06T11:57:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "BEECH HILL, HADLEY WOOD: Route 399 is on diversion via Camlet Way and Crescent East due to roadworks. Buses will not be serving stops in the Hail & Ride section from Newmans Way to Lancaster Avenue.",
+  "created": "2021-10-05T10:46:00Z",
+  "lastUpdate": "2021-10-06T17:37:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "PRAED STREET (W2/Paddington): Routes 7,23,27,36,205,332,N7 and N27 diverted: Owing to damaged Cadent Gas Infrastructure outside St Mary's Hospital, requiring emergency repairs, Praed Street is closed to all traffic and all buses are on diversion via Sussex Gardens and Eastbourne Terrace, with buses travelling towards Bayswater or Notting Hill missing the section of route and stops between St Mary's Hospital and Paddington Station. Buses travelling towards Edgware Road will not serve the stop at Paddington Station.",
+  "created": "2021-10-06T22:50:00Z",
+  "lastUpdate": "2021-10-06T22:55:00Z",
+  "affectedRoutes": [],
+  "affectedStops": [],
+  "closureText": "busService"
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "ABBEY ROAD: Route 139 is on diversion due to roadworks. Buses towards Golders Green are diverted via St Johns Wood Road, Wellington Road, Finchley Road, Hilgrove Road and Belsize Road missing stops from Hall Road to Belsize Road. Buses towards Waterloo are diverted via Quex Road, Kilburn High Road, Maida Vale, Hamilton Terrace and Hall Road missing stops from Priory Road to Hall Road.",
+  "created": "2021-09-30T11:48:00Z",
+  "lastUpdate": "2021-10-07T07:19:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "ABBEY ROAD: Route 189 is on diversion due to roadworks. Buses towards Kilburn are diverted via St Johns Wood Road, Wellington Road, Finchley Road, Hilgrove Road and Belsize Road missing stops from Hall Road to Belsize Road. Buses towards Marble Arch are diverted via Kilburn High Road, Maida Vale, Hamilton Terrace and Hall Road missing stops from Quex Road to Hall Road.",
+  "created": "2021-09-30T12:36:00Z",
+  "lastUpdate": "2021-10-07T07:19:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}, {
+  "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+  "category": "RealTime",
+  "type": "lineInfo",
+  "categoryDescription": "RealTime",
+  "description": "CARPENTERS ROAD: Route 108 is on diversion from Stratford City Bus Station to Stratford High Street/Warton Road due to roadworks. Buses will miss the stops London Aquatics Centre, Carpenters Primary School and Gibbins Road.",
+  "created": "2021-10-07T10:19:00Z",
+  "lastUpdate": "2021-10-07T10:21:00Z",
+  "affectedRoutes": [],
+  "affectedStops": []
+}]

@@ -38,5 +38,13 @@ namespace BusBoard.Tfl
             var data = response.Data;
             return data;
         }
+
+        public static ActiveDisruptionsList CheckDisruptionsForAll(string modes)
+        {
+            var request = new RestRequest($"/Line/Mode/{modes}/Disruption");
+            var response = Client.Get<ActiveDisruptionsList>(request);
+            var data = response.Data;
+            return data;
+        }
     }
 }

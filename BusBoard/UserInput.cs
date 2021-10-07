@@ -81,7 +81,7 @@ namespace BusBoard
         public static MainAction GetMainAction()
         {
             Console.WriteLine(
-                $"\nWhich action would you like to do? Type 1 for Journey Planner and 2 for Nearest Bus Stop");
+                $"\nWhich action would you like to do? Type 1 for Journey Planner, 2 for Nearest Bus Stop an 3 for Active Disruptions");
 
             while (true)
             {
@@ -94,10 +94,13 @@ namespace BusBoard
 
                     case "2":
                         return MainAction.NearestBusStop;
+                    
+                    case "3":
+                        return MainAction.ActiveDisruptions;
 
                     default:
                         Logger.Error($"User entered an invalid Main Menu action option of \"{response}\"");
-                        Console.WriteLine("You entered an invalid option. Please type 1 or 2");
+                        Console.WriteLine("You entered an invalid option. Please type 1, 2 or 3");
                         break;
                 }
             }
@@ -106,7 +109,8 @@ namespace BusBoard
         public enum MainAction
         {
             JourneyPlanner,
-            NearestBusStop
+            NearestBusStop,
+            ActiveDisruptions
         }
     }
 }
