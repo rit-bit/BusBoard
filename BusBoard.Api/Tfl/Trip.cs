@@ -19,8 +19,10 @@ namespace BusBoard.Tfl
             }
             var builder = new StringBuilder();
             var option = 'A';
+            // TODO - AppendLine
             builder.Append($"\nOPTION {option}:");
             builder.Append('\n');
+            // TODO - foreach journeys
             builder.Append(journeys[0]);
             for (var i = 1; i < journeys.Count; i++)
             {
@@ -55,6 +57,7 @@ namespace BusBoard.Tfl
         
         public override string ToString()
         {
+            // TODO - Make into a LINQ
             foreach (var leg in legs)
             {
                 if (leg.isDisrupted)
@@ -121,6 +124,7 @@ namespace BusBoard.Tfl
             return description;
         }
 
+        // TODO - Double check if this needs to be a custom method
         public override bool Equals(object? obj)
         {
             if (obj == null)

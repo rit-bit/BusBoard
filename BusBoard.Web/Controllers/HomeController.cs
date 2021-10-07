@@ -22,7 +22,7 @@ namespace BusBoard.Web.Controllers
         public IActionResult Index()
         {
             var buses = TflApi.GetBusesForTwoNearestStops("NW5 1TL");
-            return View(buses);
+            return View(new HomeViewModel {buses = buses});
         }
 
         public IActionResult Privacy()
@@ -37,3 +37,13 @@ namespace BusBoard.Web.Controllers
         }
     }
 }
+
+// form post
+// path/query params
+// controller method params
+
+// 1. make a form
+// 2. send data to somewhere
+// 3. open a controller endpoint
+// 4. perform api requests to tfl and postcodes.io
+// 5. present in view

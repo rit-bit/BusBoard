@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HomeViewModel
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -12,7 +13,8 @@
             <th>Arrival time</th>
             <th>Bus Stop</th>
         </tr>
-        @foreach (var arrival in @Model)
+        @Model.blah
+        @foreach (var arrival in @Model.buses)
         {
             <tr>
                 <td>@arrival.LineName</td>

@@ -40,6 +40,7 @@ namespace BusBoard
             var config = new LoggingConfiguration();
             var target = new FileTarget { FileName = @"C:\Work\Logs\SupportBank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
             config.AddTarget("File Logger", target);
+            // TODO - Add console target and remove duplicated lines in other files
             config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
             LogManager.Configuration = config;
         }
@@ -72,6 +73,7 @@ namespace BusBoard
             {
                 var location = PostcodeApi.GetLatLonFromPostcode(postcode);
                 var stopPoints = TflApi.GetStopPointsFromLocation(location);
+                // TODO - var index = GetNextBusStopIndex();
                 var index = 0;
                 if (stopPoints.Count > 1)
                 {

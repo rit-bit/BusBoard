@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BusBoard.Tfl
 {
@@ -37,6 +38,8 @@ namespace BusBoard.Tfl
                     busList.Add(item);
                 }
             }
+
+            // TODO - return busList.OrderBy(bus => bus.ExpectedArrival);
 
             busList.Sort(new Comparison<StopPointArrival>(StopPointArrival.Comparison));
             return busList;
