@@ -54,17 +54,7 @@ namespace BusBoard
         public static void GetNearestBusStopsAndDirections()
         {
             var postcode = UserInput.GetPostcodeInput("Input postcode:");
-            var location = PostcodeApi.GetLatLonFromPostcode(postcode);
-            var stopPoints = TflApi.GetStopPointsFromLocation(location);
-
-            if (stopPoints.Count == 0)
-            {
-                Logger.Error($"No bus stops were found for the given location of \"{location}\"");
-                Console.WriteLine("There are no bus stops for the given postcode. Try a different postcode");
-                return;
-            }
-
-            var busList = StopPointArrival.GetArrivalList(stopPoints);
+            var busList = TflApi.GetBusesForTwoNearestStops(postcode);
 
             foreach (var busArrival in busList)
             {
@@ -73,13 +63,15 @@ namespace BusBoard
 
             if (busList.Count == 0)
             {
-                Logger.Error($"No buses were found for the given location of \"{location}\"");
+                Logger.Error($"No buses were found for the given location of \"{postcode}\"");
                 Console.WriteLine("No buses found for this location");
                 return;
             }
 
             if (UserInput.DoesUserWantDirections())
             {
+                var location = PostcodeApi.GetLatLonFromPostcode(postcode);
+                var stopPoints = TflApi.GetStopPointsFromLocation(location);
                 var index = 0;
                 if (stopPoints.Count > 1)
                 {

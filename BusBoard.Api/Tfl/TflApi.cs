@@ -20,6 +20,21 @@ namespace BusBoard.Tfl
             return response.Data.Take(5);
         }
 
+        public static List<StopPointArrival> GetBusesForTwoNearestStops(string postcode)
+        {
+            var location = PostcodeApi.GetLatLonFromPostcode(postcode);
+            var stopPoints = GetStopPointsFromLocation(location);
+
+            if (stopPoints.Count == 0)
+            {
+                Logger.Error($"No bus stops were found for the given location of \"{location}\"");
+                Console.WriteLine("There are no bus stops for the given postcode. Try a different postcode");
+                return new List<StopPointArrival>();
+            }
+
+            return StopPointArrival.GetArrivalList(stopPoints);
+        }
+
         public static List<StopPoint> GetStopPointsFromLocation(LocationInfo location)
         {
             const string stopTypes = "NaptanPublicBusCoachTram";
