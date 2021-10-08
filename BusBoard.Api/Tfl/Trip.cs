@@ -19,6 +19,7 @@ namespace BusBoard.Tfl
             }
             var builder = new StringBuilder();
             var option = 'A';
+            builder.AppendLine();
             foreach (var journey in journeys)
             {
                 builder.AppendLine($"OPTION {option++}:");
