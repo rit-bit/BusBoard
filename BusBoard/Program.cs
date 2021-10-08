@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using BusBoard.Postcode;
 using BusBoard.Tfl;
 using NLog;
@@ -38,10 +39,12 @@ namespace BusBoard
         private static void InitLogging()
         {
             var config = new LoggingConfiguration();
-            var target = new FileTarget { FileName = @"C:\Work\Logs\SupportBank.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
-            config.AddTarget("File Logger", target);
-            // TODO - Add console target and remove duplicated lines in other files
-            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, target));
+            var fileTarget = new FileTarget { FileName = @"C:\Work\Logs\BusBoard.log", Layout = @"${longdate} ${level} - ${logger}: ${message}" };
+            var consoleTarget = new ConsoleTarget { Name = "Console", Layout = @"${message}" };
+            config.AddTarget("File Logger", fileTarget);
+            config.AddTarget("Console", consoleTarget);
+            config.AddRule(LogLevel.Error, LogLevel.Fatal, "Console");
+            config.LoggingRules.Add(new LoggingRule("*", LogLevel.Debug, fileTarget));
             LogManager.Configuration = config;
         }
 
@@ -49,7 +52,7 @@ namespace BusBoard
         {
             var destination = UserInput.GetPostcodeInput("Input destination postcode: ");
             Trip.PrintDirections(Trip.Softwire, destination);
-            //TODO execption throw when journey planned from softwire to softwire
+            //TODO exception thrown when journey planned from softwire to softwire
         }
 
         public static void GetNearestBusStopsAndDirections()
@@ -65,7 +68,6 @@ namespace BusBoard
             if (busList.Count == 0)
             {
                 Logger.Error($"No buses were found for the given location of \"{postcode}\"");
-                Console.WriteLine("No buses found for this location");
                 return;
             }
 
@@ -73,14 +75,18 @@ namespace BusBoard
             {
                 var location = PostcodeApi.GetLatLonFromPostcode(postcode);
                 var stopPoints = TflApi.GetStopPointsFromLocation(location);
-                // TODO - var index = GetNextBusStopIndex();
-                var index = 0;
-                if (stopPoints.Count > 1)
-                {
-                   index = UserInput.WhichBusStop(stopPoints[0].commonName, stopPoints[1].commonName);
-                }
+                var index = GetNextBusStopIndex(stopPoints);
                 Trip.PrintDirectionsToBusStop(stopPoints[index]);
             }
+        }
+        private static int GetNextBusStopIndex(List<StopPoint> stopPoints)
+        {
+            if (stopPoints.Count > 1)
+            {
+                return UserInput.WhichBusStop(stopPoints[0].commonName, stopPoints[1].commonName);
+            }
+            
+            return 0;
         }
         
         public static void CheckActiveDisruptions()

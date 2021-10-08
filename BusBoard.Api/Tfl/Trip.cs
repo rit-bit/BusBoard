@@ -19,20 +19,11 @@ namespace BusBoard.Tfl
             }
             var builder = new StringBuilder();
             var option = 'A';
-            // TODO - AppendLine
-            builder.Append($"\nOPTION {option}:");
-            builder.Append('\n');
-            // TODO - foreach journeys
-            builder.Append(journeys[0]);
-            for (var i = 1; i < journeys.Count; i++)
+            foreach (var journey in journeys)
             {
-                option++;
-                var journey = journeys[i];
-                builder.Append($"\n\nOPTION {option}:");
-                builder.Append('\n');
-                builder.Append(journey);
+                builder.AppendLine($"OPTION {option++}:");
+                builder.AppendLine(journey.ToString());
             }
-
             return builder.ToString();
         }
 
@@ -57,24 +48,17 @@ namespace BusBoard.Tfl
         
         public override string ToString()
         {
-            // TODO - Make into a LINQ
-            foreach (var leg in legs)
-            {
-                if (leg.isDisrupted)
-                {
-                    isDisrupted = true;
-                    break;
-                }
-            }
+            // If any leg is disrupted, whole journey is flagged as disrupted
+            isDisrupted = legs.Any(leg => leg.isDisrupted);
 
             var builder = new StringBuilder();
             
             if (isDisrupted)
             {
-                builder.Append("This journey is disrupted\n");
+                builder.AppendLine("This journey is disrupted");
                 
             }
-            builder.Append(string.Join('\n', legs));
+            builder.AppendLine(string.Join('\n', legs));
             return builder.ToString();
         }
     }
@@ -94,14 +78,11 @@ namespace BusBoard.Tfl
             
             if (isDisrupted)
             {
-                builder.Append("There are disruptions for this part of the journey\n");
-                builder.Append(string.Join('\n', disruptions.Distinct().ToList()));
+                builder.AppendLine("There are disruptions for this part of the journey");
+                builder.AppendLine(string.Join('\n', disruptions.Distinct().ToList()));
             }
-            builder.Append($"\n{instruction} for {ConvertMinutesToHoursMinutes(duration)}");
-            if (instruction.steps.Count == 0)
-            {
-                builder.Append(')');
-            }
+            builder.AppendLine($"{instruction} for {ConvertMinutesToHoursMinutes(duration)}");
+            
             return builder.ToString();
         }
         
@@ -170,18 +151,16 @@ namespace BusBoard.Tfl
             var builder = new StringBuilder(summary);
             if (steps.Count == 0)
             {
-                builder.Append("\n(");
+                builder.Append('(');
                 builder.Append(detailed);
+                builder.AppendLine(")");
                 return builder.ToString();
             }
-            builder.Append('\n');
-            builder.Append(steps[0].FirstToString());
+            builder.AppendLine(steps[0].FirstToString());
             for (var i = 1; i < steps.Count; i++)
             {
-                builder.Append('\n');
-                builder.Append(steps[i]);
+                builder.AppendLine(steps[i].ToString());
             }
-
             return builder.ToString();
         }
     }

@@ -23,8 +23,7 @@ namespace BusBoard
 
                 else
                 {
-                    Logger.Error($"User entered an invalid postcode of \"{postCode}\"");
-                    Console.WriteLine("Invalid Postcode. Please enter a new one");
+                    Logger.Error($"You entered an invalid postcode of \"{postCode}\". Please enter a new one.");
                 }
             }
         }
@@ -47,8 +46,7 @@ namespace BusBoard
                     }
                 }
 
-                Logger.Error($"User entered an invalid option of \"{response}\" instead of \"Y\" or \"N\".");
-                Console.WriteLine("You entered an invalid option. Please type Y or N");
+                Logger.Error($"You entered an invalid option of \"{response}\" instead of \"Y\" or \"N\".");
             }
         }
 
@@ -70,9 +68,7 @@ namespace BusBoard
                         return 1;
 
                     default:
-                        Logger.Error(
-                            $"User entered an invalid option of \"{response}\" for which bus stop to get directions to.");
-                        Console.WriteLine("You entered an invalid option. Please type 1 or 2");
+                        Logger.Error($"You entered an invalid option of \"{response}\" for which bus stop to get directions to. Please type 1 or 2.");
                         break;
                 }
             }
@@ -99,8 +95,7 @@ namespace BusBoard
                         return MainAction.ActiveDisruptions;
 
                     default:
-                        Logger.Error($"User entered an invalid Main Menu action option of \"{response}\"");
-                        Console.WriteLine("You entered an invalid option. Please type 1, 2 or 3");
+                        Logger.Error($"You entered an invalid Main Menu action option of \"{response}\". Please type 1, 2 or 3.");
                         break;
                 }
             }
